@@ -3,6 +3,12 @@ import fs from "fs";
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
+const today = new Date();
+const todayStr = today.toISOString().split("T")[0];
+const windowEnd = new Date(today);
+windowEnd.setMonth(windowEnd.getMonth() + 12);
+const windowEndStr = windowEnd.toISOString().split("T")[0];
+
 const prompt = `You are updating "Opportunity Radar," a monthly briefing on UK consumer
 retail trade events for Irish exporters, used for Enterprise Ireland client support.
 
@@ -11,6 +17,11 @@ SECTORS COVERED: Fashion, Homeware, Gift, Health & Beauty, Pet (incl. pet food).
 GEOGRAPHIC SCOPE: Primarily London and the Midlands (NEC Birmingham, ExCeL, Olympia,
 Business Design Centre), plus Manchester (Manchester Central) and Glasgow (Scottish
 Event Campus).
+
+TIME WINDOW: Only include events scheduled between ${todayStr} and ${windowEndStr}
+(a rolling 12-month horizon from today). Exclude any event that has already taken
+place. Within each classification section, sort events chronologically, soonest
+first.
 
 SOURCES TO CHECK for event announcements: British Fashion Council, Drapers,
 TheIndustry.fashion, TheIndustry.beauty, UKFT, Walpole, The Giftware Association, AIS,
@@ -50,14 +61,15 @@ yet worth active pursuit), Ignore (doesn't meet the qualification gate).
 PRIMARY BENEFIT (pick one dominant purpose): Buyer Access, Decision Maker Access,
 Networking, Market Intelligence, Brand Discovery.
 
-TASK: Search for current and upcoming UK trade shows, awards, conferences, and events
-in the sectors and regions above. For each qualifying event, determine score,
+TASK: Search for UK trade shows, awards, conferences, and events in the sectors,
+regions, and time window above. For each qualifying event, determine score,
 confidence, classification, and primary benefit per the framework. Then output a
 complete, self-contained HTML page (inline CSS, no external dependencies, no
 JavaScript needed) titled "Opportunity Radar", with:
-- A header showing today's date as "Last updated: <date>"
+- A header showing "Last updated: ${todayStr}" and the coverage window
+  "${todayStr} to ${windowEndStr}"
 - Events grouped into sections by classification tier (Must Attend, Strategic, Niche,
-  Monitor, Ignore last)
+  Monitor, Ignore last), sorted chronologically within each section
 - Each event showing: name, date, venue/city, category, score /100, confidence,
   primary benefit, and a one-sentence rationale
 - Clean, readable styling (a simple sans-serif layout is fine)
