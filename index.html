@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opportunity Radar</title>
+  <style>
+    :root {
+      --primary: #0a2540;
+      --secondary: #1d5c42; /* Emerald Green */
+      --accent: #d4af37; /* Gold */
+      --bg: #f8fafc;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      
+      /* Tier Colors */
+      --must-attend: #10b981;
+      --strategic: #3b82f6;
+      --niche: #8b5cf6;
+      --monitor: #f59e0b;
+      --ignore: #64748b;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: white;
+      padding: 3rem 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 4px 20px rgba(10, 37, 64, 0.15);
+    }
+
+    .header-content h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+    }
+
+    .header-content p {
+      margin: 0 0 1.5rem 0;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .meta-box {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .meta-item strong {
+      color: var(--accent);
+    }
+
+    /* Section Styles */
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 3rem 0 1.5rem 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .section-title::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 1.75rem;
+      border-radius: 4px;
+    }
+
+    .must-attend-title { color: var(--must-attend); }
+    .must-attend-title::before { background-color: var(--must-attend); }
+
+    .strategic-title { color: var(--strategic); }
+    .strategic-title::before { background-color: var(--strategic); }
+
+    .niche-title { color: var(--niche); }
+    .niche-title::before { background-color: var(--niche); }
+
+    .monitor-title { color: var(--monitor); }
+    .monitor-title::before { background-color: var(--monitor); }
+
+    .ignore-title { color: var(--ignore); }
+    .ignore-title::before { background-color: var(--ignore); }
+
+    /* Grid Layout */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Event Card */
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    }
+
+    .card.must-attend-card { border-left: 5px solid var(--must-attend); }
+    .card.strategic-card { border-left: 5px solid var(--strategic); }
+    .card.niche-card { border-left: 5px solid var(--niche); }
+    .card.monitor-card { border-left: 5px solid var(--monitor); }
+    .card.ignore-card { border-left: 5px solid var(--ignore); opacity: 0.8; }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .event-category {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--text-light);
+      background-color: var(--bg);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    .score-badge {
+      font-size: 0.9rem;
+      font-weight: 800;
+      padding: 0.25rem 0.5rem;
+      border-radius: 6px;
+      color: white;
+    }
+
+    .must-attend-card .score-badge { background-color: var(--must-attend); }
+    .strategic-card .score-badge { background-color: var(--strategic); }
+    .niche-card .score-badge { background-color: var(--niche); }
+    .monitor-card .score-badge { background-color: var(--monitor); }
+    .ignore-card .score-badge { background-color: var(--ignore); }
+
+    .event-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem 0;
+      color: var(--primary);
+    }
+
+    .event-meta {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 0.75rem;
+    }
+
+    .event-details {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      background: var(--bg);
+      padding: 0.75rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+
+    .detail-item strong {
+      color: var(--text);
+    }
+
+    .detail-item span {
+      display: block;
+      color: var(--text-light);
+    }
+
+    .event-rationale {
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.4;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <h1>Opportunity Radar</h1>
+        <p>UK consumer retail trade events intelligence briefing for Irish exporters, curated for Enterprise Ireland.</p>
+        <div class="meta-box">
+          <div class="meta-item">Last updated: <strong>2026-08-07</strong></div>
+          <div class="meta-item">Coverage Window: <strong>2026-08-07 to 2027-08-07</strong></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MUST ATTEND -->
+    <h2 class="section-title must-attend-title">Must Attend</h2>
+    <div class="grid">
+      <!-- Autumn Fair 2026 -->
+      <div class="card must-attend-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Trade Show</span>
+            <span class="score-badge">88/100</span>
+          </div>
+          <h3 class="event-name">Autumn Fair 2026</h3>
+          <div class="event-meta">6–9 September 2026 | NEC Birmingham</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">The UK’s leading high-volume trade show for home, gift, and fashion, attracting over 13,000 retail buyers ahead of peak golden quarter trading.</p>
+      </div>
+
+      <!-- Top Drawer Autumn 2026 -->
+      <div class="card must-attend-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Trade Show</span>
+            <span class="score-badge">89/100</span>
+          </div>
+          <h3 class="event-name">Top Drawer Autumn 2026</h3>
+          <div class="event-meta">13–15 September 2026 | Olympia London</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">The UK's premier design-led lifestyle trade show, connecting curated, premium gift, homeware, and fashion brands with key boutique and department store buyers.</p>
+      </div>
+
+      <!-- PATS 2026 -->
+      <div class="card must-attend-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Trade Show</span>
+            <span class="score-badge">89/100</span>
+          </div>
+          <h3 class="event-name">PATS 2026</h3>
+          <div class="event-meta">27–29 September 2026 | NEC Birmingham</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">Relocated to the massive NEC Birmingham, PATS is the definitive, unmissable trade event for Irish pet care and pet food exporters looking to secure UK wholesale distributors.</p>
+      </div>
+
+      <!-- Professional Beauty London 2026 -->
+      <div class="card must-attend-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Trade Show</span>
+            <span class="score-badge">84/100</span>
+          </div>
+          <h3 class="event-name">Professional Beauty London 2026</h3>
+          <div class="event-meta">4–5 October 2026 | ExCeL London</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">Moving to a landmark October slot and co-located with Salon International, this is Europe’s largest gathering of professional beauty, spa, and skincare buyers.</p>
+      </div>
+
+      <!-- Drapers Awards 2026 -->
+      <div class="card must-attend-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Awards</span>
+            <span class="score-badge">81/100</span>
+          </div>
+          <h3 class="event-name">Drapers Awards 2026</h3>
+          <div class="event-meta">10 November 2026 | London</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Networking</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">Widely regarded as the "Oscars of fashion retail," this flagship black-tie event is the ultimate networking hub for heads of buying, trading directors, and CEOs of the UK's top fashion chains.</p>
+      </div>
+
+      <!-- Top Drawer S/S 2027 -->
+      <div class="card must-attend-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Trade Show</span>
+            <span class="score-badge">89/100</span>
+          </div>
+          <h3 class="event-name">Top Drawer S/S 2027</h3>
+          <div class="event-meta">10–12 January 2027 | Olympia London</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">The S/S edition presents a crucial starting line for design-led giftware, homeware, and fashion accessories targeting premium boutiques and major retail players.</p>
+      </div>
+
+      <!-- Spring Fair 2027 -->
+      <div class="card must-attend-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Trade Show</span>
+            <span class="score-badge">91/100</span>
+          </div>
+          <h3 class="event-name">Spring Fair 2027</h3>
+          <div class="event-meta">7–10 February 2027 | NEC Birmingham</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">The UK's largest retail trade show, co-located with Pure London, delivering an unparalleled volume of retail buyers and commercial opportunities across all covered sectors.</p>
+      </div>
+    </div>
+
+    <!-- STRATEGIC -->
+    <h2 class="section-title strategic-title">Strategic</h2>
+    <div class="grid">
+      <!-- Salon International 2026 -->
+      <div class="card strategic-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Trade Show</span>
+            <span class="score-badge">80/100</span>
+          </div>
+          <h3 class="event-name">Salon International 2026</h3>
+          <div class="event-meta">4–5 October 2026 | ExCeL London</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Brand Discovery</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">Co-located alongside Professional Beauty, this is the leading professional hair show in the UK, strategic for professional haircare brand exporters.</p>
+      </div>
+
+      <!-- Decorex 2026 -->
+      <div class="card strategic-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Trade Show</span>
+            <span class="score-badge">83/100</span>
+          </div>
+          <h3 class="event-name">Decorex 2026</h3>
+          <div class="event-meta">11–14 October 2026 | Olympia London</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Networking</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">The UK's premier luxury interior design show, providing high-end Irish homeware, lighting, and textile exporters with strategic access to premium specifiers and boutique buyers.</p>
+      </div>
+
+      <!-- CEW UK Achiever Awards 2026 -->
+      <div class="card strategic-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Awards</span>
+            <span class="score-badge">78/100</span>
+          </div>
+          <h3 class="event-name">CEW UK Achiever Awards 2026</h3>
+          <div class="event-meta">1 December 2026 | The Peninsula London</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Networking</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">A high-profile industry luncheon celebrating outstanding female beauty executives, offering exceptional networking with UK beauty CEOs, retail heads, and key distributors.</p>
+      </div>
+
+      <!-- CEW UK Beauty Awards Demo Event 2027 -->
+      <div class="card strategic-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Event</span>
+            <span class="score-badge">83/100</span>
+          </div>
+          <h3 class="event-name">CEW UK Beauty Awards Demonstration Event</h3>
+          <div class="event-meta">4 March 2027 | Business Design Centre, London</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Brand Discovery</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">An essential beauty demonstration evening where beauty brands get to showcase product innovations directly to 1,000+ influential industry experts and retail decision-makers.</p>
+      </div>
+    </div>
+
+    <!-- NICHE -->
+    <h2 class="section-title niche-title">Niche</h2>
+    <div class="grid">
+      <!-- INDX Homeware Autumn 2026 -->
+      <div class="card niche-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Trade Show</span>
+            <span class="score-badge">78/100</span>
+          </div>
+          <h3 class="event-name">INDX Homeware Autumn 2026</h3>
+          <div class="event-meta">8–9 September 2026 | Cranmore Park, Solihull</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">Organised by the major buying group AIS, this trade show offers direct, niche access to independent department store owners and retail buyers.</p>
+      </div>
+
+      <!-- Glee 2026 -->
+      <div class="card niche-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Trade Show</span>
+            <span class="score-badge">74/100</span>
+          </div>
+          <h3 class="event-name">Glee 2026</h3>
+          <div class="event-meta">8–10 September 2026 | NEC Birmingham</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">While primarily garden-focused, Glee hosts a significant, growing designated pet care and outdoor living sector with thousands of visiting retail buyers.</p>
+      </div>
+
+      <!-- The Bed Show 2026 -->
+      <div class="card niche-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Trade Show</span>
+            <span class="score-badge">72/100</span>
+          </div>
+          <h3 class="event-name">The Bed Show 2026</h3>
+          <div class="event-meta">22–23 September 2026 | Telford International Centre</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">Organised by the National Bed Federation, this is the UK's leading specialized event for bed manufacturers and bedding component suppliers, offering deep niche value.</p>
+      </div>
+
+      <!-- Scotland's Trade Fair Spring 2027 -->
+      <div class="card niche-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Trade Show</span>
+            <span class="score-badge">80/100</span>
+          </div>
+          <h3 class="event-name">Scotland's Trade Fair Spring 2027</h3>
+          <div class="event-meta">24–26 January 2027 | SEC Glasgow</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">The definitive regional buying showcase for Northern UK and Scottish independent gift, fashion, and homeware stockists, now consolidated with the autumn show.</p>
+      </div>
+
+      <!-- INDX Homeware Spring 2027 -->
+      <div class="card niche-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Trade Show</span>
+            <span class="score-badge">79/100</span>
+          </div>
+          <h3 class="event-name">INDX Homeware Spring 2027</h3>
+          <div class="event-meta">23–24 February 2027 | Cranmore Park, Solihull</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">The spring iteration of the AIS-buying-group homeware show, offering a targeted route to market for niche Irish tableware, textiles, and gift suppliers.</p>
+      </div>
+    </div>
+
+    <!-- MONITOR -->
+    <h2 class="section-title monitor-title">Monitor</h2>
+    <div class="grid">
+      <!-- London Fashion Week September 2026 -->
+      <div class="card monitor-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Event</span>
+            <span class="score-badge">52/100</span>
+          </div>
+          <h3 class="event-name">London Fashion Week September 2026</h3>
+          <div class="event-meta">17–21 September 2026 | Various Venues, London</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Market Intelligence</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">Excellent for observing creative design trends and PR-driven brand movements, though of limited value for direct commercial wholesale buying transactions for most retail exporters.</p>
+      </div>
+
+      <!-- Crufts 2027 -->
+      <div class="card monitor-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Event</span>
+            <span class="score-badge">68/100</span>
+          </div>
+          <h3 class="event-name">Crufts 2027</h3>
+          <div class="event-meta">4–7 March 2027 | NEC Birmingham</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Market Intelligence</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">Primarily a consumer show, but the massive scale of its 500+ exhibitor trade stands provides excellent landscape assessment and brand exposure opportunities.</p>
+      </div>
+    </div>
+
+    <!-- IGNORE -->
+    <h2 class="section-title ignore-title">Ignore</h2>
+    <div class="grid">
+      <!-- Ideal Home Show 2027 -->
+      <div class="card ignore-card">
+        <div>
+          <div class="card-header">
+            <span class="event-category">Event</span>
+            <span class="score-badge">35/100</span>
+          </div>
+          <h3 class="event-name">Ideal Home Show 2027</h3>
+          <div class="event-meta">2–11 April 2027 | Olympia London</div>
+          <div class="event-details">
+            <div class="detail-item"><strong>Primary Benefit</strong><span>Brand Discovery</span></div>
+            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
+          </div>
+        </div>
+        <p class="event-rationale">Excluded from active promotion as it is almost entirely a consumer-facing lifestyle exhibition, offering very limited B2B wholesale or buyer trade potential.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
