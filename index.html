@@ -1,582 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Opportunity Radar</title>
-  <style>
-    :root {
-      --primary: #0a2540;
-      --secondary: #1d5c42; /* Emerald Green */
-      --accent: #d4af37; /* Gold */
-      --bg: #f8fafc;
-      --text: #1e293b;
-      --text-light: #64748b;
-      --card-bg: #ffffff;
-      --border: #e2e8f0;
-      
-      /* Tier Colors */
-      --must-attend: #10b981;
-      --strategic: #3b82f6;
-      --niche: #8b5cf6;
-      --monitor: #f59e0b;
-      --ignore: #64748b;
-    }
+<meta charset="UTF-8">
+<title>Retail Opportunity Radar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff;
+    --surface:#f7f8fa;
+    --surface2:#eef1f5;
+    --border:#dde2e8;
+    --text:#1c232c;
+    --dim:#5b6572;
+    --dimmer:#8b96a3;
+    /* Strategic classification — priority tier: red (most important) down to grey */
+    --anchor:#d13b30;
+    --strategic:#d97a1f;
+    --niche:#c9a227;
+    --monitor:#7c5cbf;
+    --ignore:#6b7686;
+    /* Confidence rating — a separate teal family so it never reads as the same signal as classification */
+    --hi:#0e7c66;
+    --med:#2f9e8f;
+    --lo:#5fa89d;
+    /* Generic UI accent (active tabs/buttons) — deliberately separate from both palettes above */
+    --accent:#2f6fed;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:'Inter',sans-serif; -webkit-font-smoothing:antialiased;
+    padding:32px 20px 80px;
+  }
+  .wrap{max-width:1180px; margin:0 auto;}
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.5;
-      color: var(--text);
-      background-color: var(--bg);
-      margin: 0;
-      padding: 0;
-    }
+  /* header */
+  header{display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:6px;}
+  h1{font-family:'Fraunces',serif; font-weight:600; font-size:34px; margin:0; letter-spacing:-0.01em;}
+  h1 em{font-style:italic; color:var(--anchor); font-weight:400;}
+  .sub{color:var(--dim); font-size:13.5px; max-width:520px; line-height:1.5; margin-top:6px;}
+  .review-box{
+    background:var(--surface); border:1px solid var(--border); border-radius:10px;
+    padding:12px 16px; font-size:12.5px; color:var(--dim); text-align:right; min-width:200px;
+  }
+  .review-box button{
+    margin-top:8px; background:var(--accent); color:#ffffff; border:none; border-radius:6px;
+    padding:7px 14px; font-family:'Inter'; font-weight:600; font-size:12.5px; cursor:pointer;
+  }
+  .review-box button:hover{filter:brightness(1.08);}
+  .review-date{font-family:'IBM Plex Mono',monospace; color:var(--text);}
+  .freshness{color:var(--dimmer); font-size:11px; margin-top:8px;}
+  .freshness span{color:var(--dim); font-family:'IBM Plex Mono',monospace;}
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem;
-    }
+  .monthtabs{display:flex; gap:6px; margin-bottom:2px; flex-wrap:wrap;}
+  .monthtabs button{
+    background:var(--surface); border:1px solid var(--border); color:var(--dim);
+    font-family:'Inter'; font-weight:600; font-size:13px; padding:8px 18px; border-radius:9px 9px 0 0; cursor:pointer;
+    border-bottom:none; position:relative; top:1px;
+  }
+  .monthtabs button.active{background:var(--surface2); color:var(--text); border-bottom:1px solid var(--surface2);}
+  .monthtabs .count{font-family:'IBM Plex Mono',monospace; font-size:10px; color:var(--dimmer); margin-left:5px;}
+  .monthtabs button.active .count{color:var(--anchor);}
+  .catfilter{display:flex; gap:6px; flex-wrap:wrap; padding:10px 0 0;}
+  .catfilter button{
+    background:var(--surface); border:1px solid var(--border); color:var(--dim);
+    font-family:'Inter'; font-size:11.5px; font-weight:600; padding:5px 12px; border-radius:20px; cursor:pointer;
+  }
+  .catfilter button.active{background:var(--accent); color:#ffffff; border-color:var(--accent);}
+  .tag.cat{border-color:var(--accent); color:var(--accent);}
 
-    header {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-      color: white;
-      padding: 3rem 1.5rem;
-      border-radius: 12px;
-      margin-bottom: 2.5rem;
-      box-shadow: 0 4px 20px rgba(10, 37, 64, 0.15);
-    }
+  /* legend + view toggle */
+  .controls{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; margin:26px 0 18px; border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:14px 0;}
+  .legend{display:flex; gap:16px; flex-wrap:wrap; font-size:11.5px; color:var(--dim);}
+  .legend span{display:inline-flex; align-items:center; gap:6px;}
+  .dot{width:9px; height:9px; border-radius:50%; display:inline-block;}
+  .viewtoggle{display:flex; gap:6px; background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:3px;}
+  .viewtoggle button{background:none; border:none; color:var(--dim); font-family:'Inter'; font-size:12.5px; font-weight:600; padding:6px 14px; border-radius:6px; cursor:pointer;}
+  .viewtoggle button.active{background:var(--surface2); color:var(--text);}
 
-    .header-content h1 {
-      margin: 0 0 0.5rem 0;
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: -0.025em;
-    }
+  /* calendar grid */
+  .cal{display:grid; grid-template-columns:repeat(7,1fr); gap:6px;}
+  .dow{font-size:11px; color:var(--dimmer); text-transform:uppercase; letter-spacing:.08em; text-align:center; padding-bottom:4px;}
+  .day{
+    background:var(--surface); border:1px solid var(--border); border-radius:10px;
+    min-height:88px; padding:8px; position:relative; cursor:default;
+    box-shadow:0 1px 2px rgba(28,35,44,.04);
+  }
+  .day.empty{background:transparent; border:none;}
+  .daynum{font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--dimmer);}
+  .day.today .daynum{color:var(--anchor); font-weight:600;}
+  .evdot{
+    margin-top:6px; padding:4px 6px; border-radius:6px; font-size:10.5px; line-height:1.3;
+    cursor:pointer; border-left:3px solid; background:var(--surface2); color:var(--text);
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  }
+  .evdot:hover{background:#e2e7ed;}
+  .evdot + .evdot{margin-top:3px;}
 
-    .header-content p {
-      margin: 0 0 1.5rem 0;
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
+  /* list view */
+  .weekgroup{margin-bottom:22px;}
+  .weeklabel{font-size:11px; text-transform:uppercase; letter-spacing:.1em; color:var(--dimmer); margin-bottom:8px; font-family:'IBM Plex Mono',monospace;}
+  .card{
+    background:var(--surface); border:1px solid var(--border); border-left:4px solid var(--monitor);
+    border-radius:10px; padding:14px 16px; margin-bottom:9px; cursor:pointer; display:flex; justify-content:space-between; gap:14px; align-items:center;
+    box-shadow:0 1px 3px rgba(28,35,44,.06);
+  }
+  .card:hover{background:var(--surface2);}
+  .card-main{flex:1; min-width:0;}
+  .card-date{font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--dim);}
+  .card-title{font-weight:600; font-size:15px; margin:2px 0 4px;}
+  .card-loc{font-size:12px; color:var(--dim);}
+  .card-blurb{font-size:12.5px; color:var(--dim); line-height:1.5; margin:5px 0 2px; max-width:520px;}
+  .card-tags{display:flex; gap:6px; flex-wrap:wrap; margin-top:6px;}
+  .tag{font-size:10px; padding:2px 7px; border-radius:20px; background:var(--surface2); color:var(--dim); border:1px solid var(--border);}
+  .card-right{display:flex; align-items:center; gap:12px; flex-shrink:0;}
+  .radar-wrap{display:flex; flex-direction:column; align-items:center; gap:3px;}
+  .radar-label{font-size:9.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--dimmer); white-space:nowrap;}
+  .radar{position:relative; width:44px; height:44px;}
+  .radar svg{transform:rotate(-90deg);}
+  .radar-score{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:600;}
+  .class-pill{font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; padding:4px 9px; border-radius:20px; white-space:nowrap;}
 
-    .meta-box {
-      display: inline-flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 0.75rem 1.25rem;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-    }
+  /* detail panel */
+  .overlay{position:fixed; inset:0; background:rgba(28,35,44,.55); display:none; align-items:flex-start; justify-content:center; padding:40px 16px; overflow-y:auto; z-index:50;}
+  .overlay.open{display:flex;}
+  .panel{background:var(--bg); border:1px solid var(--border); border-radius:16px; max-width:640px; width:100%; padding:28px 30px 30px; margin-bottom:40px; box-shadow:0 12px 32px rgba(28,35,44,.18);}
+  .panel-top{display:flex; justify-content:space-between; align-items:flex-start; gap:10px;}
+  .panel-close{background:none; border:none; color:var(--dim); font-size:20px; cursor:pointer; line-height:1;}
+  .panel h2{font-family:'Fraunces',serif; font-size:23px; font-weight:600; margin:2px 0 4px;}
+  .panel-meta{font-size:12.5px; color:var(--dim); font-family:'IBM Plex Mono',monospace;}
+  .panel-desc{font-size:13.5px; color:var(--dim); line-height:1.6; margin:14px 0;}
+  .section-label{font-size:11px; text-transform:uppercase; letter-spacing:.09em; color:var(--dimmer); margin:20px 0 8px; font-family:'IBM Plex Mono',monospace;}
+  .qa{font-size:13px; line-height:1.6; margin-bottom:8px;}
+  .qa b{color:var(--text); font-weight:600;}
+  .qa span{color:var(--dim);}
+  .scorebar-row{display:flex; align-items:center; gap:10px; font-size:12px; margin-bottom:6px;}
+  .scorebar-label{width:130px; color:var(--dim); flex-shrink:0;}
+  .scorebar-track{flex:1; height:6px; background:var(--surface2); border-radius:4px; overflow:hidden;}
+  .scorebar-fill{height:100%; border-radius:4px; background:var(--accent);}
+  .scorebar-val{width:34px; text-align:right; font-family:'IBM Plex Mono',monospace; color:var(--text);}
+  .why ul{margin:4px 0 0; padding-left:18px; font-size:13px; color:var(--dim); line-height:1.7;}
+  .field label{display:block; font-size:11.5px; color:var(--dim); margin-bottom:4px;}
+  .field textarea, .field input[type=text]{
+    width:100%; background:var(--surface2); border:1px solid var(--border); border-radius:7px;
+    color:var(--text); font-family:'Inter'; font-size:13px; padding:8px 10px; resize:vertical;
+  }
+  .field{margin-bottom:12px;}
+  .yn{display:flex; gap:8px; margin-bottom:14px;}
+  .yn button{flex:1; background:var(--surface2); border:1px solid var(--border); color:var(--dim); padding:8px; border-radius:7px; cursor:pointer; font-family:'Inter'; font-weight:600; font-size:12.5px;}
+  .yn button.on{background:var(--accent); color:#ffffff; border-color:var(--accent);}
+  .panel-link{display:inline-block; margin-top:6px; color:var(--anchor); font-size:12.5px; text-decoration:none; border-bottom:1px solid rgba(201,137,26,.4);}
+  .save-note{font-size:11px; color:var(--dimmer); margin-top:10px;}
+  .flag{background:rgba(209,59,48,.08); border:1px solid rgba(209,59,48,.3); color:#a3281f; border-radius:8px; padding:8px 12px; font-size:12px; margin:12px 0;}
+  .history-card{display:flex; gap:12px; background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:10px 12px; margin-bottom:6px;}
+  .history-year{font-family:'IBM Plex Mono',monospace; font-weight:600; color:var(--accent); flex-shrink:0;}
+  .history-body{font-size:12.5px; color:var(--dim); line-height:1.5;}
+  .history-notes{margin-top:4px; font-style:italic; color:var(--text);}
+  .history-hint{font-size:11px; color:var(--dimmer); margin:6px 0 4px; line-height:1.5;}
+  .refresh-note{margin-top:30px; padding:16px 18px; background:var(--surface); border:1px solid var(--border); border-radius:10px; font-size:12.5px; color:var(--dim); line-height:1.6;}
+  .refresh-note b{color:var(--text);}
+  .empty-state{color:var(--dimmer); font-size:13px; padding:20px 0;}
 
-    .meta-item strong {
-      color: var(--accent);
-    }
-
-    /* Section Styles */
-    .section-title {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      font-size: 1.75rem;
-      font-weight: 700;
-      margin: 3rem 0 1.5rem 0;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid var(--border);
-    }
-
-    .section-title::before {
-      content: "";
-      display: inline-block;
-      width: 6px;
-      height: 1.75rem;
-      border-radius: 4px;
-    }
-
-    .must-attend-title { color: var(--must-attend); }
-    .must-attend-title::before { background-color: var(--must-attend); }
-
-    .strategic-title { color: var(--strategic); }
-    .strategic-title::before { background-color: var(--strategic); }
-
-    .niche-title { color: var(--niche); }
-    .niche-title::before { background-color: var(--niche); }
-
-    .monitor-title { color: var(--monitor); }
-    .monitor-title::before { background-color: var(--monitor); }
-
-    .ignore-title { color: var(--ignore); }
-    .ignore-title::before { background-color: var(--ignore); }
-
-    /* Grid Layout */
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
-    @media (min-width: 768px) {
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    /* Event Card */
-    .card {
-      background-color: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
-      transition: transform 0.2s, box-shadow 0.2s;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-    }
-
-    .card.must-attend-card { border-left: 5px solid var(--must-attend); }
-    .card.strategic-card { border-left: 5px solid var(--strategic); }
-    .card.niche-card { border-left: 5px solid var(--niche); }
-    .card.monitor-card { border-left: 5px solid var(--monitor); }
-    .card.ignore-card { border-left: 5px solid var(--ignore); opacity: 0.8; }
-
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 1rem;
-    }
-
-    .event-category {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      color: var(--text-light);
-      background-color: var(--bg);
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-    }
-
-    .score-badge {
-      font-size: 0.9rem;
-      font-weight: 800;
-      padding: 0.25rem 0.5rem;
-      border-radius: 6px;
-      color: white;
-    }
-
-    .must-attend-card .score-badge { background-color: var(--must-attend); }
-    .strategic-card .score-badge { background-color: var(--strategic); }
-    .niche-card .score-badge { background-color: var(--niche); }
-    .monitor-card .score-badge { background-color: var(--monitor); }
-    .ignore-card .score-badge { background-color: var(--ignore); }
-
-    .event-name {
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin: 0 0 0.5rem 0;
-      color: var(--primary);
-    }
-
-    .event-meta {
-      font-size: 0.9rem;
-      color: var(--text-light);
-      margin-bottom: 0.75rem;
-    }
-
-    .event-details {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0.5rem;
-      font-size: 0.85rem;
-      background: var(--bg);
-      padding: 0.75rem;
-      border-radius: 6px;
-      margin-bottom: 1rem;
-    }
-
-    .detail-item strong {
-      color: var(--text);
-    }
-
-    .detail-item span {
-      display: block;
-      color: var(--text-light);
-    }
-
-    .event-rationale {
-      font-size: 0.95rem;
-      color: var(--text);
-      line-height: 1.4;
-      margin: 0;
-    }
-  </style>
+  @media(max-width:760px){
+    .cal{grid-template-columns:repeat(7,minmax(0,1fr)); gap:4px;}
+    .day{min-height:60px; padding:5px;}
+    .evdot{font-size:9px; padding:3px 4px;}
+    .dow{font-size:9px;}
+    header{flex-direction:column; align-items:flex-start;}
+    .review-box{text-align:left; width:100%;}
+  }
+</style>
 </head>
 <body>
+<div class="wrap">
 
-  <div class="container">
-    <header>
-      <div class="header-content">
-        <h1>Opportunity Radar</h1>
-        <p>UK consumer retail trade events intelligence briefing for Irish exporters, curated for Enterprise Ireland.</p>
-        <div class="meta-box">
-          <div class="meta-item">Last updated: <strong>2026-08-07</strong></div>
-          <div class="meta-item">Coverage Window: <strong>2026-08-07 to 2027-08-07</strong></div>
-        </div>
-      </div>
-    </header>
-
-    <!-- MUST ATTEND -->
-    <h2 class="section-title must-attend-title">Must Attend</h2>
-    <div class="grid">
-      <!-- Autumn Fair 2026 -->
-      <div class="card must-attend-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Trade Show</span>
-            <span class="score-badge">88/100</span>
-          </div>
-          <h3 class="event-name">Autumn Fair 2026</h3>
-          <div class="event-meta">6–9 September 2026 | NEC Birmingham</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">The UK’s leading high-volume trade show for home, gift, and fashion, attracting over 13,000 retail buyers ahead of peak golden quarter trading.</p>
-      </div>
-
-      <!-- Top Drawer Autumn 2026 -->
-      <div class="card must-attend-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Trade Show</span>
-            <span class="score-badge">89/100</span>
-          </div>
-          <h3 class="event-name">Top Drawer Autumn 2026</h3>
-          <div class="event-meta">13–15 September 2026 | Olympia London</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">The UK's premier design-led lifestyle trade show, connecting curated, premium gift, homeware, and fashion brands with key boutique and department store buyers.</p>
-      </div>
-
-      <!-- PATS 2026 -->
-      <div class="card must-attend-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Trade Show</span>
-            <span class="score-badge">89/100</span>
-          </div>
-          <h3 class="event-name">PATS 2026</h3>
-          <div class="event-meta">27–29 September 2026 | NEC Birmingham</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">Relocated to the massive NEC Birmingham, PATS is the definitive, unmissable trade event for Irish pet care and pet food exporters looking to secure UK wholesale distributors.</p>
-      </div>
-
-      <!-- Professional Beauty London 2026 -->
-      <div class="card must-attend-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Trade Show</span>
-            <span class="score-badge">84/100</span>
-          </div>
-          <h3 class="event-name">Professional Beauty London 2026</h3>
-          <div class="event-meta">4–5 October 2026 | ExCeL London</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">Moving to a landmark October slot and co-located with Salon International, this is Europe’s largest gathering of professional beauty, spa, and skincare buyers.</p>
-      </div>
-
-      <!-- Drapers Awards 2026 -->
-      <div class="card must-attend-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Awards</span>
-            <span class="score-badge">81/100</span>
-          </div>
-          <h3 class="event-name">Drapers Awards 2026</h3>
-          <div class="event-meta">10 November 2026 | London</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Networking</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">Widely regarded as the "Oscars of fashion retail," this flagship black-tie event is the ultimate networking hub for heads of buying, trading directors, and CEOs of the UK's top fashion chains.</p>
-      </div>
-
-      <!-- Top Drawer S/S 2027 -->
-      <div class="card must-attend-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Trade Show</span>
-            <span class="score-badge">89/100</span>
-          </div>
-          <h3 class="event-name">Top Drawer S/S 2027</h3>
-          <div class="event-meta">10–12 January 2027 | Olympia London</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">The S/S edition presents a crucial starting line for design-led giftware, homeware, and fashion accessories targeting premium boutiques and major retail players.</p>
-      </div>
-
-      <!-- Spring Fair 2027 -->
-      <div class="card must-attend-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Trade Show</span>
-            <span class="score-badge">91/100</span>
-          </div>
-          <h3 class="event-name">Spring Fair 2027</h3>
-          <div class="event-meta">7–10 February 2027 | NEC Birmingham</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">The UK's largest retail trade show, co-located with Pure London, delivering an unparalleled volume of retail buyers and commercial opportunities across all covered sectors.</p>
-      </div>
+  <header>
+    <div>
+      <h1>Opportunity <em>Radar</em></h1>
+      <div class="sub">Every event is scored the same way — buyer access, decision-maker reach, networking, market intelligence, and fit against the current client portfolio.</div>
+      <div class="freshness">Sources last checked <span id="lastChecked">—</span> — refreshed automatically each month.</div>
     </div>
-
-    <!-- STRATEGIC -->
-    <h2 class="section-title strategic-title">Strategic</h2>
-    <div class="grid">
-      <!-- Salon International 2026 -->
-      <div class="card strategic-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Trade Show</span>
-            <span class="score-badge">80/100</span>
-          </div>
-          <h3 class="event-name">Salon International 2026</h3>
-          <div class="event-meta">4–5 October 2026 | ExCeL London</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Brand Discovery</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">Co-located alongside Professional Beauty, this is the leading professional hair show in the UK, strategic for professional haircare brand exporters.</p>
-      </div>
-
-      <!-- Decorex 2026 -->
-      <div class="card strategic-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Trade Show</span>
-            <span class="score-badge">83/100</span>
-          </div>
-          <h3 class="event-name">Decorex 2026</h3>
-          <div class="event-meta">11–14 October 2026 | Olympia London</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Networking</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">The UK's premier luxury interior design show, providing high-end Irish homeware, lighting, and textile exporters with strategic access to premium specifiers and boutique buyers.</p>
-      </div>
-
-      <!-- CEW UK Achiever Awards 2026 -->
-      <div class="card strategic-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Awards</span>
-            <span class="score-badge">78/100</span>
-          </div>
-          <h3 class="event-name">CEW UK Achiever Awards 2026</h3>
-          <div class="event-meta">1 December 2026 | The Peninsula London</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Networking</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">A high-profile industry luncheon celebrating outstanding female beauty executives, offering exceptional networking with UK beauty CEOs, retail heads, and key distributors.</p>
-      </div>
-
-      <!-- CEW UK Beauty Awards Demo Event 2027 -->
-      <div class="card strategic-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Event</span>
-            <span class="score-badge">83/100</span>
-          </div>
-          <h3 class="event-name">CEW UK Beauty Awards Demonstration Event</h3>
-          <div class="event-meta">4 March 2027 | Business Design Centre, London</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Brand Discovery</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">An essential beauty demonstration evening where beauty brands get to showcase product innovations directly to 1,000+ influential industry experts and retail decision-makers.</p>
-      </div>
+    <div class="review-box">
+      Last reviewed<br>
+      <span class="review-date" id="reviewDate">never</span>
+      <div><button id="reviewBtn">Mark this week reviewed</button></div>
     </div>
+  </header>
 
-    <!-- NICHE -->
-    <h2 class="section-title niche-title">Niche</h2>
-    <div class="grid">
-      <!-- INDX Homeware Autumn 2026 -->
-      <div class="card niche-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Trade Show</span>
-            <span class="score-badge">78/100</span>
-          </div>
-          <h3 class="event-name">INDX Homeware Autumn 2026</h3>
-          <div class="event-meta">8–9 September 2026 | Cranmore Park, Solihull</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">Organised by the major buying group AIS, this trade show offers direct, niche access to independent department store owners and retail buyers.</p>
-      </div>
+  <div class="monthtabs" id="monthTabs"></div>
+  <div class="catfilter" id="catFilter"></div>
 
-      <!-- Glee 2026 -->
-      <div class="card niche-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Trade Show</span>
-            <span class="score-badge">74/100</span>
-          </div>
-          <h3 class="event-name">Glee 2026</h3>
-          <div class="event-meta">8–10 September 2026 | NEC Birmingham</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">While primarily garden-focused, Glee hosts a significant, growing designated pet care and outdoor living sector with thousands of visiting retail buyers.</p>
-      </div>
-
-      <!-- The Bed Show 2026 -->
-      <div class="card niche-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Trade Show</span>
-            <span class="score-badge">72/100</span>
-          </div>
-          <h3 class="event-name">The Bed Show 2026</h3>
-          <div class="event-meta">22–23 September 2026 | Telford International Centre</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">Organised by the National Bed Federation, this is the UK's leading specialized event for bed manufacturers and bedding component suppliers, offering deep niche value.</p>
-      </div>
-
-      <!-- Scotland's Trade Fair Spring 2027 -->
-      <div class="card niche-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Trade Show</span>
-            <span class="score-badge">80/100</span>
-          </div>
-          <h3 class="event-name">Scotland's Trade Fair Spring 2027</h3>
-          <div class="event-meta">24–26 January 2027 | SEC Glasgow</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">The definitive regional buying showcase for Northern UK and Scottish independent gift, fashion, and homeware stockists, now consolidated with the autumn show.</p>
-      </div>
-
-      <!-- INDX Homeware Spring 2027 -->
-      <div class="card niche-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Trade Show</span>
-            <span class="score-badge">79/100</span>
-          </div>
-          <h3 class="event-name">INDX Homeware Spring 2027</h3>
-          <div class="event-meta">23–24 February 2027 | Cranmore Park, Solihull</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Buyer Access</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">The spring iteration of the AIS-buying-group homeware show, offering a targeted route to market for niche Irish tableware, textiles, and gift suppliers.</p>
-      </div>
+  <div class="controls">
+    <div class="legend">
+      <span><i class="dot" style="background:var(--anchor)"></i>Must Attend</span>
+      <span><i class="dot" style="background:var(--strategic)"></i>Strategic</span>
+      <span><i class="dot" style="background:var(--niche)"></i>Niche</span>
+      <span><i class="dot" style="background:var(--monitor)"></i>Monitor</span>
+      <span><i class="dot" style="background:var(--ignore)"></i>Ignore</span>
     </div>
-
-    <!-- MONITOR -->
-    <h2 class="section-title monitor-title">Monitor</h2>
-    <div class="grid">
-      <!-- London Fashion Week September 2026 -->
-      <div class="card monitor-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Event</span>
-            <span class="score-badge">52/100</span>
-          </div>
-          <h3 class="event-name">London Fashion Week September 2026</h3>
-          <div class="event-meta">17–21 September 2026 | Various Venues, London</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Market Intelligence</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">Excellent for observing creative design trends and PR-driven brand movements, though of limited value for direct commercial wholesale buying transactions for most retail exporters.</p>
-      </div>
-
-      <!-- Crufts 2027 -->
-      <div class="card monitor-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Event</span>
-            <span class="score-badge">68/100</span>
-          </div>
-          <h3 class="event-name">Crufts 2027</h3>
-          <div class="event-meta">4–7 March 2027 | NEC Birmingham</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Market Intelligence</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">Primarily a consumer show, but the massive scale of its 500+ exhibitor trade stands provides excellent landscape assessment and brand exposure opportunities.</p>
-      </div>
-    </div>
-
-    <!-- IGNORE -->
-    <h2 class="section-title ignore-title">Ignore</h2>
-    <div class="grid">
-      <!-- Ideal Home Show 2027 -->
-      <div class="card ignore-card">
-        <div>
-          <div class="card-header">
-            <span class="event-category">Event</span>
-            <span class="score-badge">35/100</span>
-          </div>
-          <h3 class="event-name">Ideal Home Show 2027</h3>
-          <div class="event-meta">2–11 April 2027 | Olympia London</div>
-          <div class="event-details">
-            <div class="detail-item"><strong>Primary Benefit</strong><span>Brand Discovery</span></div>
-            <div class="detail-item"><strong>Confidence</strong><span>High</span></div>
-          </div>
-        </div>
-        <p class="event-rationale">Excluded from active promotion as it is almost entirely a consumer-facing lifestyle exhibition, offering very limited B2B wholesale or buyer trade potential.</p>
-      </div>
+    <div class="viewtoggle">
+      <button id="btnCal" class="active">Calendar</button>
+      <button id="btnList">List</button>
     </div>
   </div>
 
+  <div id="calView"></div>
+  <div id="listView" style="display:none;"></div>
+
+  <div class="refresh-note">
+    <b>How this stays current:</b> a scheduled automation searches trade venues and industry bodies once a month and rewrites <code>events.json</code>, which this page reads live. Personal notes below (attended, people met, follow-ups) are saved in <b>this browser only</b> — they won't appear on another device or for a colleague opening the same link.
+  </div>
+
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="panel" id="panel"></div>
+</div>
+
+<script>
+/* ---------- DATA (loaded from events.json at runtime) ---------- */
+let EVENTS = [];
+let lastCheckedDate = null;
+
+/* ---------- SCORING HELPERS ---------- */
+function totalScore(e){return e.scores.buyer+e.scores.decision+e.scores.network+e.scores.intel+e.scores.ei;}
+const classColor = {anchor:'var(--anchor)', strategic:'var(--strategic)', niche:'var(--niche)', monitor:'var(--monitor)', ignore:'var(--ignore)'};
+const classLabel = {anchor:'Must Attend', strategic:'Strategic', niche:'Niche', monitor:'Monitor', ignore:'Ignore'};
+const confColor = {High:'var(--hi)', Medium:'var(--med)', Low:'var(--lo)'};
+
+function fmtRange(e){
+  const s=new Date(e.dateStart+'T00:00:00'), en=new Date(e.dateEnd+'T00:00:00');
+  const opt={month:'short',day:'numeric'};
+  const sameMonth = s.getMonth()===en.getMonth();
+  const str = e.dateStart===e.dateEnd
+    ? s.toLocaleDateString('en-GB',opt)
+    : sameMonth
+      ? `${s.toLocaleDateString('en-GB',{day:'numeric'})}–${en.toLocaleDateString('en-GB',opt)}`
+      : `${s.toLocaleDateString('en-GB',opt)} – ${en.toLocaleDateString('en-GB',opt)}`;
+  return e.dateTBC ? str+' (date TBC)' : str;
+}
+
+/* ---------- ROLLING 12-MONTH WINDOW ---------- */
+function buildMonthsWindow(){
+  const now = new Date();
+  const months = [];
+  for(let i=0;i<12;i++){
+    const d = new Date(now.getFullYear(), now.getMonth()+i, 1);
+    const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
+    const label = d.toLocaleDateString('en-GB',{month:'short',year:'numeric'});
+    months.push({key,label});
+  }
+  return months;
+}
+let MONTHS = buildMonthsWindow();
+let currentMonth = MONTHS[0].key;
+let currentCategory = 'All';
+
+function eventsInMonth(monthKey){
+  return EVENTS.filter(e => (e.dateStart.slice(0,7)===monthKey || e.dateEnd.slice(0,7)===monthKey)
+    && (currentCategory==='All' || e.category===currentCategory));
+}
+
+function buildCatFilter(){
+  const cats = ['All', ...new Set(EVENTS.map(e=>e.category))];
+  const el = document.getElementById('catFilter');
+  el.innerHTML = cats.map(c=>`<button data-c="${c}" class="${c===currentCategory?'active':''}">${c}</button>`).join('');
+  el.querySelectorAll('button').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      currentCategory = btn.dataset.c;
+      buildCatFilter();
+      buildMonthTabs();
+      buildCalendar();
+      buildList();
+    });
+  });
+}
+
+function buildMonthTabs(){
+  const el=document.getElementById('monthTabs');
+  el.innerHTML = MONTHS.map(m=>{
+    const n = eventsInMonth(m.key).length;
+    return `<button data-m="${m.key}" class="${m.key===currentMonth?'active':''}">${m.label} <span class="count">${n}</span></button>`;
+  }).join('');
+  el.querySelectorAll('button').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      currentMonth = btn.dataset.m;
+      buildMonthTabs();
+      buildCalendar();
+      buildList();
+    });
+  });
+}
+
+/* ---------- CALENDAR VIEW ---------- */
+function buildCalendar(){
+  const cal=document.getElementById('calView');
+  const dows=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+  let html='<div class="cal">';
+  dows.forEach(d=>html+=`<div class="dow">${d}</div>`);
+
+  const [yr,mo]=currentMonth.split('-').map(Number);
+  const firstDay = new Date(yr, mo-1, 1);
+  const daysInMonth = new Date(yr, mo, 0).getDate();
+  let startOffset = firstDay.getDay()-1; if(startOffset<0) startOffset=6;
+  for(let i=0;i<startOffset;i++) html+='<div class="day empty"></div>';
+
+  const todayStr = new Date().toISOString().slice(0,10);
+  for(let d=1; d<=daysInMonth; d++){
+    const dateStr = `${currentMonth}-${String(d).padStart(2,'0')}`;
+    const dayEvents = EVENTS.filter(e=> dateStr>=e.dateStart && dateStr<=e.dateEnd && (currentCategory==='All' || e.category===currentCategory));
+    const isToday = dateStr===todayStr;
+    html+=`<div class="day${isToday?' today':''}"><div class="daynum">${d}</div>`;
+    dayEvents.forEach(e=>{
+      html+=`<div class="evdot" style="border-color:${classColor[e.classification]}" title="${e.desc.replace(/"/g,'&quot;')}" onclick="openPanel('${e.id}')">${e.name}</div>`;
+    });
+    html+='</div>';
+  }
+  html+='</div>';
+  cal.innerHTML=html;
+}
+
+/* ---------- LIST VIEW ---------- */
+function weekOf(dateStr){
+  const d=new Date(dateStr+'T00:00:00');
+  const day=d.getDay()||7;
+  const monday=new Date(d); monday.setDate(d.getDate()-day+1);
+  const sunday=new Date(monday); sunday.setDate(monday.getDate()+6);
+  const opt={month:'short',day:'numeric'};
+  return `${monday.toLocaleDateString('en-GB',opt)} – ${sunday.toLocaleDateString('en-GB',opt)}`;
+}
+
+function radarSVG(score, confidence){
+  const r=18, c=2*Math.PI*r, pct=Math.max(score,4)/100;
+  const col = confColor[confidence] || 'var(--dimmer)';
+  return `<svg width="44" height="44" viewBox="0 0 44 44">
+    <circle cx="22" cy="22" r="${r}" fill="none" stroke="var(--border)" stroke-width="4"/>
+    <circle cx="22" cy="22" r="${r}" fill="none" stroke="${col}" stroke-width="4"
+      stroke-dasharray="${c}" stroke-dashoffset="${c*(1-pct)}" stroke-linecap="round"/>
+  </svg>`;
+}
+
+function buildList(){
+  const sorted=eventsInMonth(currentMonth).sort((a,b)=>a.dateStart.localeCompare(b.dateStart));
+  const groups={};
+  sorted.forEach(e=>{ const w=weekOf(e.dateStart); (groups[w]=groups[w]||[]).push(e); });
+
+  let html='';
+  if(sorted.length===0) html='<div class="empty-state">No events logged for this month yet.</div>';
+  Object.keys(groups).forEach(w=>{
+    html+=`<div class="weekgroup"><div class="weeklabel">Week of ${w}</div>`;
+    groups[w].forEach(e=>{
+      const score=totalScore(e);
+      html+=`<div class="card" style="border-left-color:${classColor[e.classification]}" onclick="openPanel('${e.id}')">
+        <div class="card-main">
+          <div class="card-date">${fmtRange(e)}</div>
+          <div class="card-title">${e.name}</div>
+          <div class="card-loc">${e.location}</div>
+          <div class="card-blurb">${e.desc}</div>
+          <div class="card-tags">
+            <span class="tag cat">${e.category}</span>
+            <span class="tag">${e.sector}</span>
+            <span class="tag">${e.primaryBenefit}</span>
+          </div>
+        </div>
+        <div class="card-right">
+          <span class="class-pill" style="background:${classColor[e.classification]}22; color:${classColor[e.classification]}">${classLabel[e.classification]}</span>
+          <div class="radar-wrap">
+            <div class="radar-label">Confidence Rating</div>
+            <div class="radar">${radarSVG(score,e.confidence)}<div class="radar-score">${score}</div></div>
+          </div>
+        </div>
+      </div>`;
+    });
+    html+='</div>';
+  });
+  document.getElementById('listView').innerHTML=html;
+}
+
+/* ---------- DETAIL PANEL ---------- */
+function scoreRow(label,val,max){
+  return `<div class="scorebar-row">
+    <div class="scorebar-label">${label}</div>
+    <div class="scorebar-track"><div class="scorebar-fill" style="width:${(val/max)*100}%"></div></div>
+    <div class="scorebar-val">${val}/${max}</div>
+  </div>`;
+}
+
+let currentEventId=null;
+
+function openPanel(id){
+  const e=EVENTS.find(x=>x.id===id);
+  if(!e) return;
+  currentEventId=id;
+  const score=totalScore(e);
+  const thisYear = e.dateStart.slice(0,4);
+  let history=[];
+  try{
+    const raw = localStorage.getItem('event:'+e.series);
+    if(raw) history = JSON.parse(raw);
+  }catch(err){ /* no saved record yet */ }
+
+  const thisYearEntry = history.find(h=>h.year===thisYear) || {attended:null,peopleMet:'',followUps:'',opportunities:'',wouldAttend:null,notes:''};
+  const priorYears = history.filter(h=>h.year!==thisYear).sort((a,b)=>b.year.localeCompare(a.year));
+
+  const panel=document.getElementById('panel');
+  panel.innerHTML=`
+    <div class="panel-top">
+      <div>
+        <span class="class-pill" style="background:${classColor[e.classification]}22; color:${classColor[e.classification]}">${classLabel[e.classification]}</span>
+        <h2>${e.name}</h2>
+        <div class="panel-meta">${fmtRange(e)} &nbsp;·&nbsp; ${e.location}</div>
+      </div>
+      <button class="panel-close" onclick="closePanel()">✕</button>
+    </div>
+    <div class="panel-desc">${e.desc}</div>
+    ${e.classification==='ignore' ? `<div class="flag">Flagged: this event didn't clear the qualification gate — kept visible for reference only.</div>` : ''}
+
+    <div class="section-label">The seven questions</div>
+    <div class="qa"><b>Why was this included?</b><br><span>${(e.reasons&&e.reasons[0])||'—'}</span></div>
+    <div class="qa"><b>Who am I likely to meet?</b><br><span>${e.sector} buyers and decision-makers — see confidence rating below.</span></div>
+    <div class="qa"><b>How confident are we?</b><br><span style="color:${confColor[e.confidence]||'var(--dimmer)'}">${e.confidence}</span></div>
+    <div class="qa"><b>Primary benefit:</b> <span>${e.primaryBenefit}</span></div>
+
+    <div class="section-label">Score — ${score}/100</div>
+    ${scoreRow('Buyer Access', e.scores.buyer, 30)}
+    ${scoreRow('Decision-Maker Access', e.scores.decision, 25)}
+    ${scoreRow('Networking', e.scores.network, 20)}
+    ${scoreRow('Market Intelligence', e.scores.intel, 15)}
+    ${scoreRow('EI Relevance', e.scores.ei, 10)}
+
+    <div class="section-label">Why added</div>
+    <div class="why"><ul>${(e.reasons||[]).map(r=>`<li>${r}</li>`).join('')}</ul></div>
+    <div style="font-size:11.5px;color:var(--dimmer);margin-top:6px;">Source: ${e.source||'—'} · Detected ${e.detected||'—'}</div>
+    ${e.link ? `<a class="panel-link" href="${e.link}" target="_blank" rel="noopener">Visit event site ↗</a>` : ''}
+
+    ${priorYears.length ? `
+    <div class="section-label">History — past editions you've logged</div>
+    ${priorYears.map(h=>`
+      <div class="history-card">
+        <div class="history-year">${h.year}</div>
+        <div class="history-body">
+          <div><b>Attended:</b> ${h.attended || '—'} &nbsp; <b>Would attend again:</b> ${h.wouldAttend || '—'}</div>
+          ${h.notes ? `<div class="history-notes">"${h.notes}"</div>` : ''}
+        </div>
+      </div>
+    `).join('')}
+    ` : ''}
+
+    <div class="section-label">Personal intelligence layer — ${thisYear}</div>
+    <div class="field"><label>Attended?</label>
+      <div class="yn">
+        <button data-k="attended" data-v="yes" class="${thisYearEntry.attended==='yes'?'on':''}">Yes</button>
+        <button data-k="attended" data-v="no" class="${thisYearEntry.attended==='no'?'on':''}">No</button>
+      </div>
+    </div>
+    <div class="field"><label>People met</label><textarea rows="2" id="f_peopleMet">${thisYearEntry.peopleMet}</textarea></div>
+    <div class="field"><label>Follow-ups</label><textarea rows="2" id="f_followUps">${thisYearEntry.followUps}</textarea></div>
+    <div class="field"><label>Opportunities created</label><textarea rows="2" id="f_opportunities">${thisYearEntry.opportunities}</textarea></div>
+    <div class="field"><label>Would attend again?</label>
+      <div class="yn">
+        <button data-k="wouldAttend" data-v="yes" class="${thisYearEntry.wouldAttend==='yes'?'on':''}">Yes</button>
+        <button data-k="wouldAttend" data-v="no" class="${thisYearEntry.wouldAttend==='no'?'on':''}">No</button>
+      </div>
+    </div>
+    <div class="field"><label>Notes</label><textarea rows="3" id="f_notes">${thisYearEntry.notes}</textarea></div>
+    <div class="save-note" id="saveNote">Saved automatically as you type — stored in this browser only, not shared across devices.</div>
+  `;
+
+  panel.querySelectorAll('.yn button').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      panel.querySelectorAll(`.yn button[data-k="${btn.dataset.k}"]`).forEach(b=>b.classList.remove('on'));
+      btn.classList.add('on');
+      savePersonal(e.series, thisYear);
+    });
+  });
+  ['f_peopleMet','f_followUps','f_opportunities','f_notes'].forEach(fid=>{
+    document.getElementById(fid).addEventListener('input', ()=>savePersonal(e.series, thisYear));
+  });
+
+  document.getElementById('overlay').classList.add('open');
+}
+
+function savePersonal(series, year){
+  const panel=document.getElementById('panel');
+  const attendedBtn = panel.querySelector('.yn button[data-k="attended"].on');
+  const wouldBtn = panel.querySelector('.yn button[data-k="wouldAttend"].on');
+  const entry={
+    year,
+    attended: attendedBtn ? attendedBtn.dataset.v : null,
+    peopleMet: document.getElementById('f_peopleMet').value,
+    followUps: document.getElementById('f_followUps').value,
+    opportunities: document.getElementById('f_opportunities').value,
+    wouldAttend: wouldBtn ? wouldBtn.dataset.v : null,
+    notes: document.getElementById('f_notes').value,
+  };
+  try{
+    let history=[];
+    try{
+      const raw = localStorage.getItem('event:'+series);
+      if(raw) history = JSON.parse(raw);
+    }catch(err){ /* first save for this series */ }
+    history = history.filter(h=>h.year!==year);
+    history.push(entry);
+    localStorage.setItem('event:'+series, JSON.stringify(history));
+    document.getElementById('saveNote').textContent='Saved just now — stored in this browser only.';
+  }catch(err){
+    document.getElementById('saveNote').textContent='Could not save — try again.';
+  }
+}
+
+function closePanel(){
+  document.getElementById('overlay').classList.remove('open');
+  currentEventId=null;
+}
+document.getElementById('overlay').addEventListener('click', (ev)=>{
+  if(ev.target.id==='overlay') closePanel();
+});
+
+/* ---------- VIEW TOGGLE ---------- */
+document.getElementById('btnCal').addEventListener('click', ()=>{
+  document.getElementById('calView').style.display='block';
+  document.getElementById('listView').style.display='none';
+  document.getElementById('btnCal').classList.add('active');
+  document.getElementById('btnList').classList.remove('active');
+});
+document.getElementById('btnList').addEventListener('click', ()=>{
+  document.getElementById('calView').style.display='none';
+  document.getElementById('listView').style.display='block';
+  document.getElementById('btnList').classList.add('active');
+  document.getElementById('btnCal').classList.remove('active');
+});
+
+/* ---------- WEEKLY REVIEW TRACKER ---------- */
+function loadReviewDate(){
+  try{
+    const raw = localStorage.getItem('lastReviewed');
+    if(raw) document.getElementById('reviewDate').textContent=new Date(raw).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
+  }catch(err){ /* nothing saved yet */ }
+}
+document.getElementById('reviewBtn').addEventListener('click', ()=>{
+  const now=new Date().toISOString();
+  try{
+    localStorage.setItem('lastReviewed', now);
+    document.getElementById('reviewDate').textContent=new Date(now).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
+  }catch(err){}
+});
+
+/* ---------- INIT: fetch events.json, then render everything ---------- */
+async function init(){
+  try{
+    const res = await fetch('events.json?t=' + Date.now());
+    if(!res.ok) throw new Error('events.json not found (status ' + res.status + ')');
+    const data = await res.json();
+    EVENTS = data.events || [];
+    lastCheckedDate = data.generatedAt || null;
+  }catch(err){
+    console.error('Could not load events.json:', err);
+    EVENTS = [];
+  }
+
+  document.getElementById('lastChecked').textContent = lastCheckedDate
+    ? new Date(lastCheckedDate).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})
+    : 'not yet generated';
+
+  buildCatFilter();
+  buildMonthTabs();
+  buildCalendar();
+  buildList();
+  loadReviewDate();
+}
+init();
+</script>
 </body>
 </html>
