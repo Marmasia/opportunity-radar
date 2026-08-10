@@ -173,7 +173,7 @@ ${SHARED_RULES}`;
 
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-3.5-pro",
+      model: "gemini-3.6-flash",
       contents: prompt,
       config: { tools: [{ googleSearch: {} }] },
     });
