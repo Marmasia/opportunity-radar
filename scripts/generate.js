@@ -10,13 +10,21 @@ windowEnd.setMonth(windowEnd.getMonth() + 12);
 const windowEndStr = windowEnd.toISOString().split("T")[0];
 
 const SHARED_RULES = `
-GEOGRAPHIC SCOPE: Primarily London and the Midlands (NEC Birmingham, ExCeL, Olympia,
-Business Design Centre), plus Manchester (Manchester Central) and Glasgow (Scottish
-Event Campus).
+GEOGRAPHIC SCOPE: Primarily London and the Midlands, plus Manchester and Glasgow.
 
 TIME WINDOW: Only include events scheduled between ${todayStr} and ${windowEndStr}
 (a rolling 12-month horizon from today). Exclude any event that has already taken
 place.
+
+MANDATORY SEARCH PROCESS: You MUST perform a separate, targeted Google Search query
+for EACH venue and EACH body listed below individually (e.g. "site:[venue website]
+events 2026", "[body name] awards 2026", "[body name] events calendar"). Do not stop
+after your first few results — searching only 2-3 sources and then writing up
+findings is a failure mode. If a source's search turns up nothing relevant, note
+that internally and move to the next source, but you must attempt every single one
+listed before finalizing your answer. Also search generally for "[sector] trade show
+UK 2026 2027" and "[sector] awards UK 2026 2027" to catch anything the source-by-source
+pass missed. Being exhaustive matters more than being fast here.
 
 QUALIFICATION GATE: Include an event only if it has at least one of: buyer access,
 decision-maker access (heads of buying, trading/commercial directors, founders),
@@ -85,66 +93,87 @@ matching exactly this shape:
   ]
 }
 
-Omit "dateTBC" entirely for confirmed dates. Omit "link" if you don't have one.`;
+Omit "dateTBC" entirely for confirmed dates. Omit "link" if you don't have one.
+If, after an exhaustive search, you genuinely find zero qualifying events for this
+specific bucket, return {"events": []} rather than inventing anything.`;
 
-const SECTORS = [
+// Narrower buckets than a plain sector split — each covers only 2-4 named sources,
+// so a single call can't shortcut by only checking one or two before wrapping up.
+const BUCKETS = [
   {
-    name: "Fashion",
-    prompt: `SECTOR FOCUS: Fashion retail (womenswear, menswear, accessories, footwear).
-VENUES TO CHECK: Olympia London, ExCeL London, Business Design Centre (Islington),
-Design Centre Chelsea Harbour, Truman Brewery, Royal Albert Hall, Old Billingsgate.
-BODIES & TRADE PRESS TO CHECK (their own events/awards pages by name — awards
-ceremonies don't show up on generic exhibitor trackers): British Fashion Council,
-Drapers, TheIndustry.fashion, UKFT, Walpole, Clarion Events, Hyve Group.`,
+    name: "Fashion — venues & BFC/Drapers",
+    prompt: `SECTOR: Fashion retail (womenswear, menswear, accessories, footwear).
+VENUES TO SEARCH INDIVIDUALLY: Olympia London, ExCeL London, Business Design Centre
+(Islington).
+BODIES TO SEARCH INDIVIDUALLY: British Fashion Council (their own events + awards
+pages), Drapers (their own events + awards pages).`,
   },
   {
-    name: "Homeware & Gift",
-    prompt: `SECTOR FOCUS: Homeware and Gift retail (furniture, home accessories, gifting,
+    name: "Fashion — trade press & remaining venues",
+    prompt: `SECTOR: Fashion retail (womenswear, menswear, accessories, footwear).
+VENUES TO SEARCH INDIVIDUALLY: Truman Brewery, Royal Albert Hall, Old Billingsgate.
+BODIES TO SEARCH INDIVIDUALLY: TheIndustry.fashion (events + awards pages), UKFT,
+Walpole.`,
+  },
+  {
+    name: "Homeware & Gift — NEC/Cranmore/Giftware/AIS",
+    prompt: `SECTOR: Homeware and Gift retail (furniture, home accessories, gifting,
 tableware, textiles).
-VENUES TO CHECK: NEC Birmingham, Cranmore Park (Solihull), Telford International
-Centre, Business Design Centre (Islington), Design Centre Chelsea Harbour, Harrogate
-Convention Centre.
-BODIES & TRADE PRESS TO CHECK: The Giftware Association, AIS (Associated Independent
-Stores), BHETA, National Bed Federation, Clarion Events, Hyve Group.`,
+VENUES TO SEARCH INDIVIDUALLY: NEC Birmingham, Cranmore Park (Solihull).
+BODIES TO SEARCH INDIVIDUALLY: The Giftware Association, AIS (Associated Independent
+Stores).`,
   },
   {
-    name: "Health & Beauty",
-    prompt: `SECTOR FOCUS: Health & Beauty (cosmetics, skincare, haircare, wellness, spa).
-VENUES TO CHECK: ExCeL London, Coventry Building Society Arena, Grand Connaught Rooms,
-Grosvenor House, Royal Lancaster Hotel, Olympia London.
-BODIES & TRADE PRESS TO CHECK: CTPA, CEW UK, COPRA, British Beauty Council, Cosmetics
-Business, Society for Cosmetic Science (SCS), Clarion Events, Hyve Group.`,
+    name: "Homeware & Gift — remaining venues & BHETA/Beds",
+    prompt: `SECTOR: Homeware and Gift retail (furniture, home accessories, gifting,
+tableware, textiles).
+VENUES TO SEARCH INDIVIDUALLY: Telford International Centre, Business Design Centre
+(Islington), Harrogate Convention Centre, Design Centre Chelsea Harbour.
+BODIES TO SEARCH INDIVIDUALLY: BHETA, National Bed Federation.`,
+  },
+  {
+    name: "Health & Beauty — ExCeL/Coventry & CTPA/CEW",
+    prompt: `SECTOR: Health & Beauty (cosmetics, skincare, haircare, wellness, spa).
+VENUES TO SEARCH INDIVIDUALLY: ExCeL London, Coventry Building Society Arena.
+BODIES TO SEARCH INDIVIDUALLY: CTPA, CEW UK (their own awards + events pages).`,
+  },
+  {
+    name: "Health & Beauty — remaining venues & COPRA/British Beauty Council/SCS",
+    prompt: `SECTOR: Health & Beauty (cosmetics, skincare, haircare, wellness, spa).
+VENUES TO SEARCH INDIVIDUALLY: Grand Connaught Rooms, Grosvenor House, Royal
+Lancaster Hotel, Olympia London.
+BODIES TO SEARCH INDIVIDUALLY: COPRA, British Beauty Council, Cosmetics Business,
+Society for Cosmetic Science (SCS).`,
   },
   {
     name: "Pet",
-    prompt: `SECTOR FOCUS: Pet, including pet food.
-VENUES TO CHECK: NEC Birmingham, ExCeL London, Olympia London.
-BODIES & TRADE PRESS TO CHECK: UK Pet Food, Clarion Events, Hyve Group.`,
+    prompt: `SECTOR: Pet, including pet food.
+VENUES TO SEARCH INDIVIDUALLY: NEC Birmingham, ExCeL London, Olympia London.
+BODIES TO SEARCH INDIVIDUALLY: UK Pet Food.`,
   },
   {
-    name: "Cross-sector / Manchester & Glasgow regional",
-    prompt: `SECTOR FOCUS: Any Fashion, Homeware, Gift, Health & Beauty, or Pet event
-specifically based in Manchester or Glasgow (regional venues, not London/Midlands),
-plus any major cross-sector retail conference or summit not tied to a single sector
-above (e.g. general retail leadership summits relevant to multiple portfolio sectors).
-VENUES TO CHECK: Manchester Central Convention Complex, Scottish Event Campus
-(Glasgow), V&A South Kensington (London Design Festival hub — cross-sector design
-trend event, include if relevant).
-BODIES TO CHECK: Clarion Events, Hyve Group, TheIndustry.fashion, TheIndustry.beauty.`,
+    name: "Cross-sector — Manchester, Glasgow, event organizers",
+    prompt: `SECTOR: Any Fashion, Homeware, Gift, Health & Beauty, or Pet event
+specifically based in Manchester or Glasgow, plus any cross-sector retail
+conference/summit not tied to one sector above.
+VENUES TO SEARCH INDIVIDUALLY: Manchester Central Convention Complex, Scottish Event
+Campus (Glasgow), V&A South Kensington (London Design Festival).
+BODIES/ORGANIZERS TO SEARCH INDIVIDUALLY: Clarion Events, Hyve Group,
+TheIndustry.beauty.`,
   },
 ];
 
-async function fetchSector(sector) {
+async function fetchBucket(bucket) {
   const prompt = `You are updating "Opportunity Radar," a monthly briefing on UK
 consumer retail trade events for Irish exporters, used for Enterprise Ireland client
 support.
 
-${sector.prompt}
+${bucket.prompt}
 ${SHARED_RULES}`;
 
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemini-3.5-pro",
       contents: prompt,
       config: { tools: [{ googleSearch: {} }] },
     });
@@ -154,22 +183,22 @@ ${SHARED_RULES}`;
 
     const parsed = JSON.parse(raw);
     if (!parsed.events || !Array.isArray(parsed.events)) {
-      console.warn(`[${sector.name}] No 'events' array in response — skipping this sector.`);
+      console.warn(`[${bucket.name}] No 'events' array in response — skipping this bucket.`);
       return [];
     }
-    console.log(`[${sector.name}] Found ${parsed.events.length} events`);
+    console.log(`[${bucket.name}] Found ${parsed.events.length} events`);
     return parsed.events;
   } catch (err) {
-    console.warn(`[${sector.name}] Failed: ${err.message} — skipping this sector, others continue.`);
+    console.warn(`[${bucket.name}] Failed: ${err.message} — skipping this bucket, others continue.`);
     return [];
   }
 }
 
-const results = await Promise.all(SECTORS.map(fetchSector));
+const results = await Promise.all(BUCKETS.map(fetchBucket));
 let allEvents = results.flat();
 
-// De-duplicate: the same flagship event (e.g. Autumn Fair) can legitimately surface
-// in more than one sector search. Key on name + start date, case-insensitive.
+// De-duplicate: the same flagship event can legitimately surface in more than one
+// bucket search. Key on name + start date, case-insensitive.
 const seen = new Map();
 for (const e of allEvents) {
   const key = `${(e.name || "").toLowerCase().trim()}|${e.dateStart}`;
@@ -178,7 +207,7 @@ for (const e of allEvents) {
 allEvents = Array.from(seen.values());
 
 if (allEvents.length === 0) {
-  throw new Error("All sector searches returned zero events — aborting to avoid overwriting events.json with empty data.");
+  throw new Error("All bucket searches returned zero events — aborting to avoid overwriting events.json with empty data.");
 }
 
 // The script (not the model) owns these metadata fields for consistency.
@@ -193,4 +222,4 @@ const output = {
 };
 
 fs.writeFileSync("events.json", JSON.stringify(output, null, 2));
-console.log(`events.json updated successfully with ${allEvents.length} events (after de-duplication)`);
+console.log(`events.json updated successfully with ${allEvents.length} events (after de-duplication, from ${BUCKETS.length} buckets)`);
