@@ -1,781 +1,1246 @@
 {
   "baseline_events": [
     {
-      "canonical_id": "january-furniture-show",
+      "id": "january-furniture-show",
+      "series": "january-furniture-show",
       "name": "January Furniture Show",
       "aliases": [],
-      "status": "active",
-      "note": null,
-      "category_raw": "Furniture",
-      "location": "NEC, Birmingham",
-      "description": "Contemporary furniture, innovative design concepts and homewares to suit all retailer and customer styles. They will be able to discover everything from beds, to cabinets, to home d\u00e9cor and accessories from leading suppliers all in one place. Source from over 500 furniture, retail and interior brands. Over 20,000 buyers and 50,000 products on display.",
-      "link": "https://thefurnitureshows.com/january-furniture-show",
       "dateStart": "2027-01-24",
       "dateEnd": "2027-01-27",
-      "date_raw_source": "24th-27th 2027",
-      "month_hint": "January",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
-    },
-    {
-      "canonical_id": "home-lifestyle-show",
-      "name": "Home & Lifestyle Show",
-      "aliases": [],
-      "status": "superseded",
-      "note": "Marked ND (no date/discontinued) in source file; likely superseded by Manchester Furniture Show / January Furniture Show",
-      "category_raw": "Home & Lifestyle",
       "location": "NEC, Birmingham",
-      "description": "The Home & Lifestyle Show brings the world of interior and exterior accessories to you at your crucial buying time, creating a vibrant and aspirational marketplace for the manufacturers, buyers and specifiers of trend-led interior products.Hand-selected UK and international exhibitors will showcase an unrivalled and curated collection of the leading home, interiors, accessories and lighting brands",
-      "link": null,
-      "dateStart": "2025-01-19",
-      "dateEnd": "2025-01-22",
-      "date_raw_source": "19-22nd 2025",
-      "month_hint": "January",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "category": "Trade Show",
+      "sector": "Furniture",
+      "desc": "Contemporary furniture, innovative design concepts and homewares to suit all retailer and customer styles. They will be able to discover everything from beds, to cabinets, to home d\u00e9cor and accessories from leading suppliers all in one place. Source from over 500 furniture, retail and interior brands. Over 20,000 buyers and 50,000 products on display.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://thefurnitureshows.com/january-furniture-show",
+      "scores": {
+        "buyer": 26,
+        "decision": 18,
+        "network": 14,
+        "intel": 12,
+        "ei": 10
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "toy-fair",
+      "id": "toy-fair",
+      "series": "toy-fair",
       "name": "Toy Fair",
       "aliases": [],
-      "status": "active",
-      "note": null,
-      "category_raw": "Toys",
-      "location": "Olympia, London",
-      "description": "Transform your product lines with vibrant creativity as The Toy Fair, the UK\u2019s largest dedicated toy, game and hobby trade show returns.\nWhether you're an established retailer, an industry novice or an inspired toy manufacturer, discover brand-new, sought-after toys, games, and hobby products from over 250 companies hitting the shelves next year.",
-      "link": null,
       "dateStart": "2027-01-19",
       "dateEnd": "2027-01-21",
-      "date_raw_source": "19th-21st 2027",
-      "month_hint": "January",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Olympia, London",
+      "category": "Trade Show",
+      "sector": "Toys",
+      "desc": "Transform your product lines with vibrant creativity as The Toy Fair, the UK\u2019s largest dedicated toy, game and hobby trade show returns.\nWhether you're an established retailer, an industry novice or an inspired toy manufacturer, discover brand-new, sought-after toys, games, and hobby products from over 250 companies hitting the shelves next year.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 18,
+        "decision": 12,
+        "network": 11,
+        "intel": 9,
+        "ei": 4
+      },
+      "classification": "monitor",
+      "confidence": "High",
+      "primaryBenefit": "Market Intelligence",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "spring-fair-pure-london",
+      "id": "spring-fair-pure-london",
+      "series": "spring-fair-pure-london",
       "name": "Spring Fair",
       "aliases": [
         "Spring Fair",
         "Spring Fair (with Pure London)"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Home, Gift, Apparel, Jewellery, Toys",
-      "location": "NEC, Birmingham",
-      "description": "Spring Fair is the UK's most diverse and exciting marketplace for Home, Gift, Fashion and Everyday products.\u00a0Explore thousands of products from the most innovative suppliers in the industry.",
-      "link": null,
       "dateStart": "2027-02-07",
       "dateEnd": "2027-02-10",
-      "date_raw_source": "7th-10th 2027",
-      "month_hint": "February",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "NEC, Birmingham",
+      "category": "Trade Show",
+      "sector": "Home, Gift, Apparel, Jewellery, Toys",
+      "desc": "Spring Fair is the UK's most diverse and exciting marketplace for Home, Gift, Fashion and Everyday products.\u00a0Explore thousands of products from the most innovative suppliers in the industry.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 29,
+        "decision": 21,
+        "network": 15,
+        "intel": 14,
+        "ei": 10
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (fixed a naming-key mismatch during baseline rebuild)"
+      ]
     },
     {
-      "canonical_id": "packaging-innovations-empack",
+      "id": "packaging-innovations-empack",
+      "series": "packaging-innovations-empack",
       "name": "Packaging Innovations and Empack",
       "aliases": [],
-      "status": "active",
-      "note": null,
-      "category_raw": "Primary & secondary packaging",
-      "location": "NEC, Birmingham",
-      "description": "You will find suppliers across the whole range of packaging products and services \u2013 from design to innovative primary and secondary packaging to contract packing, e-commerce fulfilment, labelling and printing, as well as packing and processing technology. Biggest packaging and processing show in the UK.",
-      "link": "https://www.packagingbirmingham.com/",
       "dateStart": "2027-02-24",
       "dateEnd": "2027-02-25",
-      "date_raw_source": "24th-25th 2027",
-      "month_hint": "February",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "NEC, Birmingham",
+      "category": "Trade Show",
+      "sector": "Primary & secondary packaging",
+      "desc": "You will find suppliers across the whole range of packaging products and services \u2013 from design to innovative primary and secondary packaging to contract packing, e-commerce fulfilment, labelling and printing, as well as packing and processing technology. Biggest packaging and processing show in the UK.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://www.packagingbirmingham.com/",
+      "scores": {
+        "buyer": 14,
+        "decision": 16,
+        "network": 12,
+        "intel": 11,
+        "ei": 6
+      },
+      "classification": "niche",
+      "confidence": "High",
+      "primaryBenefit": "Market Intelligence",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "ideal-home-show",
+      "id": "ideal-home-show",
+      "series": "ideal-home-show",
       "name": "Ideal Home Show",
       "aliases": [],
-      "status": "active",
-      "note": null,
-      "category_raw": "Home, Garden, Lifestyle",
-      "location": "Olympia, London",
-      "description": "UK's Biggest Home Event, with over 600 brands exhibiting and over 160,000 annual visitors. Inlcudes the Eat & Drink Festival, Furniture, and Celebrity Guests and Experts.",
-      "link": "https://www.idealhomeshow.co.uk/",
       "dateStart": "2027-04-02",
       "dateEnd": "2027-04-11",
-      "date_raw_source": "2nd-11th 2027",
-      "month_hint": "April",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Olympia, London",
+      "category": "Trade Show",
+      "sector": "Home, Garden, Lifestyle",
+      "desc": "UK's Biggest Home Event, with over 600 brands exhibiting and over 160,000 annual visitors. Inlcudes the Eat & Drink Festival, Furniture, and Celebrity Guests and Experts.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://www.idealhomeshow.co.uk/",
+      "scores": {
+        "buyer": 14,
+        "decision": 10,
+        "network": 12,
+        "intel": 14,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Market Intelligence",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "indx-beds",
+      "id": "indx-beds",
+      "series": "indx-beds",
       "name": "INDX Beds",
       "aliases": [],
-      "status": "active",
-      "note": null,
-      "category_raw": "Furniture",
-      "location": "Cranmore Park Conference & Event Centre",
-      "description": "AIS Members only on 29 April, open to general trade 30 April\nBeds, sofa beds, and bedroom furniture, alongside leading brands within upholstery, living room, dining room, and garden sectors. INDX Beds is curated by buyers from Associated Independent Stores (AIS), the UK\u2019s leading buying, services, and events group for fashion, home, and leisure.",
-      "link": null,
       "dateStart": "2027-04-27",
       "dateEnd": "2027-04-28",
-      "date_raw_source": "27th-28th 2027",
-      "month_hint": "April",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Cranmore Park Conference & Event Centre",
+      "category": "Trade Show",
+      "sector": "Furniture",
+      "desc": "AIS Members only on 29 April, open to general trade 30 April\nBeds, sofa beds, and bedroom furniture, alongside leading brands within upholstery, living room, dining room, and garden sectors. INDX Beds is curated by buyers from Associated Independent Stores (AIS), the UK\u2019s leading buying, services, and events group for fashion, home, and leisure.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 20,
+        "decision": 13,
+        "network": 12,
+        "intel": 9,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "indx-flooring",
+      "id": "indx-flooring",
+      "series": "indx-flooring",
       "name": "INDX NATIONAL FLOORING SHOW",
       "aliases": [
         "INDX National Flooring Show"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Flooring",
-      "location": "Cranmore Park Conference & Event Centre",
-      "description": "In partnership with flooring buying groups including ACG, AIS\u00a0Flooring One,\u00a0Bond Retail Marketing, Carpet 1st, Greendale, and SMG, the show will bring together top UK and European brands across carpets, rugs, laminates, woods, vinyl, LVT\u2019s, underlays and accessories.",
-      "link": null,
       "dateStart": "2027-05-09",
       "dateEnd": "2027-05-10",
-      "date_raw_source": "9th-10th 2027",
-      "month_hint": "May",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Cranmore Park Conference & Event Centre",
+      "category": "Trade Show",
+      "sector": "Flooring",
+      "desc": "In partnership with flooring buying groups including ACG, AIS\u00a0Flooring One,\u00a0Bond Retail Marketing, Carpet 1st, Greendale, and SMG, the show will bring together top UK and European brands across carpets, rugs, laminates, woods, vinyl, LVT\u2019s, underlays and accessories.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 16,
+        "decision": 10,
+        "network": 9,
+        "intel": 7,
+        "ei": 6
+      },
+      "classification": "monitor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "tweakments-live",
+      "id": "tweakments-live",
+      "series": "tweakments-live",
       "name": "Tweakments Live",
       "aliases": [],
-      "status": "active",
-      "note": null,
-      "category_raw": "Beauty, Skin, Wellness",
-      "location": "The Columbia Hotel",
-      "description": "Expert-led event designed for anyone who wants to understand what really works in skincare, aesthetic treatments and longevity. Hosted by beauty journalist and aesthetics expert Alice Hart-Davis, the event brings together leading practitioners, trusted experts and curious consumers for a day of honest conversations about modern aesthetics. Gives attendees direct access to credible information, lea",
-      "link": "https://www.futureevents.uk/tweakments-live?utm_medium=referral&utm_source=www.thebeautyshow.co.uk&utm_campaign=%2F",
       "dateStart": "2026-05-14",
       "dateEnd": "2026-05-14",
-      "date_raw_source": "14th 2026",
-      "month_hint": "May",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "The Columbia Hotel",
+      "category": "Conference",
+      "sector": "Beauty, Skin, Wellness",
+      "desc": "Expert-led event designed for anyone who wants to understand what really works in skincare, aesthetic treatments and longevity. Hosted by beauty journalist and aesthetics expert Alice Hart-Davis, the event brings together leading practitioners, trusted experts and curious consumers for a day of honest conversations about modern aesthetics. Gives attendees direct access to credible information, lea",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://www.futureevents.uk/tweakments-live?utm_medium=referral&utm_source=www.thebeautyshow.co.uk&utm_campaign=%2F",
+      "scores": {
+        "buyer": 10,
+        "decision": 14,
+        "network": 13,
+        "intel": 11,
+        "ei": 7
+      },
+      "classification": "niche",
+      "confidence": "Medium",
+      "primaryBenefit": "Market Intelligence",
+      "reasons": [
+        "Aesthetics/skincare education event with real practitioner and consumer crossover",
+        "Health & Beauty (Wellness) relevance, but consumer-expert format rather than a buyer floor"
+      ]
     },
     {
-      "canonical_id": "indx-gift-edit",
+      "id": "indx-gift-edit",
+      "series": "indx-gift-edit",
       "name": "INDX Gift Edit",
       "aliases": [],
-      "status": "active",
-      "note": null,
-      "category_raw": "Gift",
-      "location": "Cranmore Park Conference & Event Centre",
-      "description": "Previously paired with toys, this trade show will provide a fresh wave of gift inspiration, connecting leading suppliers with the UK and Ireland. As the needs of the gift industry evolve, INDX Gift Edit promises a comercially curated selection of high-quality products spanning food and drink, homeware, lifestyle, fashion accessories, stationery, toys, artisan crafts, and much more.",
-      "link": "https://indxshows.co.uk/shows/gift",
       "dateStart": "2026-05-19",
       "dateEnd": "2026-05-19",
-      "date_raw_source": "19th 2026",
-      "month_hint": "May",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Cranmore Park Conference & Event Centre",
+      "category": "Trade Show",
+      "sector": "Gift",
+      "desc": "Previously paired with toys, this trade show will provide a fresh wave of gift inspiration, connecting leading suppliers with the UK and Ireland. As the needs of the gift industry evolve, INDX Gift Edit promises a comercially curated selection of high-quality products spanning food and drink, homeware, lifestyle, fashion accessories, stationery, toys, artisan crafts, and much more.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://indxshows.co.uk/shows/gift",
+      "scores": {
+        "buyer": 20,
+        "decision": 13,
+        "network": 11,
+        "intel": 9,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Core Gift portfolio fit, AIS-curated",
+        "Confirmed dates published directly by AIS"
+      ]
     },
     {
-      "canonical_id": "museums-and-heritage",
+      "id": "museums-and-heritage",
+      "series": "museums-and-heritage",
       "name": "M+I",
       "aliases": [
         "M+I"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Museums & Heritage",
-      "location": "Olympia London",
-      "description": "UK\u2019s leading event for museum, heritage, and cultural-sector professionals, bringing together exhibitors, expert speakers, and industry leaders for networking, learning, and discovering new solutions.",
-      "link": "https://show.museumsandheritage.com/",
       "dateStart": "2027-05-12",
       "dateEnd": "2027-05-13",
-      "date_raw_source": "12- 13th May 2027",
-      "month_hint": "May",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Olympia London",
+      "category": "Trade Show",
+      "sector": "Museums & Heritage",
+      "desc": "UK\u2019s leading event for museum, heritage, and cultural-sector professionals, bringing together exhibitors, expert speakers, and industry leaders for networking, learning, and discovering new solutions.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://show.museumsandheritage.com/",
+      "scores": {
+        "buyer": 6,
+        "decision": 9,
+        "network": 10,
+        "intel": 8,
+        "ei": 2
+      },
+      "classification": "monitor",
+      "confidence": "Medium",
+      "primaryBenefit": "Market Intelligence",
+      "reasons": [
+        "Museums & Heritage sector sits outside the five-sector portfolio entirely",
+        "Kept only for reference \u2014 very unlikely to be worth active pursuit"
+      ]
     },
     {
-      "canonical_id": "spa-peeps-virgin-cruise",
+      "id": "spa-peeps-virgin-cruise",
+      "series": "spa-peeps-virgin-cruise",
       "name": "Spa Peeps",
       "aliases": [
         "Spa Peeps"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Wellness, beauty, health",
-      "location": "On Virgin Cruise",
-      "description": "Spa industry education & networking. Key Spa directors attend.",
-      "link": "https://www.thespapeeps.com/",
       "dateStart": null,
       "dateEnd": null,
-      "date_raw_source": "DATES TBC",
-      "month_hint": "June",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "On Virgin Cruise",
+      "category": "Event",
+      "sector": "Wellness, beauty, health",
+      "desc": "Spa industry education & networking. Key Spa directors attend.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://www.thespapeeps.com/",
+      "dateTBC": true,
+      "scores": {
+        "buyer": 10,
+        "decision": 16,
+        "network": 17,
+        "intel": 9,
+        "ei": 8
+      },
+      "classification": "niche",
+      "confidence": "Low",
+      "primaryBenefit": "Networking",
+      "reasons": [
+        "Dates genuinely TBC per the source itself \u2014 do not treat as scheduled until confirmed",
+        "Same curated small-group Spa Peeps format as other editions already scored higher"
+      ]
     },
     {
-      "canonical_id": "regional-growth-summit",
+      "id": "regional-growth-summit",
+      "series": "regional-growth-summit",
       "name": "The Regional Growth Summit",
       "aliases": [
         "The Regional Growth Summit"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Beauty, Hair, Spa",
-      "location": "The Royal Armouries Museum, Leeds, Yorkshire",
-      "description": "Meeting leading professional hair and beauty suppliers to discover the latest innovations and find out how they can support you and your business. Includes roundtables with professionals to dicuss how you could improve your clinic, spa, or salon. The show has a main stage, business strategy roundtable, networking lounge and a mini expo.",
-      "link": "https://professionalbeauty.co.uk/",
       "dateStart": "2026-06-08",
       "dateEnd": "2026-06-08",
-      "date_raw_source": "8th June 2026",
-      "month_hint": "June",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "The Royal Armouries Museum, Leeds, Yorkshire",
+      "category": "Event",
+      "sector": "Beauty, Hair, Spa",
+      "desc": "Meeting leading professional hair and beauty suppliers to discover the latest innovations and find out how they can support you and your business. Includes roundtables with professionals to dicuss how you could improve your clinic, spa, or salon. The show has a main stage, business strategy roundtable, networking lounge and a mini expo.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://professionalbeauty.co.uk/",
+      "scores": {
+        "buyer": 16,
+        "decision": 13,
+        "network": 14,
+        "intel": 9,
+        "ei": 8
+      },
+      "classification": "niche",
+      "confidence": "Low",
+      "primaryBenefit": "Networking",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "indx-kidswear",
+      "id": "indx-kidswear",
+      "series": "indx-kidswear",
       "name": "INDX National Kidswear Show",
       "aliases": [
         "INDX National Kidswear Show",
         "INDX National Kidswear & Kids Footwear"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Childrenswear",
-      "location": "Cranmore Park Conference & Event Centre",
-      "description": "Bringing together an expert edit of UK and international labels, and attracting leading department stores, garden centres, kidswear indies, boutiques, and category specialists. Curated by buyers from Associated Independent Stores (AIS) - the UK\u2019s leading buying group for fashion, home, and leisure, the show takes place at Cranmore Park and is open to all retailers.",
-      "link": "https://indxshows.co.uk/shows/kids",
       "dateStart": "2026-07-05",
       "dateEnd": "2026-07-06",
-      "date_raw_source": "5th-6th 2026",
-      "month_hint": "July",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Cranmore Park Conference & Event Centre",
+      "category": "Trade Show",
+      "sector": "Childrenswear",
+      "desc": "Bringing together an expert edit of UK and international labels, and attracting leading department stores, garden centres, kidswear indies, boutiques, and category specialists. Curated by buyers from Associated Independent Stores (AIS) - the UK\u2019s leading buying group for fashion, home, and leisure, the show takes place at Cranmore Park and is open to all retailers.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://indxshows.co.uk/shows/kids",
+      "scores": {
+        "buyer": 16,
+        "decision": 10,
+        "network": 9,
+        "intel": 7,
+        "ei": 7
+      },
+      "classification": "monitor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "manchester-furniture-show",
+      "id": "manchester-furniture-show",
+      "series": "manchester-furniture-show",
       "name": "Manchester Furniture Show",
       "aliases": [],
-      "status": "active",
-      "note": null,
-      "category_raw": "Furniture",
-      "location": "Manchester Central",
-      "description": "One-stop shop for summer buying. Renowned as the most relaxed, friendly and easy-to-visit furniture and interiors show in the UK, the beloved show provides the furniture industry with it's favourite mid-season buying fix. 3500 Buyers, 100+ brands.",
-      "link": "https://thefurnitureshows.com/",
       "dateStart": "2026-07-05",
       "dateEnd": "2026-07-06",
-      "date_raw_source": "5th-6th 2026",
-      "month_hint": "July",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Manchester Central",
+      "category": "Trade Show",
+      "sector": "Furniture",
+      "desc": "One-stop shop for summer buying. Renowned as the most relaxed, friendly and easy-to-visit furniture and interiors show in the UK, the beloved show provides the furniture industry with it's favourite mid-season buying fix. 3500 Buyers, 100+ brands.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://thefurnitureshows.com/",
+      "scores": {
+        "buyer": 22,
+        "decision": 15,
+        "network": 14,
+        "intel": 10,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "indx-menswear",
+      "id": "indx-menswear",
+      "series": "indx-menswear",
       "name": "INDX MAN",
       "aliases": [
         "INDX MAN",
         "INDX National Menswear Show"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Menswear",
-      "location": "Cranmore Park Conference & Event Centre",
-      "description": "Our exhibitor list is carefully curated each season to focus on emerging international designers and lifestyle brands, many of whom select Scoop as their only trade platform.",
-      "link": "https://indxshows.co.uk/shows/men",
       "dateStart": "2026-07-12",
       "dateEnd": "2026-07-14",
-      "date_raw_source": "12th-14th 2026",
-      "month_hint": "July",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Cranmore Park Conference & Event Centre",
+      "category": "Trade Show",
+      "sector": "Menswear",
+      "desc": "Our exhibitor list is carefully curated each season to focus on emerging international designers and lifestyle brands, many of whom select Scoop as their only trade platform.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://indxshows.co.uk/shows/men",
+      "scores": {
+        "buyer": 20,
+        "decision": 12,
+        "network": 11,
+        "intel": 9,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "indx-woman",
+      "id": "indx-woman",
+      "series": "indx-woman",
       "name": "INDX WOMAN",
       "aliases": [
         "INDX WOMAN"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Womenswear",
-      "location": "Cranmore Park Conference & Event Centre",
-      "description": "Known for its order-writing status and business focused format, the show is tailored to meet the needs of todays indies, bringing together a trend and insight-led showcase from a commercially sound brand edit. Curated by buyers from Associated Independent Stores (AIS), the UK\u2019s leading buying group for fashion, home, and leisure, the show attracts department stores, boutiques, indies and lifestyle",
-      "link": "https://indxshows.co.uk/shows/woman",
       "dateStart": "2026-07-19",
       "dateEnd": "2026-07-21",
-      "date_raw_source": "19th-21st 2026",
-      "month_hint": "July",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Cranmore Park Conference & Event Centre",
+      "category": "Trade Show",
+      "sector": "Womenswear",
+      "desc": "Known for its order-writing status and business focused format, the show is tailored to meet the needs of todays indies, bringing together a trend and insight-led showcase from a commercially sound brand edit. Curated by buyers from Associated Independent Stores (AIS), the UK\u2019s leading buying group for fashion, home, and leisure, the show attracts department stores, boutiques, indies and lifestyle",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://indxshows.co.uk/shows/woman",
+      "scores": {
+        "buyer": 24,
+        "decision": 14,
+        "network": 12,
+        "intel": 10,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "scoop",
+      "id": "scoop",
+      "series": "scoop",
       "name": "Scoop",
       "aliases": [
         "Scoop International"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Apparel & Accessories",
-      "location": "Olympia, London",
-      "description": "Recognised by designers, fashion buyers and industry experts as one of the UK\u2019s leading fashion and lifestyle trade shows, Scoop offers visitors a unique buying environment to discover some of the most exceptional brands on the market.",
-      "link": "https://scoop-international.com/Page/about-scoop",
       "dateStart": "2026-07-19",
       "dateEnd": "2026-07-21",
-      "date_raw_source": "19th-21st 2026",
-      "month_hint": "July",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Olympia, London",
+      "category": "Trade Show",
+      "sector": "Apparel & Accessories",
+      "desc": "Recognised by designers, fashion buyers and industry experts as one of the UK\u2019s leading fashion and lifestyle trade shows, Scoop offers visitors a unique buying environment to discover some of the most exceptional brands on the market.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://scoop-international.com/Page/about-scoop",
+      "scores": {
+        "buyer": 22,
+        "decision": 16,
+        "network": 14,
+        "intel": 13,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "spa-peeps-elevate-aesthetics",
+      "id": "spa-peeps-elevate-aesthetics",
+      "series": "spa-peeps-elevate-aesthetics",
       "name": "Spa Peeps, Wellness Peeps, Elevate Aesthetics",
       "aliases": [
         "Spa Peeps, Wellness Peeps, Elevate Aesthetics"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Health & Beauty, Medical Aestehtics, Dermatology, Advanced Skincare",
-      "location": "The Global Ambassador, Pheonix",
-      "description": "levate Aesthetics is where the leading minds in medical aesthetics, dermatology, and advanced skincare come together to connect, collaborate, and elevate the future of the industry. This exclusive event is designed to foster meaningful partnerships between innovative brands and the top aesthetic and dermatology decision-makers from across the country.  Featuring only 20-25 hand-selected buyers.",
-      "link": "https://www.thespapeeps.com/",
       "dateStart": "2026-07-19",
       "dateEnd": "2026-07-22",
-      "date_raw_source": "19th-22nd 2026",
-      "month_hint": "July",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "The Global Ambassador, Pheonix",
+      "category": "Event",
+      "sector": "Health & Beauty, Medical Aestehtics, Dermatology, Advanced Skincare",
+      "desc": "levate Aesthetics is where the leading minds in medical aesthetics, dermatology, and advanced skincare come together to connect, collaborate, and elevate the future of the industry. This exclusive event is designed to foster meaningful partnerships between innovative brands and the top aesthetic and dermatology decision-makers from across the country.  Featuring only 20-25 hand-selected buyers.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://www.thespapeeps.com/",
+      "scores": {
+        "buyer": 14,
+        "decision": 20,
+        "network": 17,
+        "intel": 9,
+        "ei": 9
+      },
+      "classification": "niche",
+      "confidence": "Medium",
+      "primaryBenefit": "Decision Maker Access",
+      "reasons": [
+        "Only 20-25 hand-selected buyers \u2014 very high decision-maker density despite tiny scale",
+        "Core Health & Beauty (medical aesthetics) fit"
+      ]
     },
     {
-      "canonical_id": "spa-peeps-elevate-lifestyle",
+      "id": "spa-peeps-elevate-lifestyle",
+      "series": "spa-peeps-elevate-lifestyle",
       "name": "Spa Peeps, Wellness Peeps, Elevate Lifestyle",
       "aliases": [
         "Spa Peeps, Wellness Peeps, Elevate Lifestyle"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Wellness, Fitness, Luxury Living",
-      "location": "The Global Ambassador, Pheonix",
-      "description": "Elevate Lifestyle is the next evolution of our event platform \u2014 created for leading brands shaping the future of wellness, fitness, and luxury living. This exclusive, high-touch event brings together top innovators and decision-makers from across the lifestyle and wellness ecosystem for purposeful, one-on-one connection. Featuring only 20-25 hand-selected buyers.",
-      "link": "https://www.thespapeeps.com/",
       "dateStart": "2026-07-22",
       "dateEnd": "2026-07-25",
-      "date_raw_source": "22nd-25th 2026",
-      "month_hint": "July",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "The Global Ambassador, Pheonix",
+      "category": "Event",
+      "sector": "Wellness, Fitness, Luxury Living",
+      "desc": "Elevate Lifestyle is the next evolution of our event platform \u2014 created for leading brands shaping the future of wellness, fitness, and luxury living. This exclusive, high-touch event brings together top innovators and decision-makers from across the lifestyle and wellness ecosystem for purposeful, one-on-one connection. Featuring only 20-25 hand-selected buyers.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://www.thespapeeps.com/",
+      "scores": {
+        "buyer": 13,
+        "decision": 19,
+        "network": 17,
+        "intel": 9,
+        "ei": 7
+      },
+      "classification": "niche",
+      "confidence": "Medium",
+      "primaryBenefit": "Decision Maker Access",
+      "reasons": [
+        "Curated small-group format, wellness/lifestyle fit",
+        "Same organiser as other Spa Peeps editions already tracked"
+      ]
     },
     {
-      "canonical_id": "indx-intimate-apparel",
+      "id": "indx-intimate-apparel",
+      "series": "indx-intimate-apparel",
       "name": "INDX Intimate Apparel",
       "aliases": [],
-      "status": "active",
-      "note": null,
-      "category_raw": "Lingerie & swimwear",
-      "location": "Cranmore Park Conference & Event Centre",
-      "description": "The largest UK trade show dedicated to the intimates' sector, INDX Intimate Apparel is considered the industry's national show. Bringing together over 150 industry leading brands across lingerie, nightwear and legwear, the next show will shine a seasonal spotlight on swim, beach, and resortwear.",
-      "link": null,
       "dateStart": "2026-07-26",
       "dateEnd": "2026-07-28",
-      "date_raw_source": "26th-28th 2026",
-      "month_hint": "July",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Cranmore Park Conference & Event Centre",
+      "category": "Trade Show",
+      "sector": "Lingerie & swimwear",
+      "desc": "The largest UK trade show dedicated to the intimates' sector, INDX Intimate Apparel is considered the industry's national show. Bringing together over 150 industry leading brands across lingerie, nightwear and legwear, the next show will shine a seasonal spotlight on swim, beach, and resortwear.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 16,
+        "decision": 10,
+        "network": 9,
+        "intel": 7,
+        "ei": 7
+      },
+      "classification": "monitor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "spa-peeps-elevate-spa",
+      "id": "spa-peeps-elevate-spa",
+      "series": "spa-peeps-elevate-spa",
       "name": "Spa Peeps, Elevate Spa",
       "aliases": [
         "Spa Peeps, Elevate Spa"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Spa",
-      "location": "Riviera Maya, Kanai, Mexico",
-      "description": "In this intimate, relaxed environment, attendees will enjoy a thoughtful blend of elevated networking, curated business opportunities, and immersive leisure experiences. Designed to encourage organic relationship-building in a luxurious setting, Riviera Maya offers the perfect space to spark fresh ideas, forge meaningful partnerships, and celebrate the future of the spa industry.",
-      "link": "https://www.thespapeeps.com/",
       "dateStart": "2026-08-23",
       "dateEnd": "2026-08-26",
-      "date_raw_source": "23rd-26th 2026",
-      "month_hint": "August",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Riviera Maya, Kanai, Mexico",
+      "category": "Event",
+      "sector": "Spa",
+      "desc": "In this intimate, relaxed environment, attendees will enjoy a thoughtful blend of elevated networking, curated business opportunities, and immersive leisure experiences. Designed to encourage organic relationship-building in a luxurious setting, Riviera Maya offers the perfect space to spark fresh ideas, forge meaningful partnerships, and celebrate the future of the spa industry.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://www.thespapeeps.com/",
+      "scores": {
+        "buyer": 15,
+        "decision": 20,
+        "network": 18,
+        "intel": 8,
+        "ei": 7
+      },
+      "classification": "strategic",
+      "confidence": "Medium",
+      "primaryBenefit": "Decision Maker Access",
+      "reasons": [
+        "Same touring Spa Peeps Elevate Spa format as the Dubai edition, scored by analogy",
+        "NOTE: this date is already in the past relative to a rolling 12-month window - generate.js own date-window filter should exclude it from the live calendar even though it stays in this baseline file"
+      ]
     },
     {
-      "canonical_id": "indx-furniture",
+      "id": "indx-furniture",
+      "series": "indx-furniture",
       "name": "INDX Furniture Show",
       "aliases": [
         "INDX Furniture Show",
         "INDX Furniture (Beds & Bedroom)"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Furniture",
-      "location": "Cranmore Park Conference & Event Centre",
-      "description": "The first day of the show is reserved for AIS Members but general trade visitors are welcome on day two. Bringing together trend, insight, design, and innovation, and featuring industry leading brands, product exclusives, and new collections, the August show will incorporate beds and bedroom, alongside the usual categories: upholstery, living room, and dining room. Attracting department stores, ca",
-      "link": "https://indxshows.co.uk/shows/furniture",
       "dateStart": "2026-08-26",
       "dateEnd": "2026-08-27",
-      "date_raw_source": "26th-27th 2026",
-      "month_hint": "August",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Cranmore Park Conference & Event Centre",
+      "category": "Trade Show",
+      "sector": "Furniture",
+      "desc": "The first day of the show is reserved for AIS Members but general trade visitors are welcome on day two. Bringing together trend, insight, design, and innovation, and featuring industry leading brands, product exclusives, and new collections, the August show will incorporate beds and bedroom, alongside the usual categories: upholstery, living room, and dining room. Attracting department stores, ca",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://indxshows.co.uk/shows/furniture",
+      "scores": {
+        "buyer": 20,
+        "decision": 13,
+        "network": 12,
+        "intel": 9,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "jewellery-show",
+      "id": "jewellery-show",
+      "series": "jewellery-show",
       "name": "The Jewellery Show",
       "aliases": [
         "The Jewellery Show"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Jewellery",
-      "location": "Olympia, London",
-      "description": "The Jewellery Show is the UK\u2019s premier jewellery trade event of the year.Returning to the Olympia London on 2nd to 3rd  September 2026, the Jewellery Show will be a vital opportunity to refresh your knowledge, gain insight into the latest trends, source new collections and materials to stock in your stores, learn how to improve your business and network with thousands of other jewellery profession",
-      "link": "https://www.thejewelleryshow.co.uk/",
       "dateStart": "2026-09-02",
       "dateEnd": "2026-09-03",
-      "date_raw_source": "2nd-3rd 2026",
-      "month_hint": "September",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Olympia, London",
+      "category": "Trade Show",
+      "sector": "Jewellery",
+      "desc": "The Jewellery Show is the UK\u2019s premier jewellery trade event of the year.Returning to the Olympia London on 2nd to 3rd  September 2026, the Jewellery Show will be a vital opportunity to refresh your knowledge, gain insight into the latest trends, source new collections and materials to stock in your stores, learn how to improve your business and network with thousands of other jewellery profession",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://www.thejewelleryshow.co.uk/",
+      "scores": {
+        "buyer": 24,
+        "decision": 15,
+        "network": 12,
+        "intel": 12,
+        "ei": 7
+      },
+      "classification": "strategic",
+      "confidence": "Medium",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "autumn-fair",
+      "id": "autumn-fair",
+      "series": "autumn-fair",
       "name": "Autumn Fair",
       "aliases": [
         "Autumn Fair 2026 (incorporating Moda Fashion)",
         "Autumn Fair 2026 (incorporating Moda)"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Home, Gift, Apparel, Jewellery, Toys",
-      "location": "NEC, Birmingham",
-      "description": "Autumn Fair showcases a curated selection of the newest and best-selling products- guaranteed to elevate your store front. From greeting cards and kids toys to footwear and furniture, explore products from 10\u00a0sectors across Home, Gift and Fashion.",
-      "link": null,
       "dateStart": "2026-09-06",
       "dateEnd": "2026-09-09",
-      "date_raw_source": "6th-9th 2026",
-      "month_hint": "September",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "NEC, Birmingham",
+      "category": "Trade Show",
+      "sector": "Home, Gift, Apparel, Jewellery, Toys",
+      "desc": "Autumn Fair showcases a curated selection of the newest and best-selling products- guaranteed to elevate your store front. From greeting cards and kids toys to footwear and furniture, explore products from 10\u00a0sectors across Home, Gift and Fashion.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 28,
+        "decision": 20,
+        "network": 14,
+        "intel": 13,
+        "ei": 10
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "indx-home",
+      "id": "indx-home",
+      "series": "indx-home",
       "name": "INDX Home",
       "aliases": [],
-      "status": "active",
-      "note": null,
-      "category_raw": "Kitchen & dining, organising & storage, small electricals, home textiles, soft furnishing, and home accessories",
-      "location": "Cranmore Park Conference & Event Centre",
-      "description": "Curated by buyers from Associated Independent Stores (AIS), the UK\u2019s leading buying group for fashion, home, and leisure.  2 day show for homewares stockists, attracting department stores, garden centres, farm shops, gift, and lifestyle retailers - you do not need to be a Member of AIS to attend.",
-      "link": null,
       "dateStart": "2026-09-08",
       "dateEnd": "2026-09-09",
-      "date_raw_source": "8th-9th 2026",
-      "month_hint": "September",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Cranmore Park Conference & Event Centre",
+      "category": "Trade Show",
+      "sector": "Kitchen & dining, organising & storage, small electricals, home textiles, soft furnishing, and home accessories",
+      "desc": "Curated by buyers from Associated Independent Stores (AIS), the UK\u2019s leading buying group for fashion, home, and leisure.  2 day show for homewares stockists, attracting department stores, garden centres, farm shops, gift, and lifestyle retailers - you do not need to be a Member of AIS to attend.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 22,
+        "decision": 14,
+        "network": 12,
+        "intel": 9,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "glee",
+      "id": "glee",
+      "series": "glee",
       "name": "GLEE",
       "aliases": [
         "GLEE"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Landscaping & Garden Decoration, Home, Gift & Clothing, Garden Care, Pets, Plants, Food & Beverage",
-      "location": "NEC Birmingham",
-      "description": "UK's leading garden and outdoor living trade show, hosting the most exciting brands, innovative products and inspiring garden retail insights. Premium destination for garden and outdoor living inspiration, Glee brings the British, European and International markets together under one roof. Moving to September just in time for its 50th anniversary, Glee is set to be bigger and better than ever. It ",
-      "link": "https://www.gleebirmingham.com/",
       "dateStart": "2026-09-08",
       "dateEnd": "2026-09-10",
-      "date_raw_source": "8th-10th 2026",
-      "month_hint": "September",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "NEC Birmingham",
+      "category": "Trade Show",
+      "sector": "Landscaping & Garden Decoration, Home, Gift & Clothing, Garden Care, Pets, Plants, Food & Beverage",
+      "desc": "UK's leading garden and outdoor living trade show, hosting the most exciting brands, innovative products and inspiring garden retail insights. Premium destination for garden and outdoor living inspiration, Glee brings the British, European and International markets together under one roof. Moving to September just in time for its 50th anniversary, Glee is set to be bigger and better than ever. It ",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://www.gleebirmingham.com/",
+      "scores": {
+        "buyer": 23,
+        "decision": 14,
+        "network": 12,
+        "intel": 12,
+        "ei": 6
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "packaging-week",
+      "id": "packaging-week",
+      "series": "packaging-week",
       "name": "London Packaging Week",
       "aliases": [
         "London Packaging Week"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Fashion accessories, luxury products, health, beauty,wellness, food, consumer goods",
-      "location": "Excel, London",
-      "description": "London Packaging Week, home to four co-located events combines to create a dynamic and inspirational event that drives packaging innovation, business and connections at the heart of the UK\u2019s luxury, cosmetics, premium drinks and consumer products markets. Join hundreds of industry leaders, including suppliers, designers, packaging developers, marketers, founders, and buyers, as they gather to fuel",
-      "link": null,
       "dateStart": "2026-09-16",
       "dateEnd": "2026-09-17",
-      "date_raw_source": "16th-17th 2026",
-      "month_hint": "September",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Excel, London",
+      "category": "Trade Show",
+      "sector": "Fashion accessories, luxury products, health, beauty,wellness, food, consumer goods",
+      "desc": "London Packaging Week, home to four co-located events combines to create a dynamic and inspirational event that drives packaging innovation, business and connections at the heart of the UK\u2019s luxury, cosmetics, premium drinks and consumer products markets. Join hundreds of industry leaders, including suppliers, designers, packaging developers, marketers, founders, and buyers, as they gather to fuel",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 18,
+        "decision": 20,
+        "network": 16,
+        "intel": 13,
+        "ei": 7
+      },
+      "classification": "strategic",
+      "confidence": "Medium",
+      "primaryBenefit": "Decision Maker Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "organic-food",
+      "id": "organic-food",
+      "series": "organic-food",
       "name": "The London Food & Drinks Shows - Natural and Organic Food Show",
       "aliases": [
         "Natural and Organic Food Show",
         "The London Food & Drinks Shows - Natural and Organic Food Show"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Food & Drink",
-      "location": "Excel, London",
-      "description": "Previously  The Natural & Organic Product Expo (NOPEX), this has now solely become The Natural & Organic Food Show, removing the Natural Health & Natural Beauty expos for the foreseeable future. This will take place as part of The London Food & Drink Shows, co-locating with leading trade events lunch! and The National Restaurant, Pub & Bar. By doing this, the show will gain greater visibility and ",
-      "link": "https://www.naturalandorganicfoodshow.co.uk/",
       "dateStart": "2026-09-16",
       "dateEnd": "2026-09-17",
-      "date_raw_source": "16th-17th 2026",
-      "month_hint": "September",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Excel, London",
+      "category": "Trade Show",
+      "sector": "Food & Drink",
+      "desc": "Previously  The Natural & Organic Product Expo (NOPEX), this has now solely become The Natural & Organic Food Show, removing the Natural Health & Natural Beauty expos for the foreseeable future. This will take place as part of The London Food & Drink Shows, co-locating with leading trade events lunch! and The National Restaurant, Pub & Bar. By doing this, the show will gain greater visibility and ",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://www.naturalandorganicfoodshow.co.uk/",
+      "scores": {
+        "buyer": 22,
+        "decision": 14,
+        "network": 12,
+        "intel": 12,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "pet-show-live",
+      "id": "pet-show-live",
+      "series": "pet-show-live",
       "name": "Pet Show Live",
       "aliases": [
         "Pet Show Live",
         "London Pet Show Live"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Pet",
-      "location": "Olympia, London",
-      "description": "Consumer Pet Show",
-      "link": "https://londonpetshowlive.com/",
       "dateStart": "2025-09-20",
       "dateEnd": "2025-09-21",
-      "date_raw_source": "20th -21st 2025",
-      "month_hint": "September",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Olympia, London",
+      "category": "Event",
+      "sector": "Pet",
+      "desc": "Consumer Pet Show",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://londonpetshowlive.com/",
+      "scores": {
+        "buyer": 5,
+        "decision": 3,
+        "network": 5,
+        "intel": 5,
+        "ei": 2
+      },
+      "classification": "ignore",
+      "confidence": "Low",
+      "primaryBenefit": "\u2014",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "bed-show",
+      "id": "bed-show",
+      "series": "bed-show",
       "name": "The Bed Show",
       "aliases": [
         "The Bed Show",
         "NBF Bed Industry Awards",
         "NBF Bed Show Gala Dinner"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Beds, Furniture",
-      "location": "Telford, Internaltional Centre",
-      "description": "Must be member of NBF to exhibit https://www.bedfed.org.uk/\n\nThe Bed Show, organised by the National Bed Federation (NBF), is firmly established in the trade calendar as the UK\u2019s biggest bed exhibition.The Bed Show is the only place to see so many UK and Irish bed manufacturers and component suppliers under one roof, with exhibitors ranging from the biggest brands on the market to small niche play",
-      "link": null,
       "dateStart": "2026-09-22",
       "dateEnd": "2026-09-23",
-      "date_raw_source": "22nd-23rd 2026",
-      "month_hint": "September",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Telford, Internaltional Centre",
+      "category": "Trade Show",
+      "sector": "Beds, Furniture",
+      "desc": "Must be member of NBF to exhibit https://www.bedfed.org.uk/\n\nThe Bed Show, organised by the National Bed Federation (NBF), is firmly established in the trade calendar as the UK\u2019s biggest bed exhibition.The Bed Show is the only place to see so many UK and Irish bed manufacturers and component suppliers under one roof, with exhibitors ranging from the biggest brands on the market to small niche play",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 16,
+        "decision": 14,
+        "network": 16,
+        "intel": 9,
+        "ei": 7
+      },
+      "classification": "niche",
+      "confidence": "High",
+      "primaryBenefit": "Networking",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "pats",
+      "id": "pats",
+      "series": "pats",
       "name": "Pats",
       "aliases": [
         "Pats",
         "PATS",
         "PATS (Pet & Aquatics Trade Show)"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Pet",
-      "location": "NEC, Birmingham",
-      "description": "PATS \u2013 the UK\u2019s No.1 Pet & Aquatics Industry Exhibition. Visiting PATS offers the entire pet trade great buying and networking opportunities.",
-      "link": null,
       "dateStart": "2026-09-27",
       "dateEnd": "2026-09-29",
-      "date_raw_source": "27th-29th 2026",
-      "month_hint": "September",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "NEC, Birmingham",
+      "category": "Trade Show",
+      "sector": "Pet",
+      "desc": "PATS \u2013 the UK\u2019s No.1 Pet & Aquatics Industry Exhibition. Visiting PATS offers the entire pet trade great buying and networking opportunities.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 22,
+        "decision": 13,
+        "network": 12,
+        "intel": 10,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "hotel-expo",
+      "id": "hotel-expo",
+      "series": "hotel-expo",
       "name": "Hotel & resort innovation expo",
       "aliases": [
         "Hotel & resort innovation expo"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Services",
-      "location": "Excel London",
-      "description": "Interesting for brands looking to understan the hotel/spa industry.\nThe show brings together hotel professionals who are looking to expand the function of their hotel and expand their knowledge and gain inspiration to stay ahead of the game. 200 Seminars, over 500 Exhibitors, and over 15,000 Hospitality Buyers.",
-      "link": "https://hotelinnovationexpo.co.uk/",
       "dateStart": "2026-09-29",
       "dateEnd": "2026-09-30",
-      "date_raw_source": "29th-30th 2026",
-      "month_hint": "September",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Excel London",
+      "category": "Trade Show",
+      "sector": "Services",
+      "desc": "Interesting for brands looking to understan the hotel/spa industry.\nThe show brings together hotel professionals who are looking to expand the function of their hotel and expand their knowledge and gain inspiration to stay ahead of the game. 200 Seminars, over 500 Exhibitors, and over 15,000 Hospitality Buyers.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://hotelinnovationexpo.co.uk/",
+      "scores": {
+        "buyer": 19,
+        "decision": 14,
+        "network": 12,
+        "intel": 11,
+        "ei": 7
+      },
+      "classification": "niche",
+      "confidence": "Medium",
+      "primaryBenefit": "Market Intelligence",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "print-show",
+      "id": "print-show",
+      "series": "print-show",
       "name": "The Print Show",
       "aliases": [
         "The Print Show"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Print",
-      "location": "NEC, Birmingham",
-      "description": "The Print Show is now established as the most important and best-attended print industry event in the UK, and is still the only exhibition entirely dedicated to the UK print sector. The Print Show is the primary meeting point for the market, offering visitors the opportunity to see the latest technological developments, meet and network with peers, and access advice from some of the leading expert",
-      "link": null,
       "dateStart": "2026-09-29",
       "dateEnd": "2026-10-01",
-      "date_raw_source": "29th-1st 2026",
-      "month_hint": "September",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "NEC, Birmingham",
+      "category": "Trade Show",
+      "sector": "Print",
+      "desc": "The Print Show is now established as the most important and best-attended print industry event in the UK, and is still the only exhibition entirely dedicated to the UK print sector. The Print Show is the primary meeting point for the market, offering visitors the opportunity to see the latest technological developments, meet and network with peers, and access advice from some of the leading expert",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 8,
+        "decision": 8,
+        "network": 10,
+        "intel": 8,
+        "ei": 2
+      },
+      "classification": "monitor",
+      "confidence": "Medium",
+      "primaryBenefit": "\u2014",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "spa-peeps-elevate-spa",
+      "id": "spa-peeps-elevate-spa",
+      "series": "spa-peeps-elevate-spa",
       "name": "Spa Peeps, Elevate Spa",
       "aliases": [
         "Spa Peeps, Elevate Spa"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Spa",
-      "location": "Dubai, UAE",
-      "description": "Set against the backdrop of Dubai\u2019s iconic skyline and rich cultural heritage, this experience blends elevated networking, curated business opportunities, and immersive leisure moments. In this intimate, refined environment, attendees will engage in meaningful conversations, spark fresh ideas, and forge lasting partnerships. Designed to encourage authentic relationship-building in one of the world",
-      "link": "https://www.thespapeeps.com/",
       "dateStart": "2026-09-30",
       "dateEnd": "2026-10-01",
-      "date_raw_source": "30th-1st 2026",
-      "month_hint": "September",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Dubai, UAE",
+      "category": "Event",
+      "sector": "Spa",
+      "desc": "Set against the backdrop of Dubai\u2019s iconic skyline and rich cultural heritage, this experience blends elevated networking, curated business opportunities, and immersive leisure moments. In this intimate, refined environment, attendees will engage in meaningful conversations, spark fresh ideas, and forge lasting partnerships. Designed to encourage authentic relationship-building in one of the world",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://www.thespapeeps.com/",
+      "scores": {
+        "buyer": 16,
+        "decision": 20,
+        "network": 18,
+        "intel": 9,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "Medium",
+      "primaryBenefit": "Decision Maker Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (Dubai edition)"
+      ]
     },
     {
-      "canonical_id": "salon-international",
+      "id": "salon-international",
+      "series": "salon-international",
       "name": "Salon International",
       "aliases": [],
-      "status": "active",
-      "note": null,
-      "category_raw": "Hair",
-      "location": "Excel, London",
-      "description": "Salon International is the hairdressing event of the year. Europe's Leading Event for Hair Professionals. \u00a320 tickets.",
-      "link": "https://hji.co.uk/salon-international",
       "dateStart": "2026-10-04",
       "dateEnd": "2026-10-05",
-      "date_raw_source": "4th-5th 2026",
-      "month_hint": "October",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Excel, London",
+      "category": "Trade Show",
+      "sector": "Hair",
+      "desc": "Salon International is the hairdressing event of the year. Europe's Leading Event for Hair Professionals. \u00a320 tickets.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://hji.co.uk/salon-international",
+      "scores": {
+        "buyer": 20,
+        "decision": 13,
+        "network": 12,
+        "intel": 11,
+        "ei": 7
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "professional-beauty-london",
+      "id": "professional-beauty-london",
+      "series": "professional-beauty-london",
       "name": "Professional Beauty London & World Spa Convention",
       "aliases": [
         "Professional Beauty London & World Spa Convention"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Health, Beauty, Wellness",
-      "location": "Excel, London",
-      "description": "The UK's leading event for the salon, spa and nail professionals. Zones include the International Zones, looking to source global brands, Skincare & Spa Zone, Advanced Treatments Zone, and the Nails, Waxing & Essentials Zone.",
-      "link": null,
       "dateStart": "2026-10-04",
       "dateEnd": "2026-10-05",
-      "date_raw_source": "4th-5th 2026",
-      "month_hint": "October",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Excel, London",
+      "category": "Trade Show",
+      "sector": "Health, Beauty, Wellness",
+      "desc": "The UK's leading event for the salon, spa and nail professionals. Zones include the International Zones, looking to source global brands, Skincare & Spa Zone, Advanced Treatments Zone, and the Nails, Waxing & Essentials Zone.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 24,
+        "decision": 17,
+        "network": 14,
+        "intel": 13,
+        "ei": 9
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "brand-licensing-europe",
+      "id": "brand-licensing-europe",
+      "series": "brand-licensing-europe",
       "name": "Brand Licensing Europe",
       "aliases": [],
-      "status": "active",
-      "note": null,
-      "category_raw": "Brand Licensing",
-      "location": "Excel, London",
-      "description": "Brand Licensing Europe (BLE) is the only pan-European event dedicated to licensing and brand extension, bringing together retailers, licensees and manufacturers for three days of deal-making, networking and trend spotting. BLE is for businesses looking to discover and secure deals with the most sought-after brands, characters and images available for licensing.",
-      "link": null,
       "dateStart": "2026-10-06",
       "dateEnd": "2026-10-08",
-      "date_raw_source": "6th-8th 2026",
-      "month_hint": "October",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Excel, London",
+      "category": "Trade Show",
+      "sector": "Brand Licensing",
+      "desc": "Brand Licensing Europe (BLE) is the only pan-European event dedicated to licensing and brand extension, bringing together retailers, licensees and manufacturers for three days of deal-making, networking and trend spotting. BLE is for businesses looking to discover and secure deals with the most sought-after brands, characters and images available for licensing.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 20,
+        "decision": 19,
+        "network": 15,
+        "intel": 12,
+        "ei": 5
+      },
+      "classification": "strategic",
+      "confidence": "Medium",
+      "primaryBenefit": "Decision Maker Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "outdoor-living-wellness",
+      "id": "outdoor-living-wellness",
+      "series": "outdoor-living-wellness",
       "name": "Outdoor Living &Wellness",
       "aliases": [
         "Outdoor Living &Wellness"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Outdoor furniture, lighting, decoration",
-      "location": "Excel,London",
-      "description": "Part of Futurecsape",
-      "link": null,
       "dateStart": "2026-10-07",
       "dateEnd": "2026-10-08",
-      "date_raw_source": "7th-8th 2026",
-      "month_hint": "October",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Excel,London",
+      "category": "Trade Show",
+      "sector": "Outdoor furniture, lighting, decoration",
+      "desc": "Part of Futurecsape",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 15,
+        "decision": 12,
+        "network": 11,
+        "intel": 9,
+        "ei": 6
+      },
+      "classification": "niche",
+      "confidence": "Low",
+      "primaryBenefit": "\u2014",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "autumn-furniture-show",
+      "id": "autumn-furniture-show",
+      "series": "autumn-furniture-show",
       "name": "The Autumn Furniture Show",
       "aliases": [
         "The Autumn Furniture Show"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Furniture / Home",
-      "location": "Telford International Centre",
-      "description": "The Autumn Furniture Show a two day trade event showcasing an impressive UK and Global portfolio.Every sector of the furniture buying industry attends this show, from independent retailers right through to contract buyers, we are open to all within this trade. Previous exhibitors include HTL, IMG Comfort, Purecare, Papaya Trading, New Trend Concepts, Sealy etc.",
-      "link": null,
       "dateStart": "2026-10-07",
       "dateEnd": "2026-10-08",
-      "date_raw_source": "7th-8th 2026",
-      "month_hint": "October",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Telford International Centre",
+      "category": "Trade Show",
+      "sector": "Furniture / Home",
+      "desc": "The Autumn Furniture Show a two day trade event showcasing an impressive UK and Global portfolio.Every sector of the furniture buying industry attends this show, from independent retailers right through to contract buyers, we are open to all within this trade. Previous exhibitors include HTL, IMG Comfort, Purecare, Papaya Trading, New Trend Concepts, Sealy etc.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 18,
+        "decision": 13,
+        "network": 13,
+        "intel": 9,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "Medium",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "pharmacy-show",
+      "id": "pharmacy-show",
+      "series": "pharmacy-show",
       "name": "The Pharmacy Show",
       "aliases": [
         "The Pharmacy Show"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Pharmacy",
-      "location": "NEC, Birmingham",
-      "description": "The Pharmacy Show is the UK\u2019s largest and leading event for community and primary care pharmacy professionals. The Pharmacy Show is solely designed to bring you practical content, strategic connections, and friendly support you need to be the best pharmacy professional. 150 educational sessions presented by 200 expert speakers  and meet with over 300 exhibitors. Opportunity to test new equipment, ",
-      "link": null,
       "dateStart": "2026-10-11",
       "dateEnd": "2026-10-12",
-      "date_raw_source": "11th-12th 2026",
-      "month_hint": "October",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "NEC, Birmingham",
+      "category": "Trade Show",
+      "sector": "Pharmacy",
+      "desc": "The Pharmacy Show is the UK\u2019s largest and leading event for community and primary care pharmacy professionals. The Pharmacy Show is solely designed to bring you practical content, strategic connections, and friendly support you need to be the best pharmacy professional. 150 educational sessions presented by 200 expert speakers  and meet with over 300 exhibitors. Opportunity to test new equipment, ",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 16,
+        "decision": 11,
+        "network": 9,
+        "intel": 8,
+        "ei": 6
+      },
+      "classification": "niche",
+      "confidence": "Medium",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "futurescape",
+      "id": "futurescape",
+      "series": "futurescape",
       "name": "Futurescape",
       "aliases": [],
-      "status": "active",
-      "note": null,
-      "category_raw": "Landscaping, garden furniture, workwear, decking, fencing, fertilisers",
-      "location": "Farnborough International Exhibit & Conference Centre",
-      "description": "FutureScape 2026 is an unmissable event. An event which enables business professionals to make strong and valuable connections for the future development of landscaping, garden design and grounds maintenance \u2013 from start-ups, small and growing businesses to large organisations and practices. As the voice of the landscaping industry, FutureScape is committed to keeping professionals ahead of the cu",
-      "link": "https://www.futurescapeevent.com/",
       "dateStart": "2026-10-13",
       "dateEnd": "2026-10-14",
-      "date_raw_source": "13th-14th 2026",
-      "month_hint": "October",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Farnborough International Exhibit & Conference Centre",
+      "category": "Trade Show",
+      "sector": "Landscaping, garden furniture, workwear, decking, fencing, fertilisers",
+      "desc": "FutureScape 2026 is an unmissable event. An event which enables business professionals to make strong and valuable connections for the future development of landscaping, garden design and grounds maintenance \u2013 from start-ups, small and growing businesses to large organisations and practices. As the voice of the landscaping industry, FutureScape is committed to keeping professionals ahead of the cu",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://www.futurescapeevent.com/",
+      "scores": {
+        "buyer": 16,
+        "decision": 12,
+        "network": 10,
+        "intel": 9,
+        "ei": 3
+      },
+      "classification": "monitor",
+      "confidence": "Medium",
+      "primaryBenefit": "\u2014",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "indx-sports-leisure",
+      "id": "indx-sports-leisure",
+      "series": "indx-sports-leisure",
       "name": "INDX Sports & Leisure",
       "aliases": [
         "INDX Sports & Leisure"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Sports, Health, Wellness",
-      "location": "Cranmore Park Conference & Event Centre",
-      "description": "For existing sports stockists and retailers who are new to the sector, INDX Sports & Leisure is an exciting one day pop-up show. Bringing together trends, insight, innovation, and market leading brands, INDX Sports & Leisure is curated by buyers from Associated Independent Stores (AIS), the UK\u2019s leading buying and services group for fashion, home, and leisure. The show attracts department stores, ",
-      "link": "https://indxshows.co.uk/shows/sports-and-leisure",
       "dateStart": "2026-11-11",
       "dateEnd": "2026-11-11",
-      "date_raw_source": "11th 2026",
-      "month_hint": "November",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Cranmore Park Conference & Event Centre",
+      "category": "Trade Show",
+      "sector": "Sports, Health, Wellness",
+      "desc": "For existing sports stockists and retailers who are new to the sector, INDX Sports & Leisure is an exciting one day pop-up show. Bringing together trends, insight, innovation, and market leading brands, INDX Sports & Leisure is curated by buyers from Associated Independent Stores (AIS), the UK\u2019s leading buying and services group for fashion, home, and leisure. The show attracts department stores, ",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": "https://indxshows.co.uk/shows/sports-and-leisure",
+      "scores": {
+        "buyer": 17,
+        "decision": 12,
+        "network": 11,
+        "intel": 9,
+        "ei": 8
+      },
+      "classification": "niche",
+      "confidence": "Medium",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     },
     {
-      "canonical_id": "scs-formulate",
+      "id": "scs-formulate",
+      "series": "scs-formulate",
       "name": "The Future of Formulation",
       "aliases": [
         "The Future of Formulation",
         "SCS Formulate",
         "Society for Cosmetic Science Formulate"
       ],
-      "status": "active",
-      "note": null,
-      "category_raw": "Health,Beauty, Wellness product formulation",
-      "location": "Coventry Building Society Arena",
-      "description": "SCS Formulate is dedicated to raw materials, ingredients and formulation services used in creating personal care and cosmetic products.",
-      "link": null,
       "dateStart": "2026-11-10",
       "dateEnd": "2026-11-11",
-      "date_raw_source": "10th-11th 2026",
-      "month_hint": "November",
-      "source": "2026_UK_Consumer_Retail_Handover.xlsx (Trade Events sheet) \u2014 treat as the tracking baseline; never silently drop an entry from here without an explicit status change"
+      "location": "Coventry Building Society Arena",
+      "category": "Trade Show",
+      "sector": "Health,Beauty, Wellness product formulation",
+      "desc": "SCS Formulate is dedicated to raw materials, ingredients and formulation services used in creating personal care and cosmetic products.",
+      "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) \u2014 permanent baseline, do not drop without explicit status change",
+      "link": null,
+      "scores": {
+        "buyer": 12,
+        "decision": 14,
+        "network": 11,
+        "intel": 13,
+        "ei": 7
+      },
+      "classification": "niche",
+      "confidence": "High",
+      "primaryBenefit": "Market Intelligence",
+      "reasons": [
+        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+      ]
     }
   ],
   "known_aliases": {
