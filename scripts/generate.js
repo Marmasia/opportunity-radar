@@ -1,5 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import fs from "fs";
+import { buildFinalEventList } from "./dedupe-and-merge.js";
+const baseline = JSON.parse(fs.readFileSync(new URL("./baseline-events.json", import.meta.url)));
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
@@ -197,14 +199,10 @@ ${SHARED_RULES}`;
 const results = await Promise.all(BUCKETS.map(fetchBucket));
 let allEvents = results.flat();
 
-// De-duplicate: the same flagship event can legitimately surface in more than one
-// bucket search. Key on name + start date, case-insensitive.
-const seen = new Map();
-for (const e of allEvents) {
-  const key = `${(e.name || "").toLowerCase().trim()}|${e.dateStart}`;
-  if (!seen.has(key)) seen.set(key, e);
-}
-allEvents = Array.from(seen.values());
+// De-duplicate fuzzy near-matches from different bucket searches, then merge
+// against the permanent baseline so a bad scrape run can never silently drop
+// a known event.
+allEvents = buildFinalEventList(baseline, allEvents);
 
 if (allEvents.length === 0) {
   throw new Error("All bucket searches returned zero events — aborting to avoid overwriting events.json with empty data.");
