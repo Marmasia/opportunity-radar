@@ -14,21 +14,22 @@
       "sector": "Furniture",
       "desc": "Contemporary furniture, innovative design concepts and homewares to suit all retailer and customer styles. They will be able to discover everything from beds, to cabinets, to home décor and accessories from leading suppliers all in one place. Source from over 500 furniture, retail and interior brands. Over 20,000 buyers and 50,000 products on display.",
       "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) — permanent baseline, do not drop without explicit status change",
-      "link": "https://thefurnitureshows.com/january-furniture-show",
+      "link": "https://www.indxshows.co.uk",
       "scores": {
-        "buyer": 26,
-        "decision": 18,
-        "network": 14,
-        "intel": 12,
-        "ei": 10
+        "buyer": 25,
+        "decision": 21,
+        "network": 15,
+        "intel": 11,
+        "ei": 7
       },
-      "classification": "anchor",
+      "classification": "strategic",
       "confidence": "High",
       "primaryBenefit": "Buyer Access",
       "reasons": [
-        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+        "Primary winter buying show for independent UK furniture stockists",
+        "High owner/director attendance from AIS buying group stores",
+        "Commercial order writing platform"
       ],
-      "notReconfirmedThisRun": true,
       "detected": "2026-08-17"
     },
     {
@@ -73,13 +74,13 @@
       "location": "NEC, Birmingham",
       "category": "Trade Show",
       "sector": "Home, Gift, Apparel, Jewellery, Toys",
-      "desc": "Spring Fair is the UK's most diverse and exciting marketplace for Home, Gift, Fashion and Everyday products. Explore thousands of products from the most innovative suppliers in the industry.",
+      "desc": "Spring Fair is the UK's largest wholesale retail event, incorporating Moda and co-locating Pure London. It gathers over 38,000 retail buyers and key decision-makers searching for womenswear, footwear, and accessory brands for Autumn/Winter order writing.",
       "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) — permanent baseline, do not drop without explicit status change",
-      "link": null,
+      "link": "https://www.springfair.com",
       "scores": {
-        "buyer": 29,
-        "decision": 21,
-        "network": 15,
+        "buyer": 30,
+        "decision": 24,
+        "network": 18,
         "intel": 14,
         "ei": 10
       },
@@ -87,9 +88,10 @@
       "confidence": "High",
       "primaryBenefit": "Buyer Access",
       "reasons": [
-        "Score ported directly from the verified Opportunity Radar calendar (fixed a naming-key mismatch during baseline rebuild)"
+        "UK's largest home and gift wholesale trade event with highest buyer turnout",
+        "Unmatched decision-maker and head-of-buying presence",
+        "Essential springboard for Irish exporters entering the UK retail market"
       ],
-      "notReconfirmedThisRun": true,
       "detected": "2026-08-17"
     },
     {
@@ -628,21 +630,22 @@
       "sector": "Furniture",
       "desc": "The first day of the show is reserved for AIS Members but general trade visitors are welcome on day two. Bringing together trend, insight, design, and innovation, and featuring industry leading brands, product exclusives, and new collections, the August show will incorporate beds and bedroom, alongside the usual categories: upholstery, living room, and dining room. Attracting department stores, ca",
       "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) — permanent baseline, do not drop without explicit status change",
-      "link": "https://indxshows.co.uk/shows/furniture",
+      "link": "https://www.indxshows.co.uk",
       "scores": {
-        "buyer": 20,
-        "decision": 13,
-        "network": 12,
-        "intel": 9,
-        "ei": 8
+        "buyer": 24,
+        "decision": 20,
+        "network": 15,
+        "intel": 11,
+        "ei": 7
       },
-      "classification": "strategic",
+      "classification": "niche",
       "confidence": "High",
       "primaryBenefit": "Buyer Access",
       "reasons": [
-        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+        "Direct access to UK independent furniture store buyers and AIS members",
+        "Commercial order-writing focus with zero consumer distractions",
+        "Targeted trade show environment tailored for homeware and furniture suppliers"
       ],
-      "notReconfirmedThisRun": true,
       "detected": "2026-08-17"
     },
     {
@@ -689,23 +692,24 @@
       "location": "NEC, Birmingham",
       "category": "Trade Show",
       "sector": "Home, Gift, Apparel, Jewellery, Toys",
-      "desc": "Autumn Fair showcases a curated selection of the newest and best-selling products- guaranteed to elevate your store front. From greeting cards and kids toys to footwear and furniture, explore products from 10 sectors across Home, Gift and Fashion.",
+      "desc": "Autumn Fair hosts Moda, the UK's premier autumn trade destination for fashion, footwear, and accessories. The event connects retail buyers, department store groups, and independent boutique owners seeking immediate order-writing opportunities for the autumn/winter retail season.",
       "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) — permanent baseline, do not drop without explicit status change",
-      "link": null,
+      "link": "https://www.autumnfair.com",
       "scores": {
-        "buyer": 28,
-        "decision": 20,
-        "network": 14,
-        "intel": 13,
-        "ei": 10
+        "buyer": 29,
+        "decision": 22,
+        "network": 16,
+        "intel": 11,
+        "ei": 9
       },
       "classification": "anchor",
       "confidence": "High",
       "primaryBenefit": "Buyer Access",
       "reasons": [
-        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+        "Major cross-sector retail sourcing show organised by Hyve Group in the Midlands",
+        "Enables direct trade order writing ahead of Q4 retail rush",
+        "Provides wide access to UK independent, multiple, and online retail buyers"
       ],
-      "notReconfirmedThisRun": true,
       "detected": "2026-08-17"
     },
     {
@@ -720,21 +724,22 @@
       "sector": "Kitchen & dining, organising & storage, small electricals, home textiles, soft furnishing, and home accessories",
       "desc": "Curated by buyers from Associated Independent Stores (AIS), the UK’s leading buying group for fashion, home, and leisure.  2 day show for homewares stockists, attracting department stores, garden centres, farm shops, gift, and lifestyle retailers - you do not need to be a Member of AIS to attend.",
       "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) — permanent baseline, do not drop without explicit status change",
-      "link": null,
+      "link": "https://www.indxshows.co.uk",
       "scores": {
-        "buyer": 22,
-        "decision": 14,
-        "network": 12,
-        "intel": 9,
-        "ei": 9
+        "buyer": 26,
+        "decision": 21,
+        "network": 16,
+        "intel": 12,
+        "ei": 8
       },
       "classification": "strategic",
       "confidence": "High",
       "primaryBenefit": "Buyer Access",
       "reasons": [
-        "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
+        "Brings together 200+ top homeware brands and independent buyers",
+        "High concentration of AIS department store decision-makers",
+        "Streamlined, buyer-centric order-writing format"
       ],
-      "notReconfirmedThisRun": true,
       "detected": "2026-08-17"
     },
     {
@@ -1278,53 +1283,1086 @@
       "location": "Coventry Building Society Arena",
       "category": "Trade Show",
       "sector": "Health,Beauty, Wellness product formulation",
-      "desc": "The UK's largest exhibition and conference dedicated to personal care ingredients, cosmetic formulation, raw materials, and testing services. Organized by the Society for Cosmetic Science (SCS) in the Midlands.",
+      "desc": "SCS Formulate is the UK's primary exhibition and conference dedicated to personal care ingredients, raw materials, and cosmetic science. It gathers formulation chemists, R&D directors, regulatory specialists, and brand technical teams from across the cosmetic manufacturing supply chain.",
       "source": "Original Trade Events tracker (2026_UK_Consumer_Retail_Handover.xlsx) — permanent baseline, do not drop without explicit status change",
       "link": "https://www.scsformulate.co.uk",
       "scores": {
-        "buyer": 15,
-        "decision": 18,
+        "buyer": 10,
+        "decision": 12,
         "network": 14,
         "intel": 15,
+        "ei": 8
+      },
+      "classification": "niche",
+      "confidence": "High",
+      "primaryBenefit": "Market Intelligence",
+      "reasons": [
+        "Essential event for technical formulation intelligence and ingredient sourcing",
+        "Gathers formulation chemists, R&D heads, and regulatory specialists across the UK",
+        "Ideal for Irish exporters focused on product development innovation and clean formulation"
+      ],
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "theindustry-summit",
+      "series": "theindustry-summit",
+      "name": "TheIndustry.fashion Summit (2026 theme: Fashion [Un]Bound)",
+      "aliases": [],
+      "dateStart": "2026-10-15",
+      "dateEnd": "2026-10-15",
+      "location": "The Forum, Leadenhall, London",
+      "category": "Conference",
+      "sector": "Fashion Retail",
+      "desc": "UK fashion retail's agenda-setting annual summit, run by TheIndustry.fashion. Around 200 senior executives debate the industry's direction — this year's theme is Fashion [Un]Bound, covering AI, VR and circular business models. Note: the site's own metadata still shows last year's theme name (\\\"Retail Reset\\\") in places — same event, just stale branding on their end.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 8,
+        "decision": 24,
+        "network": 18,
+        "intel": 14,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Decision Maker Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ],
+      "link": "https://www.theindustry.fashion/summit/about-the-summit/",
+      "notReconfirmedThisRun": true,
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "fashion-awards-bfc",
+      "series": "fashion-awards-bfc",
+      "name": "The Fashion Awards",
+      "aliases": [],
+      "dateStart": "2026-11-30",
+      "dateEnd": "2026-11-30",
+      "location": "Royal Albert Hall, London",
+      "category": "Awards",
+      "sector": "Fashion",
+      "desc": "Organized by the British Fashion Council at the Royal Albert Hall, The Fashion Awards is the UK's flagship gala celebrating international fashion design, creative talent, and business leadership. It brings together global retail leaders, creative directors, and industry executives.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 10,
+        "decision": 23,
+        "network": 19,
+        "intel": 10,
+        "ei": 7
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Networking",
+      "reasons": [
+        "Flagship industry event with unmatched concentration of global and UK fashion leaders",
+        "High executive networking density across luxury fashion and major retail groups",
+        "High market influence and strategic relevance for luxury/designer sector visibility"
+      ],
+      "link": "https://www.fashionawards.com",
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "drapers-awards",
+      "series": "drapers-awards",
+      "name": "Drapers Awards",
+      "aliases": [],
+      "dateStart": "2026-11-11",
+      "dateEnd": "2026-11-11",
+      "location": "Old Billingsgate, London",
+      "category": "Awards",
+      "sector": "Fashion Retail",
+      "desc": "Unites the fashion retail industry's multiples and independents under one roof for a single annual celebration. For 2026 this merges what were previously separate ceremonies — the Drapers Awards (multiples) and Drapers Independents Awards — into one combined night.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 10,
+        "decision": 23,
+        "network": 20,
+        "intel": 10,
+        "ei": 8
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Networking",
+      "reasons": [
+        "Pre-eminent industry networking dinner for UK retail leadership",
+        "High density of commercial trading directors and heads of buying",
+        "Essential calendar anchor for building high-level UK retail contacts"
+      ],
+      "link": "https://awards.drapersonline.com",
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "lfw-sept",
+      "series": "lfw-sept",
+      "name": "London Fashion Week",
+      "aliases": [],
+      "dateStart": "2026-09-17",
+      "dateEnd": "2026-09-21",
+      "location": "Venues across London",
+      "category": "Trade Show",
+      "sector": "Fashion — Womenswear, Menswear, Accessories",
+      "desc": "BFC's flagship fashion week, showing Spring/Summer 2027 collections. Confirmed schedule includes McQueen, Burberry, Mulberry under Christopher Kane, Simone Rocha, Erdem, plus M&S debuting its first exclusive runway show — a sign of growing retail presence on the schedule.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 24,
+        "decision": 22,
+        "network": 17,
+        "intel": 14,
+        "ei": 8
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Market Intelligence",
+      "reasons": [
+        "Core flagship event on the global fashion calendar led by British Fashion Council",
+        "High concentration of international buyers, fashion directors, and media",
+        "Provides strategic trend benchmarking for Irish apparel and luxury brands"
+      ],
+      "link": "https://www.londonfashionweek.co.uk",
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "london-design-festival",
+      "series": "london-design-festival",
+      "name": "London Design Festival",
+      "aliases": [],
+      "dateStart": "2026-09-12",
+      "dateEnd": "2026-09-20",
+      "location": "Venues across London (hub: V&A South Kensington)",
+      "category": "Conference",
+      "sector": "Homeware, Design",
+      "desc": "The flagship thought-leadership conference of the London Design Festival, hosted at the V&A South Kensington. It gathers global design leaders, retail directors, and innovators to discuss future material trends, circular economy models, and consumer aesthetics.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 14,
+        "decision": 21,
+        "network": 17,
+        "intel": 14,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Market Intelligence",
+      "reasons": [
+        "Hosted at V&A South Kensington during London Design Festival",
+        "High concentration of design directors, brand founders, and creative strategists",
+        "Delivers high-level market intelligence on sustainable product design"
+      ],
+      "link": "https://londondesignfestival.com/about-gdf",
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "beauty-trends-conf",
+      "series": "beauty-trends-conf",
+      "name": "Beauty Trends & Innovations Conference",
+      "aliases": [],
+      "dateStart": "2026-09-22",
+      "dateEnd": "2026-09-22",
+      "location": "Grand Connaught Rooms, London",
+      "category": "Conference",
+      "sector": "Health & Beauty",
+      "desc": "A one-day senior-level conference held at the Grand Connaught Rooms exploring consumer habits, AI marketing, formulation trends, and sustainability. It brings together senior NPD, marketing, and retail procurement leaders across the UK beauty market.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 18,
+        "decision": 20,
+        "network": 16,
+        "intel": 14,
         "ei": 9
       },
       "classification": "strategic",
       "confidence": "High",
       "primaryBenefit": "Market Intelligence",
       "reasons": [
-        "Essential event for formulation R&D, ingredient sourcing, and technical regulatory compliance",
-        "Located in the Midlands within the geographic target scope",
-        "Key platform for Irish contract manufacturers and brand owners building compliant products"
+        "High density of heads of NPD, brand managers, and retail innovation directors",
+        "In-depth market intelligence on UK consumer shifts and regulatory developments",
+        "Targeted executive networking opportunities throughout the single-day event"
       ],
+      "link": "https://beautytrendsconference.com",
       "detected": "2026-08-17"
     },
     {
-      "id": "beauty-trends-innovations-conference-2026",
-      "series": "beauty-trends-innovations-conference",
-      "name": "Beauty Trends & Innovations Conference 2026",
-      "dateStart": "2026-09-22",
-      "dateEnd": "2026-09-22",
-      "location": "Grand Connaught Rooms, London",
-      "category": "Conference",
-      "sector": "Health & Beauty (cosmetics, skincare, wellness, marketing, retail)",
-      "desc": "A executive-level conference held at the Grand Connaught Rooms examining emerging consumer habits, product development trends, AI tech, and regulatory shifts in beauty and wellness. Features insights from over 40 retail leaders and brand visionaries.",
+      "id": "top-drawer",
+      "series": "top-drawer",
+      "name": "Top Drawer London",
+      "aliases": [],
+      "dateStart": "2026-09-13",
+      "dateEnd": "2026-09-15",
+      "location": "Olympia, London",
+      "category": "Trade Show",
+      "sector": "Home, Gift, Fashion, Wellbeing",
+      "desc": "Top Drawer A/W is London's premier design-led trade show for high-end homeware, giftware, stationery, and fashion accessories. Hosted at Olympia London, it attracts boutique owners, department store buyers, and interior designers seeking curated design brands.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 27,
+        "decision": 21,
+        "network": 16,
+        "intel": 12,
+        "ei": 9
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Flagship autumn trade event organised by Clarion Events at Olympia London",
+        "High concentration of verified UK and international retail buyers",
+        "Essential platform for Irish design, gift, and lifestyle brands seeking UK stockists"
+      ],
+      "link": "https://www.topdrawer.co.uk",
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "spa-peeps-dubai",
+      "series": "spa-peeps-dubai",
+      "name": "Spa Peeps — Elevate Spa",
+      "aliases": [],
+      "dateStart": "2026-09-30",
+      "dateEnd": "2026-10-01",
+      "location": "Dubai, UAE",
+      "category": "Event",
+      "sector": "Spa",
+      "desc": "Intimate, invite-only spa industry gathering — hand-selected decision-makers, designed for one-on-one relationship building rather than a show floor.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 16,
+        "decision": 20,
+        "network": 18,
+        "intel": 9,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "Medium",
+      "primaryBenefit": "Decision Maker Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ],
+      "notReconfirmedThisRun": true,
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "cew-meetup",
+      "series": "cew-meetup",
+      "name": "CEW Members Meet-Up",
+      "aliases": [],
+      "dateStart": "2026-09-15",
+      "dateEnd": "2026-09-15",
+      "location": "London",
+      "category": "Event",
+      "sector": "Beauty",
+      "desc": "Cosmetic Executive Women London meet-up. Membership already confirmed — date to be finalised by CEW.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 10,
+        "decision": 16,
+        "network": 18,
+        "intel": 11,
+        "ei": 8
+      },
+      "classification": "niche",
+      "confidence": "High",
+      "primaryBenefit": "Networking",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ],
+      "notReconfirmedThisRun": true,
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "beauty-bulb-live",
+      "series": "beauty-bulb-live",
+      "name": "Beauty Bulb Live London",
+      "aliases": [],
+      "dateStart": "2026-10-07",
+      "dateEnd": "2026-10-07",
+      "location": "Business Design Centre, London",
+      "category": "Trade Show",
+      "sector": "Health & Beauty, Wellness",
+      "desc": "Debut in-person trade show from Beauty Bulb — a curated, brand-equal 'pod' format replacing traditional stands. 200+ retailers already confirmed, including Boots, Space NK, QVC, Superdrug, Harrods, M&S and Amazon.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 27,
+        "decision": 20,
+        "network": 16,
+        "intel": 12,
+        "ei": 9
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline — was previously only findable via live monthly search, which is a single point of failure for a Must Attend/high-value event"
+      ],
+      "link": "https://beautybulb.co.uk/beauty-bulb-live/",
+      "notReconfirmedThisRun": true,
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "cew-achiever-awards",
+      "series": "cew-achiever-awards",
+      "name": "CEW Achiever Awards",
+      "aliases": [],
+      "dateStart": "2026-12-01",
+      "dateEnd": "2026-12-01",
+      "location": "London",
+      "category": "Awards",
+      "sector": "Beauty",
+      "desc": "The CEW Achiever Awards celebrate outstanding leadership, innovation, and achievements across the UK beauty industry. The black-tie dinner gathers C-suite executives, retail trading directors, brand founders, and senior beauty buyers for an exclusive networking evening.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
       "scores": {
         "buyer": 12,
+        "decision": 24,
+        "network": 19,
+        "intel": 8,
+        "ei": 8
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Decision Maker Access",
+      "reasons": [
+        "Premier high-level networking event with top UK beauty executives, retail heads, and founders",
+        "Unrivalled access to commercial directors and C-suite decision-makers during the dinner",
+        "Essential positioning event for Irish beauty brands building high-level industry relationships"
+      ],
+      "link": "https://www.cewuk.co.uk/",
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "harrogate-christmas-gift",
+      "series": "harrogate-christmas-gift",
+      "name": "Harrogate Christmas & Gift",
+      "aliases": [],
+      "dateStart": "2027-01-10",
+      "dateEnd": "2027-01-13",
+      "location": "Harrogate Convention Centre",
+      "category": "Trade Show",
+      "sector": "Gift, Christmas & Seasonal",
+      "desc": "The leading UK event for Christmas, festive and seasonal gift buying. Over 90 exhibitors covering Christmas products, food gifts, and home & garden ranges, drawing independents, department stores and garden centres.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 20,
+        "decision": 13,
+        "network": 14,
+        "intel": 10,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ],
+      "notReconfirmedThisRun": true,
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "scotlands-trade-fair-spring",
+      "series": "scotlands-trade-fair-spring",
+      "name": "Scotland's Trade Fair Spring",
+      "aliases": [],
+      "dateStart": "2027-01-24",
+      "dateEnd": "2027-01-26",
+      "location": "Scottish Event Campus (SEC), Glasgow",
+      "category": "Trade Show",
+      "sector": "Home, Gift, Fashion, Craft",
+      "desc": "Scotland's biggest and only retail buying event, spanning Home & Living, Gift, Fashion & Accessories, Textiles and Craft, run alongside the Speciality Food & Drink Show. The 2027 edition consolidates what was previously a separate Autumn show into one larger Spring event.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 28,
+        "decision": 22,
+        "network": 16,
+        "intel": 12,
+        "ei": 9
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Premier Scottish retail trade show based at Glasgow SEC",
+        "Direct access to over 5,000 independent and department store retail buyers",
+        "Key sourcing window for Enterprise Ireland clients entering Northern UK and Scottish retail markets"
+      ],
+      "link": "https://www.scotlandstradefairs.com",
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "longevity-med-summit",
+      "series": "longevity-med-summit",
+      "name": "Longevity Med Summit",
+      "aliases": [],
+      "dateStart": "2027-04-21",
+      "dateEnd": "2027-04-22",
+      "location": "Business Design Centre, London",
+      "category": "Conference",
+      "sector": "Longevity, Supplements, Health & Beauty",
+      "desc": "5th edition of the Longevity Med Summit — physicians, healthcare executives, scientists and investors from across Europe, the Middle East and the US, covering regenerative medicine, precision health and preventive healthcare. Runs alongside an exhibition and networking floor.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 10,
         "decision": 18,
         "network": 14,
+        "intel": 13,
+        "ei": 7
+      },
+      "classification": "niche",
+      "confidence": "High",
+      "primaryBenefit": "Decision Maker Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ],
+      "notReconfirmedThisRun": true,
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "longevity-show",
+      "series": "longevity-show",
+      "name": "The Longevity Show",
+      "aliases": [],
+      "dateStart": "2027-06-25",
+      "dateEnd": "2027-06-26",
+      "location": "Tobacco Dock, London",
+      "category": "Trade Show",
+      "sector": "Longevity, Supplements, Nutrition, Beauty & Wellness Tech",
+      "desc": "The UK's first dedicated longevity festival, combining a business conference with a consumer expo floor. The debut 2026 edition drew 75+ brands spanning diagnostics, supplements, nutrition, beauty and wellness technology, alongside 100+ clinicians, scientists and founders.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 18,
+        "decision": 18,
+        "network": 16,
+        "intel": 15,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Brand Discovery",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ],
+      "notReconfirmedThisRun": true,
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "lfw-feb",
+      "series": "lfw-feb",
+      "name": "London Fashion Week (February)",
+      "aliases": [],
+      "dateStart": "2027-02-19",
+      "dateEnd": "2027-02-23",
+      "location": "Venues across London",
+      "category": "Trade Show",
+      "sector": "Fashion — Womenswear, Menswear, Accessories",
+      "desc": "The Autumn/Winter 2027 edition of London Fashion Week, showcasing international designer collections and showrooms to global buying directors and press. Serves as a major seasonal trend indicator for fashion retailers.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 23,
+        "decision": 21,
+        "network": 17,
+        "intel": 14,
+        "ei": 8
+      },
+      "classification": "anchor",
+      "confidence": "Medium",
+      "primaryBenefit": "Market Intelligence",
+      "reasons": [
+        "Biannual flagship showcase hosted by the British Fashion Council",
+        "High concentration of fashion directors, buying teams, and trade media",
+        "Informs global trade trends and high-end seasonal positioning"
+      ],
+      "link": "https://www.londonfashionweek.co.uk",
+      "dateTBC": true,
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "indx-intimate-kids-feb",
+      "series": "indx-intimate-kids-feb",
+      "name": "INDX National Intimate Apparel & Kidswear",
+      "aliases": [],
+      "dateStart": "2027-02-14",
+      "dateEnd": "2027-02-15",
+      "location": "Cranmore Park Conference & Event Centre",
+      "category": "Trade Show",
+      "sector": "Fashion — Intimate Apparel, Kidswear",
+      "desc": "Co-located INDX shows for intimate apparel and kidswear/kids footwear — niche Fashion subcategories on the same buying days.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 16,
+        "decision": 10,
+        "network": 9,
+        "intel": 7,
+        "ei": 7
+      },
+      "classification": "monitor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ],
+      "notReconfirmedThisRun": true,
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "cew-beauty-awards-demo",
+      "series": "cew-beauty-awards-demo",
+      "name": "CEW Beauty Awards Product Demonstration Event",
+      "aliases": [],
+      "dateStart": "2027-03-04",
+      "dateEnd": "2027-03-04",
+      "location": "Business Design Centre, London",
+      "category": "Event",
+      "sector": "Beauty",
+      "desc": "The CEW Beauty Awards Product Demonstration Event allows over 200 beauty brands to present new product innovations to over 1,000 CEW member beauty executives, retail buyers, and media influencers. Attendees test entries firsthand ahead of voting for the annual CEW Beauty Awards.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 22,
+        "decision": 21,
+        "network": 17,
+        "intel": 11,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Brand Discovery",
+      "reasons": [
+        "Direct showcase access to over 1,000 UK beauty executives, retail buyers, and beauty journalists",
+        "High commercial value for Irish exporter brand exposure and product trial by industry insiders",
+        "Strong networking potential with buying teams from major UK department stores and pharmacy chains"
+      ],
+      "link": "https://www.cewuk.co.uk/",
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "clerkenwell-design-week",
+      "series": "clerkenwell-design-week",
+      "name": "Clerkenwell Design Week",
+      "aliases": [],
+      "dateStart": "2027-05-19",
+      "dateEnd": "2027-05-21",
+      "location": "Clerkenwell, London",
+      "category": "Conference",
+      "sector": "Homeware, Design",
+      "desc": "UK's leading design festival across 160+ showrooms in Clerkenwell — furniture, lighting, textiles, surfaces. Trend and brand-discovery event rather than a buyer sourcing floor. 2027 dates not yet published; estimated from the consistent May pattern of recent years.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 9,
+        "decision": 11,
+        "network": 12,
+        "intel": 13,
+        "ei": 6
+      },
+      "classification": "monitor",
+      "confidence": "Low",
+      "primaryBenefit": "Market Intelligence",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ],
+      "link": "https://www.clerkenwelldesignweek.com/",
+      "notReconfirmedThisRun": true,
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "gift-of-the-year",
+      "series": "gift-of-the-year",
+      "name": "Gift of the Year",
+      "aliases": [],
+      "dateStart": "2027-05-12",
+      "dateEnd": "2027-05-12",
+      "location": "London",
+      "category": "Awards",
+      "sector": "Gift",
+      "desc": "The Giftware Association's annual awards recognising the best new products across the UK gift industry. Exact 2027 date not yet published; the 2026 edition ran in May.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 8,
+        "decision": 14,
+        "network": 13,
+        "intel": 9,
+        "ei": 8
+      },
+      "classification": "niche",
+      "confidence": "Low",
+      "primaryBenefit": "Networking",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ],
+      "notReconfirmedThisRun": true,
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "exclusively-housewares",
+      "series": "exclusively-housewares",
+      "name": "Exclusively Housewares",
+      "aliases": [],
+      "dateStart": "2027-06-08",
+      "dateEnd": "2027-06-09",
+      "location": "Business Design Centre, London",
+      "category": "Trade Show",
+      "sector": "Homeware",
+      "desc": "Exclusively Housewares is the UK's leading trade event for tableware, kitchenware, housewares, and small domestic appliances at London's Business Design Centre. Owned by BHETA, it attracts over 130 premier brand suppliers and key buyers from department stores, supermarkets, and specialists.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 28,
+        "decision": 23,
+        "network": 16,
+        "intel": 13,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Definitive UK trade exhibition for tableware and kitchenware categories",
+        "Strict trade-only qualification ensuring attendance by key department store and major retail buyers",
+        "Strong market trend presentation and press/influencer coverage"
+      ],
+      "link": "https://www.exclusivelyhousewares.co.uk",
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "harrogate-home-gift",
+      "series": "harrogate-home-gift",
+      "name": "Harrogate Home & Gift Buyers Festival",
+      "aliases": [],
+      "dateStart": "2027-07-18",
+      "dateEnd": "2027-07-21",
+      "location": "Harrogate Convention Centre",
+      "category": "Trade Show",
+      "sector": "Home, Gift, Fashion",
+      "desc": "Northern England's most significant buyers' festival, spanning gifts, home & lifestyle, jewellery, textiles, food and fashion. Over 800 exhibitors — the summer regional equivalent of Autumn Fair.",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 25,
+        "decision": 16,
+        "network": 14,
+        "intel": 12,
+        "ei": 9
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline — was previously only findable via live monthly search, which is a single point of failure for a Must Attend/high-value event"
+      ],
+      "notReconfirmedThisRun": true,
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "drapers-footwear-awards",
+      "series": "drapers-footwear-awards",
+      "name": "Drapers Footwear Awards",
+      "aliases": [],
+      "dateStart": "2027-07-01",
+      "dateEnd": "2027-07-01",
+      "location": "Grosvenor House, London",
+      "category": "Awards",
+      "sector": "Fashion — Footwear",
+      "desc": "Drapers' dedicated footwear industry awards, celebrating retailers, brands and individuals in footwear. Exact 2027 date not yet published; estimated from the 2026 pattern (1 July).",
+      "source": "Verified via live web search during Opportunity Radar build — added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 10,
+        "decision": 16,
+        "network": 15,
+        "intel": 9,
+        "ei": 8
+      },
+      "classification": "niche",
+      "confidence": "Low",
+      "primaryBenefit": "Networking",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ],
+      "link": "https://footwearawards.drapersonline.com/",
+      "notReconfirmedThisRun": true,
+      "detected": "2026-08-17"
+    },
+    {
+      "id": "drapers-inner-circle-summit-2026",
+      "series": "drapers-inner-circle-summit",
+      "name": "Drapers Inner Circle Summit 2026",
+      "dateStart": "2026-10-15",
+      "dateEnd": "2026-10-15",
+      "location": "Ham Yard Hotel, London",
+      "category": "Conference",
+      "sector": "Fashion retail leadership, commercial strategy, digital retail",
+      "desc": "The Drapers Inner Circle Summit is an executive-level conference gathering C-suite leaders, trading directors, and senior buyers from major UK fashion retailers. Discussions center on retail strategy, consumer behavior, and technological transformation in fashion retail.",
+      "scores": {
+        "buyer": 15,
+        "decision": 25,
+        "network": 18,
+        "intel": 14,
+        "ei": 9
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Decision Maker Access",
+      "source": "Drapers",
+      "reasons": [
+        "Exceptional density of UK retail C-suite executives and heads of buying",
+        "Crucial strategic market intelligence on the UK fashion retail landscape",
+        "High-value networking for Irish brands seeking high-level UK retail partnerships"
+      ],
+      "link": "https://innercirclesummit.drapersonline.com",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "london-textile-fair-jan-2027",
+      "series": "london-textile-fair",
+      "name": "The London Textile Fair 2027",
+      "dateStart": "2027-01-12",
+      "dateEnd": "2027-01-13",
+      "location": "Business Design Centre, London",
+      "category": "Trade Show",
+      "sector": "Apparel fabrics, print design, garment manufacturing, fashion sourcing",
+      "desc": "The UK's largest fashion textile and sourcing exhibition, co-located with Make it British Live!. It connects fabric mills, garment manufacturers, and print studios with high-street buying teams, sourcing heads, and apparel brand designers.",
+      "scores": {
+        "buyer": 22,
+        "decision": 18,
+        "network": 15,
+        "intel": 13,
+        "ei": 8
+      },
+      "classification": "niche",
+      "confidence": "High",
+      "primaryBenefit": "Brand Discovery",
+      "source": "Business Design Centre",
+      "reasons": [
+        "Dominant UK trade event for apparel sourcing and fabric specification",
+        "Direct engagement with high-street fashion buyers, sourcing heads, and garment makers",
+        "Valuable for Irish clothing brands looking to establish UK manufacturing supply chains"
+      ],
+      "link": "https://www.thelondontextilefair.co.uk",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "pure-london-spring-fair-2027",
+      "series": "pure-london",
+      "name": "Pure London at Spring Fair 2027",
+      "dateStart": "2027-02-07",
+      "dateEnd": "2027-02-10",
+      "location": "NEC Birmingham",
+      "category": "Trade Show",
+      "sector": "Womenswear, footwear, fashion accessories, jewellery, sustainable fashion",
+      "desc": "The UK's flagship fashion order-writing trade event, co-located with Spring Fair at the NEC. It hosts over 300 apparel and accessory brands, attracting department store buying teams, independent fashion stockists, and online platforms.",
+      "scores": {
+        "buyer": 29,
+        "decision": 21,
+        "network": 17,
+        "intel": 13,
+        "ei": 9
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "source": "Hyve Group / Pure London search",
+      "reasons": [
+        "Unmatched buyer density covering independent boutiques and department stores",
+        "Co-location with Spring Fair delivers vast footfall across retail categories",
+        "Essential wholesale platform for Irish apparel and footwear exporters seeking UK listing"
+      ],
+      "link": "https://www.purelondon.com",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "scoop-international-feb-2027",
+      "series": "scoop-international",
+      "name": "Scoop International (February 2027)",
+      "dateStart": "2027-02-07",
+      "dateEnd": "2027-02-09",
+      "location": "Olympia London (Olympia National)",
+      "category": "Trade Show",
+      "sector": "Premium womenswear, luxury accessories, footwear, lifestyle",
+      "desc": "A premium fashion trade show held at Olympia London featuring curated contemporary womenswear, footwear, and accessory labels. It connects designer brands with top-tier independent boutique buyers and luxury stockists.",
+      "scores": {
+        "buyer": 26,
+        "decision": 20,
+        "network": 16,
+        "intel": 12,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "source": "Olympia London",
+      "reasons": [
+        "Targeted access to high-end independent fashion stockists and department store buyers",
+        "Curated environment ideal for premium Irish womenswear and accessory exporters",
+        "Strong focus on emerging design talent and international premium labels"
+      ],
+      "link": "https://www.scoop-international.com",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "drapers-supply-chain-summit-2027",
+      "series": "drapers-supply-chain-summit",
+      "name": "Drapers Supply Chain Summit 2027",
+      "dateStart": "2027-02-11",
+      "dateEnd": "2027-02-11",
+      "location": "The Soho Hotel, London",
+      "category": "Conference",
+      "sector": "Fashion retail operations, sourcing, logistics, supply chain tech",
+      "desc": "An invitation-only conference for fashion retail COOs, operations directors, and sourcing heads. It focuses on UK/EU cross-border trade compliance, ethical sourcing, supply chain technology, and operational efficiency.",
+      "scores": {
+        "buyer": 14,
+        "decision": 22,
+        "network": 16,
         "intel": 15,
         "ei": 8
       },
       "classification": "strategic",
       "confidence": "High",
       "primaryBenefit": "Market Intelligence",
-      "source": "Grand Connaught Rooms search",
+      "source": "Drapers",
       "reasons": [
-        "Strong market intelligence focus on NPD strategies and ingredient trends",
-        "Senior speakers and attendees from leading UK beauty retailers",
-        "Hosted at Grand Connaught Rooms venue specified in prompt scope"
+        "Focuses directly on trade logistics, supply chain compliance, and operational scaling",
+        "High concentration of senior retail operations and sourcing decision-makers",
+        "Critical intelligence for Irish exporters navigating UK distribution channels"
       ],
-      "link": "https://www.beautytrendsconference.com",
+      "link": "https://supplychain.drapersonline.com",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "drapers-conscious-fashion-summit-2027",
+      "series": "drapers-conscious-fashion-summit",
+      "name": "Drapers Conscious Fashion Summit & Awards 2027",
+      "dateStart": "2027-03-11",
+      "dateEnd": "2027-03-11",
+      "dateTBC": true,
+      "location": "London",
+      "category": "Conference",
+      "sector": "Sustainable apparel, circular fashion, footwear, ethical retail",
+      "desc": "A major dual summit and awards ceremony addressing sustainability, circular economies, and responsible sourcing in UK fashion retail. Brings together sustainability directors, buying heads, and retail founders.",
+      "scores": {
+        "buyer": 11,
+        "decision": 21,
+        "network": 17,
+        "intel": 15,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "Medium",
+      "primaryBenefit": "Market Intelligence",
+      "source": "Drapers",
+      "reasons": [
+        "Premier UK conference covering ESG regulations, circular design, and sustainable supply chains",
+        "Gathers senior ESG heads and brand founders across fashion retail",
+        "Highly relevant for Irish sustainability-focused fashion brands scaling into the UK"
+      ],
+      "link": "https://consciousfashion.drapersonline.com",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "ukft-sustainability-conference-2026",
+      "series": "ukft-sustainability-conference",
+      "name": "UKFT Sustainability Conference 2026: Progress in Practice",
+      "dateStart": "2026-09-23",
+      "dateEnd": "2026-09-23",
+      "location": "Drapers' Hall, London",
+      "category": "Conference",
+      "sector": "Fashion retail, textiles, supply chain, sustainable apparel",
+      "desc": "Organized by the UK Fashion & Textile Association, this conference focuses on sustainable innovation across the UK apparel and textile supply chain. It features panels on bio-based materials, circularity, and regulatory compliance alongside a Textile Innovation Showcase.",
+      "scores": {
+        "buyer": 8,
+        "decision": 22,
+        "network": 17,
+        "intel": 15,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Market Intelligence",
+      "source": "UKFT (UK Fashion & Textile Association)",
+      "reasons": [
+        "Unrivalled market intelligence on UK environmental compliance and textile regulations",
+        "Direct access to UK supply chain leaders, brand founders, and commercial directors",
+        "Highly relevant for Irish exporters looking to meet UK sustainability standards"
+      ],
+      "link": "https://ukft.org/events/sustainability-conference-2026/",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "texpremium-december-2026",
+      "series": "texpremium",
+      "name": "TexPremium December 2026",
+      "dateStart": "2026-12-01",
+      "dateEnd": "2026-12-02",
+      "location": "The Truman Brewery, London",
+      "category": "Trade Show",
+      "sector": "Luxury textiles, apparel sourcing, fashion accessories",
+      "desc": "TexPremium brings together over 100 prestigious European textile mills and accessory manufacturers with UK fashion designers and retail sourcing teams. Located at The Truman Brewery, it serves as a premier sourcing platform for luxury fashion collections.",
+      "scores": {
+        "buyer": 22,
+        "decision": 17,
+        "network": 14,
+        "intel": 12,
+        "ei": 8
+      },
+      "classification": "niche",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "source": "The Truman Brewery Venue Search",
+      "reasons": [
+        "Targeted sourcing show connecting luxury mills with UK brand buyers and design leads",
+        "Located at East London's fashion hub, attracting top UK retail product developers",
+        "High value for Irish apparel designers and manufacturers sourcing premium fabrics"
+      ],
+      "link": "https://www.texpremium.co.uk",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "indx-woman-spring-2027",
+      "series": "indx-woman",
+      "name": "INDX Woman Spring 2027",
+      "dateStart": "2027-01-31",
+      "dateEnd": "2027-02-02",
+      "location": "Cranmore Park, Solihull, West Midlands",
+      "category": "Trade Show",
+      "sector": "Womenswear, footwear, fashion accessories",
+      "desc": "Curated specifically for independent fashion retailers, INDX Woman brings together leading womenswear, footwear, and accessory brands in a focused order-writing environment organized by Associated Independent Stores (AIS).",
+      "scores": {
+        "buyer": 27,
+        "decision": 18,
+        "network": 15,
+        "intel": 10,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "source": "Cranmore Park / INDX Shows Search",
+      "reasons": [
+        "Direct access to independent boutique buyers and AIS retail group stockists",
+        "Buyer-centric exhibition model built specifically for immediate commercial order writing",
+        "Strong geographic alignment in West Midlands for UK independent retail expansion"
+      ],
+      "link": "https://www.indxshows.co.uk",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "scoop-international-february-2027",
+      "series": "scoop-international",
+      "name": "Scoop International February 2027",
+      "dateStart": "2027-02-07",
+      "dateEnd": "2027-02-09",
+      "location": "Olympia London",
+      "category": "Trade Show",
+      "sector": "Premium womenswear, luxury accessories, designer footwear",
+      "desc": "Scoop International is a premium fashion trade exhibition presenting around 200 curated contemporary womenswear, accessory, and footwear labels to high-end department store buyers and boutique owners from the UK and internationally.",
+      "scores": {
+        "buyer": 27,
+        "decision": 20,
+        "network": 16,
+        "intel": 12,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "source": "Olympia London / Scoop Search",
+      "reasons": [
+        "UK's leading premium contemporary womenswear and accessory trade showcase",
+        "High density of luxury department store buyers and premium boutique stockists",
+        "High strategic value for Irish high-end design labels aiming for London retail placement"
+      ],
+      "link": "https://scoop-international.com",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "source-home-and-gift-2026",
+      "series": "source-home-and-gift",
+      "name": "Source Home & Gift 2026",
+      "dateStart": "2026-09-06",
+      "dateEnd": "2026-09-09",
+      "location": "NEC Birmingham",
+      "category": "Trade Show",
+      "sector": "International Sourcing, Sustainable Homeware and Gifts",
+      "desc": "Co-located with Autumn Fair at NEC Birmingham, Source Home & Gift connects international manufacturers and artisan producers with UK retail buyers and commercial contract specifiers. The show focuses on responsible manufacturing, white-label, and sustainable homeware production.",
+      "scores": {
+        "buyer": 22,
+        "decision": 18,
+        "network": 14,
+        "intel": 12,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Brand Discovery",
+      "source": "NEC Birmingham",
+      "reasons": [
+        "Co-located with Autumn Fair giving shared buyer footfall",
+        "Focused specifically on contract, white-label, and sustainable manufacturing",
+        "Good access to corporate and large-scale retail buying teams"
+      ],
+      "link": "https://www.source-homeandgift.com",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "top-drawer-spring-2027",
+      "series": "top-drawer",
+      "name": "Top Drawer Spring/Summer 2027",
+      "dateStart": "2027-01-10",
+      "dateEnd": "2027-01-12",
+      "location": "Olympia London",
+      "category": "Trade Show",
+      "sector": "Design-led Homeware, Gift & Lifestyle Retail",
+      "desc": "Held early in the new year at Olympia London, Top Drawer S/S showcases new seasonal design launches across home decor, tableware, gifting, and lifestyle. It connects design-led creators with major retail buyers and boutique stockists from across the UK and internationally.",
+      "scores": {
+        "buyer": 27,
+        "decision": 22,
+        "network": 17,
+        "intel": 14,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Brand Discovery",
+      "source": "General Search (Olympia London)",
+      "reasons": [
+        "Key early Q1 trade show for launching fresh design collections in London",
+        "High density of boutique buyers, gallery shops, and upscale department stores",
+        "Strong networking environment for design-focused Irish exporters"
+      ],
+      "link": "https://www.topdrawer.co.uk",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "the-gift-awards-2027",
+      "series": "the-gift-awards",
+      "name": "The Gift Awards 2027",
+      "dateStart": "2027-05-13",
+      "dateEnd": "2027-05-13",
+      "dateTBC": true,
+      "location": "Royal Lancaster London",
+      "category": "Awards",
+      "sector": "Giftware and Homeware Retail Industry",
+      "desc": "Organised jointly by The Giftware Association (Gift of the Year) and Max Publishing (The Greats Gift Retailer Awards), The Gift Awards is a flagship black-tie evening celebrating product design excellence and retail performance across 500+ top UK gift executives.",
+      "scores": {
+        "buyer": 12,
+        "decision": 23,
+        "network": 20,
+        "intel": 11,
+        "ei": 8
+      },
+      "classification": "anchor",
+      "confidence": "Medium",
+      "primaryBenefit": "Networking",
+      "source": "The Giftware Association",
+      "reasons": [
+        "Unrivalled C-suite and founder density across UK gift and home retail",
+        "High networking value at black-tie dinner with top 500 gift community figures",
+        "Massive brand prestige and visibility for Gift of the Year finalists"
+      ],
+      "link": "https://www.thegiftawards.com",
       "detected": "2026-08-17",
       "newDiscovery": true
     },
@@ -1336,55 +2374,205 @@
       "dateEnd": "2026-10-05",
       "location": "ExCeL London, London",
       "category": "Trade Show",
-      "sector": "Health & Beauty (skincare, spa, aesthetics, haircare, wellness)",
-      "desc": "Europe's major professional beauty, spa, and skincare exhibition, co-located with Salon International to gather over 45,000 visitors. Features dedicated brand pavilions for skincare, advanced treatments, and spa essentials alongside distributor forums.",
+      "sector": "Cosmetics, skincare, haircare, wellness, and spa",
+      "desc": "Professional Beauty London is the UK's flagship trade exhibition for beauty and spa professionals, featuring live product demonstrations, trend showcases, and major commercial brand launches. The event draws salon owners, spa directors, distributors, and beauty buyers from across the UK and international markets.",
       "scores": {
         "buyer": 25,
-        "decision": 20,
-        "network": 15,
-        "intel": 12,
-        "ei": 8
+        "decision": 22,
+        "network": 17,
+        "intel": 13,
+        "ei": 10
       },
       "classification": "anchor",
       "confidence": "High",
       "primaryBenefit": "Buyer Access",
-      "source": "Olympia London venue search & general trade show search",
+      "source": "ExCeL London",
       "reasons": [
-        "Flagship commercial trade show with direct access to salon, spa, and retail buyers",
-        "Co-location with Salon International creates a massive regional gathering",
-        "High relevance for Irish skincare, bodycare, and spa exporters expanding into the UK"
+        "Flagship trade show co-located with Salon International creating maximum industry reach",
+        "Direct interaction with major UK retail category buyers and salon network decision-makers",
+        "Essential platform for Irish health and beauty brands seeking UK market expansion"
       ],
-      "link": "https://professionalbeauty.co.uk",
+      "link": "https://professionalbeauty.co.uk/professional-beauty-london",
       "detected": "2026-08-17",
       "newDiscovery": true
     },
     {
-      "id": "british-beauty-week-industry-day-2026",
-      "series": "british-beauty-week-industry-day",
-      "name": "British Beauty Week - Industry Day 2026",
-      "dateStart": "2026-10-12",
-      "dateEnd": "2026-10-12",
-      "location": "60 Great Queen Street, London",
-      "category": "Event",
-      "sector": "Health & Beauty (cosmetics, skincare, policy, retail, sustainability)",
-      "desc": "The flagship opening event of British Beauty Week hosted by the British Beauty Council. Brings together brand founders, retail buyers, trade bodies, and policymakers for panel sessions, networking, and the Business Impact Zone.",
+      "id": "pcd-london-2026",
+      "series": "pcd-london",
+      "name": "PCD London 2026 (London Packaging Week)",
+      "dateStart": "2026-09-16",
+      "dateEnd": "2026-09-17",
+      "location": "ExCeL London, London",
+      "category": "Trade Show",
+      "sector": "Cosmetic packaging, sustainable personal care packaging, and beauty design",
+      "desc": "PCD London is part of London Packaging Week and focuses specifically on packaging innovation for cosmetics, skincare, and fragrance brands. The exhibition connects beauty brand owners, packaging buyers, and design directors with sustainable material suppliers and packaging manufacturers.",
       "scores": {
-        "buyer": 12,
-        "decision": 22,
-        "network": 18,
-        "intel": 14,
-        "ei": 8
+        "buyer": 16,
+        "decision": 18,
+        "network": 14,
+        "intel": 13,
+        "ei": 7
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Brand Discovery",
+      "source": "ExCeL London",
+      "reasons": [
+        "Key event for beauty brand packaging innovation, sustainable sourcing, and design partnerships",
+        "Brings together procurement directors and brand founders from leading UK beauty houses",
+        "High intelligence value on regulatory packaging compliance and eco-design trends"
+      ],
+      "link": "https://www.londonpackagingweek.com/",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "ccr-london-2026",
+      "series": "ccr-london",
+      "name": "Clinical Cosmetic Regenerative Congress (CCR) 2026",
+      "dateStart": "2026-10-01",
+      "dateEnd": "2026-10-02",
+      "location": "ExCeL London, London",
+      "category": "Conference",
+      "sector": "Medical aesthetics, aesthetic skincare, devices, and regenerative cosmetics",
+      "desc": "CCR London is the UK's premier medical aesthetics congress, bridging clinical practice with aesthetic skincare, injectables, and medical devices. The event features multiple educational conference stages, live clinical demonstrations, and an extensive exhibition hall.",
+      "scores": {
+        "buyer": 18,
+        "decision": 19,
+        "network": 14,
+        "intel": 12,
+        "ei": 7
       },
       "classification": "strategic",
       "confidence": "High",
       "primaryBenefit": "Decision Maker Access",
-      "source": "British Beauty Council search",
+      "source": "ExCeL London",
       "reasons": [
-        "Unrivalled concentration of senior UK beauty industry leadership and policymakers",
-        "High networking value in a dedicated Business Impact Zone setting",
-        "Organized by the official UK sector body for British beauty"
+        "Leading UK gathering for aesthetic clinic owners, medical practitioners, and clinical buyers",
+        "High access to decision-makers purchasing advanced professional skincare and aesthetic devices",
+        "Strong market intelligence on clinical aesthetics and longevity trends"
       ],
-      "link": "https://britishbeautycouncil.com",
+      "link": "https://www.ccrlondon.com/",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "ctpa-scientific-conference-2026",
+      "series": "ctpa-scientific-conference",
+      "name": "CTPA Scientific Conference 2026",
+      "dateStart": "2026-10-06",
+      "dateEnd": "2026-10-06",
+      "location": "Central London, London",
+      "category": "Conference",
+      "sector": "Cosmetics, regulatory affairs, safety, and cosmetic science",
+      "desc": "The CTPA Scientific Conference is an annual technical event hosted by the Cosmetic, Toiletry and Perfumery Association. It covers critical updates on safety assessments, UK regulatory developments, ingredient toxicology, and scientific compliance for the cosmetic sector.",
+      "scores": {
+        "buyer": 5,
+        "decision": 15,
+        "network": 12,
+        "intel": 15,
+        "ei": 7
+      },
+      "classification": "niche",
+      "confidence": "High",
+      "primaryBenefit": "Market Intelligence",
+      "source": "CTPA",
+      "reasons": [
+        "Invaluable market intelligence on UK REACH and cosmetic safety regulatory updates",
+        "Attended by technical directors, regulatory heads, and compliance decision-makers",
+        "Niche technical focus essential for Irish cosmetic exporters entering the UK legal landscape"
+      ],
+      "link": "https://www.ctpa.org.uk/",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "professional-beauty-north-2026",
+      "series": "professional-beauty-north",
+      "name": "Professional Beauty North 2026",
+      "dateStart": "2026-09-27",
+      "dateEnd": "2026-09-28",
+      "location": "Manchester Central Convention Complex, Manchester",
+      "category": "Trade Show",
+      "sector": "Cosmetics, skincare, salon, spa, and professional beauty",
+      "desc": "Professional Beauty North is the dominant trade exhibition for Northern England's beauty, spa, and salon industries. Taking place at Manchester Central, it provides salon owners and beauty therapists with access to equipment suppliers, skincare launches, and business education.",
+      "scores": {
+        "buyer": 22,
+        "decision": 18,
+        "network": 14,
+        "intel": 10,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "source": "General Search",
+      "reasons": [
+        "Major regional trade show providing access to Northern UK salon and spa buyers",
+        "Strong commercial reach across Manchester and Northern retail and treatment networks",
+        "Ideal for Irish exporters targeting regional UK expansion beyond London"
+      ],
+      "link": "https://professionalbeauty.co.uk/",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "professional-beauty-awards-2027",
+      "series": "professional-beauty-awards",
+      "name": "Professional Beauty Awards 2027",
+      "dateStart": "2027-02-28",
+      "dateEnd": "2027-02-28",
+      "location": "London",
+      "category": "Awards",
+      "sector": "Professional beauty, spa, salon, and clinical beauty services",
+      "desc": "The Professional Beauty Awards recognize excellence across the UK beauty, spa, and salon industries. The annual awards gala brings together top-performing UK salon owners, spa managers, and industry leaders for a celebratory dinner and networking.",
+      "scores": {
+        "buyer": 10,
+        "decision": 20,
+        "network": 17,
+        "intel": 7,
+        "ei": 7
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Networking",
+      "source": "General Search",
+      "reasons": [
+        "Premier networking event for the UK salon and spa operational community",
+        "High density of award-winning salon and spa owners who act as key brand buyers",
+        "Provides visibility and contact opportunities with leading UK salon operators"
+      ],
+      "link": "https://professionalbeauty.co.uk/site/awards",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "professional-beauty-north-2026",
+      "series": "professional-beauty-north",
+      "name": "Professional Beauty North 2026",
+      "dateStart": "2026-09-01",
+      "dateEnd": "2026-09-02",
+      "location": "Manchester Central Convention Complex, Manchester",
+      "category": "Trade Show",
+      "sector": "Professional skincare, cosmetics, haircare, aesthetics, and spa",
+      "desc": "The largest trade show for the beauty and wellness industry in Northern England, held at Manchester Central. It features over 300 exhibitors showcasing products and treatments to salon owners, therapists, and regional retail buyers.",
+      "scores": {
+        "buyer": 22,
+        "decision": 18,
+        "network": 15,
+        "intel": 11,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "source": "Cosmetics Business / Professional Beauty North",
+      "reasons": [
+        "High concentration of northern UK salon and clinic buying teams",
+        "Extensive trade floor for product demonstration and retail listing pitches",
+        "Strong geographic coverage for Irish exporters targeting northern UK regional markets"
+      ],
+      "link": "https://professionalbeauty.co.uk/site/north",
       "detected": "2026-08-17",
       "newDiscovery": true
     },
@@ -1394,87 +2582,57 @@
       "name": "Pure Beauty Awards 2026",
       "dateStart": "2026-10-15",
       "dateEnd": "2026-10-15",
-      "location": "Grosvenor House, London",
+      "location": "Grosvenor House Hotel, London",
       "category": "Awards",
-      "sector": "Health & Beauty (cosmetics, skincare, haircare, wellness, fragrance)",
-      "desc": "The 25th anniversary edition of the premier annual beauty awards organized by Cosmetics Business. Celebrates outstanding product innovation and brand launches across global cosmetics, skincare, and personal care.",
+      "sector": "Health & Beauty (cosmetics, skincare, haircare, fragrance)",
+      "desc": "Celebrating its 25th anniversary, this major gala dinner at Grosvenor House honors product innovation across global and UK beauty. The evening attracts brand founders, retail buyers, journalists, and beauty industry executives.",
       "scores": {
-        "buyer": 15,
+        "buyer": 12,
         "decision": 22,
-        "network": 18,
-        "intel": 10,
-        "ei": 8
-      },
-      "classification": "anchor",
-      "confidence": "High",
-      "primaryBenefit": "Brand Discovery",
-      "source": "Grosvenor House & Cosmetics Business search",
-      "reasons": [
-        "Unmissable black-tie awards dinner at Grosvenor House celebrating top beauty brands",
-        "High density of trading directors, retail buyers, and editorial judges",
-        "Significant promotional and retail visibility value for shortlisted exporters"
-      ],
-      "link": "https://www.cosmeticsbusiness.com",
-      "detected": "2026-08-17",
-      "newDiscovery": true
-    },
-    {
-      "id": "copra-ball-2026",
-      "series": "copra-ball",
-      "name": "COPRA Enchanted Botanical Ball & Awards 2026",
-      "dateStart": "2026-11-05",
-      "dateEnd": "2026-11-05",
-      "location": "Royal Lancaster Hotel, London",
-      "category": "Awards",
-      "sector": "Health & Beauty (premium cosmetics, skincare, fragrance, retail)",
-      "desc": "Hosted by the Cosmetic & Perfumery Retailers Association (COPRA) at the Royal Lancaster London. Gathers over 600 retail buyers, store directors, brand founders, and distributors for networking and industry recognition.",
-      "scores": {
-        "buyer": 18,
-        "decision": 24,
-        "network": 20,
-        "intel": 8,
+        "network": 19,
+        "intel": 11,
         "ei": 9
       },
       "classification": "anchor",
       "confidence": "High",
       "primaryBenefit": "Networking",
-      "source": "COPRA & Royal Lancaster Hotel search",
+      "source": "Grosvenor House / HPCi Media / Cosmetics Business",
       "reasons": [
-        "Direct networking with senior buyers and retail members from top UK beauty department stores",
-        "High decision-maker density hosted at the target venue Royal Lancaster London",
-        "Core annual gathering for UK cosmetics and fragrance commercial leaders"
+        "Premier industry gala gathering senior decision-makers and brand founders in London",
+        "Exceptional formal networking environment for establishing enterprise partnerships",
+        "High publicity and brand prestige value within the UK retail beauty sector"
       ],
-      "link": "https://www.copra.org",
+      "link": "https://www.cosmeticsbusiness.com/events/pure-beauty-awards",
       "detected": "2026-08-17",
       "newDiscovery": true
     },
     {
-      "id": "beauty-triangle-festival-2027",
-      "series": "beauty-triangle-festival",
-      "name": "The Beauty Triangle Festival 2027",
-      "dateStart": "2027-01-23",
-      "dateEnd": "2027-01-23",
-      "location": "London",
-      "category": "Event",
-      "sector": "Health & Beauty (wellness, aesthetics, holistic health, skincare)",
-      "desc": "An educational beauty and wellness festival featuring expert panels, live treatments, and practitioner sessions showcasing innovations across health, aesthetic treatments, and holistic wellbeing.",
+      "id": "copra-ball-awards-2026",
+      "series": "copra-ball-awards",
+      "name": "COPRA Enchanted Botanical Ball & Awards 2026",
+      "dateStart": "2026-11-05",
+      "dateEnd": "2026-11-05",
+      "location": "Royal Lancaster Hotel, London",
+      "category": "Awards",
+      "sector": "Premium cosmetics, skincare, and luxury fragrance retail",
+      "desc": "The annual black-tie ball and awards ceremony organized by the Cosmetic Toiletry and Perfumery Retailers Association (COPRA) at the Royal Lancaster London. It gathers over 600 key retail buyers, commercial directors, and beauty executives.",
       "scores": {
-        "buyer": 8,
-        "decision": 15,
-        "network": 14,
-        "intel": 13,
-        "ei": 6
+        "buyer": 22,
+        "decision": 24,
+        "network": 20,
+        "intel": 10,
+        "ei": 9
       },
-      "classification": "monitor",
-      "confidence": "Medium",
-      "primaryBenefit": "Market Intelligence",
-      "source": "British Beauty Council search",
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Decision Maker Access",
+      "source": "COPRA / Royal Lancaster Hotel",
       "reasons": [
-        "Good market intelligence on consumer wellness trends and aesthetic tech",
-        "Lower direct buyer access but offers practitioner networking",
-        "Supported by key trade body British Beauty Council"
+        "Organized by the primary UK cosmetic and perfumery retail buyers association",
+        "Unrivalled concentration of senior retail commercial directors and category heads",
+        "Top-tier networking platform specifically tailored to retail distribution deals"
       ],
-      "link": "https://thebeautytriangle.com",
+      "link": "https://www.copra.org.uk",
       "detected": "2026-08-17",
       "newDiscovery": true
     },
@@ -1486,144 +2644,385 @@
       "dateEnd": "2027-03-01",
       "location": "Olympia London, London",
       "category": "Conference",
-      "sector": "Health & Beauty (salon, spa, aesthetics, retail strategy, management)",
-      "desc": "A specialized commercial summit held at Olympia London bringing together salon owners, spa directors, and clinic leaders to address retail growth, digital marketing, team recruitment, and business scalability.",
+      "sector": "Professional beauty, salon chains, spa management, and haircare",
+      "desc": "A two-day business summit held at Olympia London designed for salon and spa owners, directors, and commercial managers looking to scale operations, optimize pricing, and evaluate new brand partnerships.",
       "scores": {
-        "buyer": 14,
+        "buyer": 15,
         "decision": 20,
         "network": 15,
         "intel": 12,
-        "ei": 7
+        "ei": 8
       },
       "classification": "strategic",
       "confidence": "Medium",
       "primaryBenefit": "Decision Maker Access",
-      "source": "Olympia London search",
+      "source": "Olympia London / Professional Beauty Group",
       "reasons": [
-        "Held at required venue Olympia London",
-        "Concentrated gathering of independent salon and spa business owners and decision-makers",
-        "Offers actionable market intelligence on salon retail distribution"
+        "Focused specifically on salon and spa business decision-makers and chain owners",
+        "High commercial relevance for professional skincare and haircare distribution",
+        "Structured networking format facilitating direct commercial discussions"
       ],
       "detected": "2026-08-17",
       "newDiscovery": true
     },
     {
-      "id": "aesthetics-awards-2027",
-      "series": "aesthetics-awards",
-      "name": "The Aesthetics Awards 2027",
-      "dateStart": "2027-03-13",
-      "dateEnd": "2027-03-13",
-      "location": "Grosvenor House, London",
-      "category": "Awards",
-      "sector": "Health & Beauty (medical aesthetics, clinical skincare, devices)",
-      "desc": "The premier awards ceremony for medical aesthetics in the UK and Ireland held at Grosvenor House. Recognizes clinical excellence, top aesthetic clinics, innovative practitioner ranges, and device manufacturers.",
+      "id": "aesthetic-medicine-london-2027",
+      "series": "aesthetic-medicine-london",
+      "name": "Aesthetic Medicine London 2027",
+      "dateStart": "2027-05-07",
+      "dateEnd": "2027-05-08",
+      "location": "Olympia London, London",
+      "category": "Trade Show",
+      "sector": "Clinical skincare, medical aesthetics, devices, and wellness",
+      "desc": "The UK's premier clinical trade show and conference at Olympia London for aesthetic practitioners, clinic owners, and advanced skincare specialists, highlighting cutting-edge treatments, devices, and professional skincare lines.",
       "scores": {
-        "buyer": 10,
-        "decision": 20,
-        "network": 18,
-        "intel": 10,
-        "ei": 7
-      },
-      "classification": "niche",
-      "confidence": "High",
-      "primaryBenefit": "Networking",
-      "source": "Grosvenor House search",
-      "reasons": [
-        "Prestigious black-tie gala dinner held at Grosvenor House venue target",
-        "High decision-maker density among clinic owners, dermatologists, and aesthetic distributors",
-        "Highly targetable for Irish exporters in clinical and cosmeceutical skincare"
-      ],
-      "link": "https://aestheticsawards.com",
-      "detected": "2026-08-17",
-      "newDiscovery": true
-    },
-    {
-      "id": "beauty-wellness-law-summit-2027",
-      "series": "beauty-wellness-law-summit",
-      "name": "Beauty & Wellness Law Summit 2027",
-      "dateStart": "2027-03-15",
-      "dateEnd": "2027-03-15",
-      "dateTBC": true,
-      "location": "London",
-      "category": "Conference",
-      "sector": "Health & Beauty (investment, legal, scaling, M&A, international expansion)",
-      "desc": "Supported by the British Beauty Council, this high-level commercial summit brings together brand founders, investors, legal advisers, and dealmakers shaping M&A, fundraising, and scale-up strategies in consumer beauty.",
-      "scores": {
-        "buyer": 8,
-        "decision": 21,
-        "network": 16,
+        "buyer": 18,
+        "decision": 18,
+        "network": 15,
         "intel": 13,
-        "ei": 7
+        "ei": 8
       },
-      "classification": "niche",
-      "confidence": "Medium",
-      "primaryBenefit": "Decision Maker Access",
-      "source": "British Beauty Council search",
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Brand Discovery",
+      "source": "Olympia London / Professional Beauty Group",
       "reasons": [
-        "Focused decision-maker environment for founders seeking growth funding or strategic partnerships",
-        "High intel on legal compliance and international market expansion",
-        "Strong endorsement from British Beauty Council board leaders"
+        "Leading trade show for the fast-growing clinical and advanced skincare market",
+        "Direct access to clinic owners and aesthetic practitioners making purchasing decisions",
+        "High market value for Irish cosmeceutical and clinical wellness brands"
       ],
+      "link": "https://aestheticmed.co.uk/site/london",
       "detected": "2026-08-17",
       "newDiscovery": true
     },
     {
-      "id": "fragrance-foundation-uk-awards-2027",
-      "series": "fragrance-foundation-uk-awards",
-      "name": "The Fragrance Foundation UK Awards 2027",
-      "dateStart": "2027-06-10",
-      "dateEnd": "2027-06-10",
-      "location": "Grosvenor House, London",
+      "id": "glee-2026-pet-products",
+      "series": "glee",
+      "name": "Glee 2026 (Pet Products Sector)",
+      "dateStart": "2026-09-08",
+      "dateEnd": "2026-09-10",
+      "location": "NEC Birmingham",
+      "category": "Trade Show",
+      "sector": "Garden centre pet retail, premium pet food, pet accessories, and wild bird care suppliers",
+      "desc": "Glee is the UK's leading trade show for garden retail and outdoor living, featuring a dedicated Pet Products sector. The event connects over 460 exhibitors with more than 5,200 trade buyers, providing Irish pet care and pet food suppliers access to garden centre chains and independent retailers.",
+      "scores": {
+        "buyer": 25,
+        "decision": 20,
+        "network": 15,
+        "intel": 12,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "source": "NEC Birmingham",
+      "reasons": [
+        "Major trade event for reaching garden centre buyers, a rapidly expanding retail channel for premium pet food.",
+        "Co-located with Autumn Fair, maximising multi-sector retail buyer exposure.",
+        "Provides direct commercial access to UK garden retail decision-makers and regional distributors."
+      ],
+      "link": "https://www.gleebirmingham.com/",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "pats-2026",
+      "series": "pats",
+      "name": "PATS 2026",
+      "dateStart": "2026-09-27",
+      "dateEnd": "2026-09-29",
+      "location": "NEC Birmingham",
+      "category": "Trade Show",
+      "sector": "Pet food, pet treats, pet care products, aquatics, garden centre buyers, and pet wholesalers",
+      "desc": "PATS is the UK's flagship B2B trade exhibition for the pet and aquatics sector, attracting over 6,000 trade visitors and 450+ exhibitors to the NEC Birmingham. Co-located with BETA International, it serves as the definitive annual sourcing event for UK pet retailers, distributors, and multiple-unit buyers.",
+      "scores": {
+        "buyer": 30,
+        "decision": 23,
+        "network": 17,
+        "intel": 13,
+        "ei": 10
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "source": "NEC Birmingham",
+      "reasons": [
+        "The UK's largest and most important trade show for pet retail sourcing and product launches.",
+        "High concentration of retail buyers from major national pet chains, garden centres, and supermarket multiples.",
+        "Co-located with BETA International, expanding commercial reach into country and equestrian retail networks."
+      ],
+      "link": "https://www.patshow.co.uk/",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "pet-excellence-awards-2026",
+      "series": "pet-excellence-awards",
+      "name": "Pet Excellence Awards 2026",
+      "dateStart": "2026-09-28",
+      "dateEnd": "2026-09-28",
+      "location": "NEC Birmingham",
       "category": "Awards",
-      "sector": "Health & Beauty (fragrance, personal care, luxury retail, packaging)",
-      "desc": "Gathers over 700 executives, creators, perfume houses, and retail buyers at Grosvenor House to celebrate innovation, responsible design, and retail excellence across the fragrance and beauty industry.",
+      "sector": "Pet food manufacturers, product suppliers, international trade partners, and pet retail leaders",
+      "desc": "Organised during PATS at the NEC Birmingham, the Pet Excellence Awards (formerly the PetQuip Awards) recognise commercial success and product innovation across the UK pet trade. The gala dinner provides high-value executive networking for suppliers, brand directors, and international distributors.",
       "scores": {
         "buyer": 15,
         "decision": 22,
-        "network": 19,
-        "intel": 9,
+        "network": 20,
+        "intel": 11,
         "ei": 8
       },
       "classification": "strategic",
       "confidence": "High",
       "primaryBenefit": "Networking",
-      "source": "Grosvenor House search",
+      "source": "NEC Birmingham",
       "reasons": [
-        "Flagship industry gathering for luxury personal care and fragrance held at Grosvenor House",
-        "Excellent networking with retail buyers from major UK department store groups",
-        "Strong brand exposure and benchmarking value"
+        "High-density networking dinner held alongside PATS with senior decision-makers across the UK pet industry.",
+        "Offers Irish pet exporters peer recognition, trade visibility, and direct contact with UK distributors.",
+        "Strong attendance from major UK pet wholesalers, buying groups, and retail commercial directors."
       ],
-      "link": "https://www.fragrancefoundation.org.uk",
+      "link": "https://www.patshow.co.uk/",
       "detected": "2026-08-17",
       "newDiscovery": true
     },
     {
-      "id": "tones-of-beauty-2027",
-      "series": "tones-of-beauty",
-      "name": "Tones of Beauty Expo 2027",
-      "dateStart": "2027-06-30",
-      "dateEnd": "2027-07-01",
-      "location": "ExCeL London, London",
-      "category": "Trade Show",
-      "sector": "Health & Beauty (inclusive cosmetics, skincare, haircare, fragrance, wellness)",
-      "desc": "The UK's premier B2B trade show dedicated to multicultural, inclusive, and emerging beauty brands. Features a structured Hosted Buyer Programme connecting brand founders directly with major UK retailers like Boots, Superdrug, Harrods, and Sainsburys.",
+      "id": "pif-awards-2026",
+      "series": "pif-awards",
+      "name": "Pet Industry Federation (PIF) Awards 2026",
+      "dateStart": "2026-11-05",
+      "dateEnd": "2026-11-05",
+      "location": "DoubleTree by Hilton, Stoke-on-Trent",
+      "category": "Awards",
+      "sector": "Pet food brands, pet retail chains, independent pet shops, and pet care suppliers",
+      "desc": "The PIF Awards are the premier annual awards event for the British pet industry, hosted by the Pet Industry Federation. The black-tie dinner celebrates achievement across manufacturing, retail, and supplier innovation, gathering C-suite executives, founders, and trade leaders from across the UK.",
       "scores": {
-        "buyer": 28,
-        "decision": 22,
-        "network": 16,
-        "intel": 12,
-        "ei": 9
+        "buyer": 12,
+        "decision": 24,
+        "network": 20,
+        "intel": 10,
+        "ei": 8
       },
       "classification": "anchor",
       "confidence": "High",
-      "primaryBenefit": "Buyer Access",
-      "source": "COPRA & Cosmetics Business trade show search",
+      "primaryBenefit": "Networking",
+      "source": "General Search",
       "reasons": [
-        "Includes a structured hosted buyer programme with confirmed UK national retail chains",
-        "Premier platform for brand discovery, emerging brands, and inclusive skincare innovation",
-        "High commercial ROI for Enterprise Ireland clients seeking wholesale distribution"
+        "Flagship national pet trade awards ceremony bringing together senior leadership and business owners.",
+        "Unmatched senior networking platform for Irish exporters seeking top-tier UK commercial partnerships.",
+        "High attendance of pet retail chain buyers, brand directors, and trade association leaders."
       ],
-      "link": "https://www.tonesofbeauty.com",
+      "link": "https://petfederation.co.uk/pif-awards/",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "london-vet-show-2026",
+      "series": "london-vet-show",
+      "name": "London Vet Show 2026",
+      "dateStart": "2026-11-19",
+      "dateEnd": "2026-11-20",
+      "location": "ExCeL London",
+      "category": "Trade Show",
+      "sector": "Veterinary practice owners, practice managers, clinical decision-makers, and specialised pet nutrition brands",
+      "desc": "London Vet Show is Europe's largest veterinary conference and trade exhibition at ExCeL London. Featuring partner content from UK Pet Food, including clinical nutrition streams, it provides targeted access to practice owners, head purchasing managers, and clinical decision-makers across the UK veterinary sector.",
+      "scores": {
+        "buyer": 20,
+        "decision": 22,
+        "network": 16,
+        "intel": 14,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Decision Maker Access",
+      "source": "ExCeL London",
+      "reasons": [
+        "Premier UK commercial platform for premium, therapeutic, and veterinary-endorsed pet food ranges.",
+        "Co-programmed with UK Pet Food on pet nutrition topics, offering high industry credibility.",
+        "Direct access to practice owners, corporate veterinary group buyers, and procurement heads."
+      ],
+      "link": "https://london.vetshow.com/",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "uk-pet-food-annual-convention-2026",
+      "series": "uk-pet-food-annual-convention",
+      "name": "UK Pet Food Annual Convention 2026",
+      "dateStart": "2026-11-26",
+      "dateEnd": "2026-11-26",
+      "location": "London",
+      "category": "Conference",
+      "sector": "Pet food manufacturers, ingredient suppliers, regulatory directors, and retail trading leads",
+      "desc": "Organised by UK Pet Food (the primary trade body for British pet food manufacturers), this annual convention brings together industry executives, technical directors, and policy leads. It features expert presentations on market trends, regulatory shifts, and pet nutrition, followed by an executive networking lunch.",
+      "scores": {
+        "buyer": 10,
+        "decision": 23,
+        "network": 18,
+        "intel": 15,
+        "ei": 10
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Market Intelligence",
+      "source": "UK Pet Food",
+      "reasons": [
+        "Core UK trade body event offering vital intelligence on UK market shifts and technical regulatory standards.",
+        "High-density gathering of managing directors and technical leads from major UK pet food brands.",
+        "Essential strategic briefing for Irish pet food exporters aiming to align products with UK market demands."
+      ],
+      "link": "https://www.ukpetfood.org/events.html",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "the-business-of-pets-conference-2027",
+      "series": "the-business-of-pets-conference",
+      "name": "The Business of Pets Conference 2027",
+      "dateStart": "2027-06-16",
+      "dateEnd": "2027-06-17",
+      "location": "Cranfield Management Development Centre, near Milton Keynes",
+      "category": "Conference",
+      "sector": "Pet business founders, pet food scaleups, retail buyers, investors, and product innovators",
+      "desc": "Organised by the Pet Industry Federation, The Business of Pets Conference is a two-day strategic conference focused on pet business resilience, scaling, and commercial growth. Held at Cranfield, it combines keynote presentations with live pitch sessions in front of retail buyers and investors.",
+      "scores": {
+        "buyer": 18,
+        "decision": 22,
+        "network": 17,
+        "intel": 14,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Decision Maker Access",
+      "source": "General Search",
+      "reasons": [
+        "Focused B2B strategy conference designed specifically for pet sector entrepreneurs and commercial leaders.",
+        "Features pitching sessions and direct engagement opportunities with UK retail buyers and investors.",
+        "High market intelligence value covering UK consumer trends, retail strategy, and channel expansion."
+      ],
+      "link": "https://petfederation.co.uk/",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "manchester-fashion-week-2026",
+      "series": "manchester-fashion-week",
+      "name": "Manchester Fashion Week 2026",
+      "dateStart": "2026-09-09",
+      "dateEnd": "2026-09-12",
+      "location": "Campfield & VERSA Studios, Manchester",
+      "category": "Trade Show",
+      "sector": "Fashion, Apparel & Designer Retail (Manchester-based)",
+      "desc": "A four-day fashion event featuring runway showcases, brand exhibitions, and panel talks focused on ethical and sustainable apparel. Centred in Manchester's St. John's creative district, it brings together UK fashion brands, buyers, and tech innovators.",
+      "scores": {
+        "buyer": 20,
+        "decision": 18,
+        "network": 15,
+        "intel": 11,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "Medium",
+      "primaryBenefit": "Brand Discovery",
+      "source": "Manchester Central & regional event search",
+      "reasons": [
+        "Major regional fashion platform specifically located in Manchester",
+        "Offers exposure to northern UK retail buyers and apparel brand founders",
+        "Focus on sustainable fashion aligns with Irish export client capabilities"
+      ],
+      "link": "https://mcrfashionweek.com",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "retail-week-ai-summit-2026",
+      "series": "retail-week-ai-summit",
+      "name": "Retail Week AI Summit 2026",
+      "dateStart": "2026-09-30",
+      "dateEnd": "2026-09-30",
+      "location": "Ham Yard Hotel, London",
+      "category": "Conference",
+      "sector": "Cross-sector Retail Executive, Tech & Digital Transformation",
+      "desc": "A dedicated full-day executive conference hosted by Retail Week in London, examining AI applications across retail operations, customer experience, supply chain, and e-commerce. Features C-suite retail leaders and digital transformation heads.",
+      "scores": {
+        "buyer": 10,
+        "decision": 24,
+        "network": 17,
+        "intel": 14,
+        "ei": 7
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Decision Maker Access",
+      "source": "General trade search / Retail Week",
+      "reasons": [
+        "High concentration of senior retail decision-makers and C-suite executives",
+        "Provides critical market intelligence on retail AI adoption and operational efficiency",
+        "Strong cross-sector relevance for tech-enabled consumer retail businesses"
+      ],
+      "link": "https://events.retail-week.com/aisummit",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "live-retail-week-x-the-grocer-2027",
+      "series": "live-retail-week-x-the-grocer",
+      "name": "LIVE 2027: Retail Week x The Grocer",
+      "dateStart": "2027-03-18",
+      "dateEnd": "2027-03-18",
+      "location": "Convene 155 Bishopsgate, London",
+      "category": "Conference",
+      "sector": "Cross-sector Retail & FMCG Leadership, Innovation & Strategy",
+      "desc": "The flagship annual cross-sector retail and grocery conference in the UK, co-produced by Retail Week and The Grocer. Brings together senior executives, trading directors, and strategy leads to address innovation, supply chain, and changing consumer behaviour.",
+      "scores": {
+        "buyer": 15,
+        "decision": 25,
+        "network": 18,
+        "intel": 14,
+        "ei": 8
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Decision Maker Access",
+      "source": "General trade search / Retail Week",
+      "reasons": [
+        "Flagship UK cross-sector retail conference gathering senior retail royalty",
+        "Unrivalled networking with retail CEOs, trading directors, and commercial heads",
+        "Essential strategic intelligence on UK consumer and retail market dynamics"
+      ],
+      "link": "https://live.retail-week.com",
+      "detected": "2026-08-17",
+      "newDiscovery": true
+    },
+    {
+      "id": "theindustry-beauty-innovators-awards-2027",
+      "series": "theindustry-beauty-innovators-awards",
+      "name": "TheIndustry.beauty The Innovators Awards 2027",
+      "dateStart": "2027-07-08",
+      "dateEnd": "2027-07-08",
+      "dateTBC": true,
+      "location": "Nobu Hotel London, London",
+      "category": "Awards",
+      "sector": "Health & Beauty (London-based)",
+      "desc": "Annual awards ceremony organized by TheIndustry.beauty celebrating innovation, product development, and retail excellence in the UK beauty sector. Nearly 300 senior beauty brand executives and retail buyers attend the VIP gala dinner.",
+      "scores": {
+        "buyer": 12,
+        "decision": 18,
+        "network": 16,
+        "intel": 8,
+        "ei": 5
+      },
+      "classification": "ignore",
+      "confidence": "Low",
+      "primaryBenefit": "Networking",
+      "source": "TheIndustry.beauty search",
+      "reasons": [
+        "Sector-specific beauty event based in London rather than Manchester or Glasgow",
+        "Retained for reference under classification 'ignore' to complete organizer audit",
+        "High networking value for beauty brand founders and beauty retail directors"
+      ],
+      "link": "https://www.theindustry.beauty/awards/",
       "detected": "2026-08-17",
       "newDiscovery": true
     }
