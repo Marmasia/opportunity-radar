@@ -308,8 +308,10 @@
       "primaryBenefit": "Networking",
       "reasons": [
         "Dates genuinely TBC per the source itself \u2014 do not treat as scheduled until confirmed",
-        "Same curated small-group Spa Peeps format as other editions already scored higher"
-      ]
+        "Same curated small-group Spa Peeps format as other editions already scored higher",
+        "Excluded from live calendar: source date is genuinely TBC (null), which can break date-based rendering. Re-include once a real date is confirmed."
+      ],
+      "status": "unscheduled"
     },
     {
       "id": "regional-growth-summit",

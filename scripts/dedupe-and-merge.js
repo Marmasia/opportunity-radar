@@ -119,7 +119,7 @@ function dedupeWithinScrape(scrapedEvents) {
 // ---------- STEP B: merge deduped scrape results into the permanent baseline ----------
 function mergeIntoBaseline(baseline, dedupedScrapedEvents) {
   const knownAliases = baseline.known_aliases || {};
-  const baselineEvents = (baseline.baseline_events || []).filter(e => e.status !== 'superseded');
+  const baselineEvents = (baseline.baseline_events || []).filter(e => !e.status || e.status === 'active');
   const usedBaselineSeries = new Set();
   const finalList = [];
 
