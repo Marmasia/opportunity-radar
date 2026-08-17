@@ -80,7 +80,7 @@
   .viewtoggle button.active{background:var(--surface2); color:var(--text);}
 
   /* calendar grid */
-  .cal{display:grid; grid-template-columns:repeat(7,1fr); gap:6px;}
+  .cal{display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:6px;}
   .dow{font-size:11px; color:var(--dimmer); text-transform:uppercase; letter-spacing:.08em; text-align:center; padding-bottom:4px;}
   .day{
     background:var(--surface); border:1px solid var(--border); border-radius:10px;
