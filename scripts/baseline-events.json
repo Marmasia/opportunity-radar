@@ -1243,6 +1243,615 @@
       "reasons": [
         "Score ported directly from the verified Opportunity Radar calendar (same event, cross-checked earlier)"
       ]
+    },
+    {
+      "id": "theindustry-summit",
+      "series": "theindustry-summit",
+      "name": "TheIndustry.fashion Summit (2026 theme: Fashion [Un]Bound)",
+      "aliases": [],
+      "dateStart": "2026-10-15",
+      "dateEnd": "2026-10-15",
+      "location": "The Forum, Leadenhall, London",
+      "category": "Conference",
+      "sector": "Fashion Retail",
+      "desc": "UK fashion retail's agenda-setting annual summit, run by TheIndustry.fashion. Around 200 senior executives debate the industry's direction \u2014 this year's theme is Fashion [Un]Bound, covering AI, VR and circular business models. Note: the site's own metadata still shows last year's theme name (\\\"Retail Reset\\\") in places \u2014 same event, just stale branding on their end.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 8,
+        "decision": 24,
+        "network": 18,
+        "intel": 14,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Decision Maker Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ],
+      "link": "https://www.theindustry.fashion/summit/about-the-summit/"
+    },
+    {
+      "id": "fashion-awards-bfc",
+      "series": "fashion-awards-bfc",
+      "name": "The Fashion Awards",
+      "aliases": [],
+      "dateStart": "2026-11-30",
+      "dateEnd": "2026-11-30",
+      "location": "Royal Albert Hall, London",
+      "category": "Awards",
+      "sector": "Fashion",
+      "desc": "The British Fashion Council's flagship awards, celebrating global creativity and fashion's cultural impact. Raised \u00a31 million for the BFC Foundation in 2025.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 10,
+        "decision": 22,
+        "network": 19,
+        "intel": 12,
+        "ei": 9
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Networking",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline \u2014 was previously only findable via live monthly search, which is a single point of failure for a Must Attend/high-value event"
+      ],
+      "link": "https://fashionawards.com/"
+    },
+    {
+      "id": "drapers-awards",
+      "series": "drapers-awards",
+      "name": "Drapers Awards",
+      "aliases": [],
+      "dateStart": "2026-11-11",
+      "dateEnd": "2026-11-11",
+      "location": "Old Billingsgate, London",
+      "category": "Awards",
+      "sector": "Fashion Retail",
+      "desc": "Unites the fashion retail industry's multiples and independents under one roof for a single annual celebration. For 2026 this merges what were previously separate ceremonies \u2014 the Drapers Awards (multiples) and Drapers Independents Awards \u2014 into one combined night.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 12,
+        "decision": 20,
+        "network": 18,
+        "intel": 11,
+        "ei": 9
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Networking",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline \u2014 was previously only findable via live monthly search, which is a single point of failure for a Must Attend/high-value event"
+      ]
+    },
+    {
+      "id": "lfw-sept",
+      "series": "lfw-sept",
+      "name": "London Fashion Week",
+      "aliases": [],
+      "dateStart": "2026-09-17",
+      "dateEnd": "2026-09-21",
+      "location": "Venues across London",
+      "category": "Trade Show",
+      "sector": "Fashion \u2014 Womenswear, Menswear, Accessories",
+      "desc": "BFC's flagship fashion week, showing Spring/Summer 2027 collections. Confirmed schedule includes McQueen, Burberry, Mulberry under Christopher Kane, Simone Rocha, Erdem, plus M&S debuting its first exclusive runway show \u2014 a sign of growing retail presence on the schedule.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 27,
+        "decision": 23,
+        "network": 16,
+        "intel": 15,
+        "ei": 10
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Brand Discovery",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline \u2014 was previously only findable via live monthly search, which is a single point of failure for a Must Attend/high-value event"
+      ],
+      "link": "https://londonfashionweek.co.uk/"
+    },
+    {
+      "id": "london-design-festival",
+      "series": "london-design-festival",
+      "name": "London Design Festival",
+      "aliases": [],
+      "dateStart": "2026-09-12",
+      "dateEnd": "2026-09-20",
+      "location": "Venues across London (hub: V&A South Kensington)",
+      "category": "Conference",
+      "sector": "Homeware, Design",
+      "desc": "Citywide design festival \u2014 talks, showroom launches, installations and the Global Design Forum across 11 design districts. Largely a trend and brand-discovery event rather than a buyer sourcing floor.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 10,
+        "decision": 12,
+        "network": 13,
+        "intel": 14,
+        "ei": 6
+      },
+      "classification": "monitor",
+      "confidence": "High",
+      "primaryBenefit": "Market Intelligence",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ]
+    },
+    {
+      "id": "beauty-trends-conf",
+      "series": "beauty-trends-conf",
+      "name": "Beauty Trends & Innovations Conference",
+      "aliases": [],
+      "dateStart": "2026-09-22",
+      "dateEnd": "2026-09-22",
+      "location": "Grand Connaught Rooms, London",
+      "category": "Conference",
+      "sector": "Health & Beauty",
+      "desc": "One-day conference on retail trends, NPD, sustainability and marketing strategy for the beauty industry. 40+ speakers from beauty brands, retailers and innovation leads, with structured networking built in.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 14,
+        "decision": 20,
+        "network": 16,
+        "intel": 14,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Decision Maker Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ]
+    },
+    {
+      "id": "top-drawer",
+      "series": "top-drawer",
+      "name": "Top Drawer London",
+      "aliases": [],
+      "dateStart": "2026-09-13",
+      "dateEnd": "2026-09-15",
+      "location": "Olympia, London",
+      "category": "Trade Show",
+      "sector": "Home, Gift, Fashion, Wellbeing",
+      "desc": "UK's leading design-led wholesale trade show, spanning Home, Hospitality, Gift, Fashion, Craft and Wellbeing sectors. Over 10,000 retailers attend twice a year to source design-led collections; includes a dedicated 'Better Trends' trend-spotting zone.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 26,
+        "decision": 18,
+        "network": 14,
+        "intel": 14,
+        "ei": 10
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline \u2014 was previously only findable via live monthly search, which is a single point of failure for a Must Attend/high-value event"
+      ],
+      "link": "https://www.topdrawer.co.uk/"
+    },
+    {
+      "id": "spa-peeps-dubai",
+      "series": "spa-peeps-dubai",
+      "name": "Spa Peeps \u2014 Elevate Spa",
+      "aliases": [],
+      "dateStart": "2026-09-30",
+      "dateEnd": "2026-10-01",
+      "location": "Dubai, UAE",
+      "category": "Event",
+      "sector": "Spa",
+      "desc": "Intimate, invite-only spa industry gathering \u2014 hand-selected decision-makers, designed for one-on-one relationship building rather than a show floor.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 16,
+        "decision": 20,
+        "network": 18,
+        "intel": 9,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "Medium",
+      "primaryBenefit": "Decision Maker Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ]
+    },
+    {
+      "id": "cew-meetup",
+      "series": "cew-meetup",
+      "name": "CEW Members Meet-Up",
+      "aliases": [],
+      "dateStart": "2026-09-15",
+      "dateEnd": "2026-09-15",
+      "location": "London",
+      "category": "Event",
+      "sector": "Beauty",
+      "desc": "Cosmetic Executive Women London meet-up. Membership already confirmed \u2014 date to be finalised by CEW.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 10,
+        "decision": 16,
+        "network": 18,
+        "intel": 11,
+        "ei": 8
+      },
+      "classification": "niche",
+      "confidence": "High",
+      "primaryBenefit": "Networking",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ]
+    },
+    {
+      "id": "beauty-bulb-live",
+      "series": "beauty-bulb-live",
+      "name": "Beauty Bulb Live London",
+      "aliases": [],
+      "dateStart": "2026-10-07",
+      "dateEnd": "2026-10-07",
+      "location": "Business Design Centre, London",
+      "category": "Trade Show",
+      "sector": "Health & Beauty, Wellness",
+      "desc": "Debut in-person trade show from Beauty Bulb \u2014 a curated, brand-equal 'pod' format replacing traditional stands. 200+ retailers already confirmed, including Boots, Space NK, QVC, Superdrug, Harrods, M&S and Amazon.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 27,
+        "decision": 20,
+        "network": 16,
+        "intel": 12,
+        "ei": 9
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline \u2014 was previously only findable via live monthly search, which is a single point of failure for a Must Attend/high-value event"
+      ],
+      "link": "https://beautybulb.co.uk/beauty-bulb-live/"
+    },
+    {
+      "id": "cew-achiever-awards",
+      "series": "cew-achiever-awards",
+      "name": "CEW Achiever Awards",
+      "aliases": [],
+      "dateStart": "2026-12-01",
+      "dateEnd": "2026-12-01",
+      "location": "London",
+      "category": "Awards",
+      "sector": "Beauty",
+      "desc": "Cosmetic Executive Women's annual Achiever Awards \u2014 a black-tie gathering of senior UK beauty industry leaders.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 8,
+        "decision": 20,
+        "network": 19,
+        "intel": 9,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Decision Maker Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ],
+      "link": "https://cewuk.co.uk/awards/awards/achiever-awards/"
+    },
+    {
+      "id": "harrogate-christmas-gift",
+      "series": "harrogate-christmas-gift",
+      "name": "Harrogate Christmas & Gift",
+      "aliases": [],
+      "dateStart": "2027-01-10",
+      "dateEnd": "2027-01-13",
+      "location": "Harrogate Convention Centre",
+      "category": "Trade Show",
+      "sector": "Gift, Christmas & Seasonal",
+      "desc": "The leading UK event for Christmas, festive and seasonal gift buying. Over 90 exhibitors covering Christmas products, food gifts, and home & garden ranges, drawing independents, department stores and garden centres.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 20,
+        "decision": 13,
+        "network": 14,
+        "intel": 10,
+        "ei": 8
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ]
+    },
+    {
+      "id": "scotlands-trade-fair-spring",
+      "series": "scotlands-trade-fair-spring",
+      "name": "Scotland's Trade Fair Spring",
+      "aliases": [],
+      "dateStart": "2027-01-24",
+      "dateEnd": "2027-01-26",
+      "location": "Scottish Event Campus (SEC), Glasgow",
+      "category": "Trade Show",
+      "sector": "Home, Gift, Fashion, Craft",
+      "desc": "Scotland's biggest and only retail buying event, spanning Home & Living, Gift, Fashion & Accessories, Textiles and Craft, run alongside the Speciality Food & Drink Show. The 2027 edition consolidates what was previously a separate Autumn show into one larger Spring event.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 25,
+        "decision": 16,
+        "network": 14,
+        "intel": 12,
+        "ei": 9
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline \u2014 was previously only findable via live monthly search, which is a single point of failure for a Must Attend/high-value event"
+      ],
+      "link": "https://www.scotlandstradefairs.com/"
+    },
+    {
+      "id": "longevity-med-summit",
+      "series": "longevity-med-summit",
+      "name": "Longevity Med Summit",
+      "aliases": [],
+      "dateStart": "2027-04-21",
+      "dateEnd": "2027-04-22",
+      "location": "Business Design Centre, London",
+      "category": "Conference",
+      "sector": "Longevity, Supplements, Health & Beauty",
+      "desc": "5th edition of the Longevity Med Summit \u2014 physicians, healthcare executives, scientists and investors from across Europe, the Middle East and the US, covering regenerative medicine, precision health and preventive healthcare. Runs alongside an exhibition and networking floor.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 10,
+        "decision": 18,
+        "network": 14,
+        "intel": 13,
+        "ei": 7
+      },
+      "classification": "niche",
+      "confidence": "High",
+      "primaryBenefit": "Decision Maker Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ]
+    },
+    {
+      "id": "longevity-show",
+      "series": "longevity-show",
+      "name": "The Longevity Show",
+      "aliases": [],
+      "dateStart": "2027-06-25",
+      "dateEnd": "2027-06-26",
+      "location": "Tobacco Dock, London",
+      "category": "Trade Show",
+      "sector": "Longevity, Supplements, Nutrition, Beauty & Wellness Tech",
+      "desc": "The UK's first dedicated longevity festival, combining a business conference with a consumer expo floor. The debut 2026 edition drew 75+ brands spanning diagnostics, supplements, nutrition, beauty and wellness technology, alongside 100+ clinicians, scientists and founders.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 18,
+        "decision": 18,
+        "network": 16,
+        "intel": 15,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Brand Discovery",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ]
+    },
+    {
+      "id": "lfw-feb",
+      "series": "lfw-feb",
+      "name": "London Fashion Week (February)",
+      "aliases": [],
+      "dateStart": "2027-02-19",
+      "dateEnd": "2027-02-23",
+      "location": "Venues across London",
+      "category": "Trade Show",
+      "sector": "Fashion \u2014 Womenswear, Menswear, Accessories",
+      "desc": "BFC's February edition of London Fashion Week, showing Autumn/Winter collections. Same Anchor status as the September edition \u2014 the UK fashion industry's other major fixed point in the year.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 27,
+        "decision": 23,
+        "network": 16,
+        "intel": 15,
+        "ei": 10
+      },
+      "classification": "anchor",
+      "confidence": "Medium",
+      "primaryBenefit": "Brand Discovery",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline \u2014 was previously only findable via live monthly search, which is a single point of failure for a Must Attend/high-value event"
+      ],
+      "link": "https://londonfashionweek.co.uk/"
+    },
+    {
+      "id": "indx-intimate-kids-feb",
+      "series": "indx-intimate-kids-feb",
+      "name": "INDX National Intimate Apparel & Kidswear",
+      "aliases": [],
+      "dateStart": "2027-02-14",
+      "dateEnd": "2027-02-15",
+      "location": "Cranmore Park Conference & Event Centre",
+      "category": "Trade Show",
+      "sector": "Fashion \u2014 Intimate Apparel, Kidswear",
+      "desc": "Co-located INDX shows for intimate apparel and kidswear/kids footwear \u2014 niche Fashion subcategories on the same buying days.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 16,
+        "decision": 10,
+        "network": 9,
+        "intel": 7,
+        "ei": 7
+      },
+      "classification": "monitor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ]
+    },
+    {
+      "id": "cew-beauty-awards-demo",
+      "series": "cew-beauty-awards-demo",
+      "name": "CEW Beauty Awards Product Demonstration Event",
+      "aliases": [],
+      "dateStart": "2027-03-04",
+      "dateEnd": "2027-03-04",
+      "location": "Business Design Centre, London",
+      "category": "Event",
+      "sector": "Beauty",
+      "desc": "CEW UK's product demonstration event tied to its Beauty Awards \u2014 brands showcase directly to press, retailers and CEW members.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 14,
+        "decision": 16,
+        "network": 15,
+        "intel": 11,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Brand Discovery",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ]
+    },
+    {
+      "id": "clerkenwell-design-week",
+      "series": "clerkenwell-design-week",
+      "name": "Clerkenwell Design Week",
+      "aliases": [],
+      "dateStart": "2027-05-19",
+      "dateEnd": "2027-05-21",
+      "location": "Clerkenwell, London",
+      "category": "Conference",
+      "sector": "Homeware, Design",
+      "desc": "UK's leading design festival across 160+ showrooms in Clerkenwell \u2014 furniture, lighting, textiles, surfaces. Trend and brand-discovery event rather than a buyer sourcing floor. 2027 dates not yet published; estimated from the consistent May pattern of recent years.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 9,
+        "decision": 11,
+        "network": 12,
+        "intel": 13,
+        "ei": 6
+      },
+      "classification": "monitor",
+      "confidence": "Low",
+      "primaryBenefit": "Market Intelligence",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ],
+      "link": "https://www.clerkenwelldesignweek.com/"
+    },
+    {
+      "id": "gift-of-the-year",
+      "series": "gift-of-the-year",
+      "name": "Gift of the Year",
+      "aliases": [],
+      "dateStart": "2027-05-12",
+      "dateEnd": "2027-05-12",
+      "location": "London",
+      "category": "Awards",
+      "sector": "Gift",
+      "desc": "The Giftware Association's annual awards recognising the best new products across the UK gift industry. Exact 2027 date not yet published; the 2026 edition ran in May.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 8,
+        "decision": 14,
+        "network": 13,
+        "intel": 9,
+        "ei": 8
+      },
+      "classification": "niche",
+      "confidence": "Low",
+      "primaryBenefit": "Networking",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ]
+    },
+    {
+      "id": "exclusively-housewares",
+      "series": "exclusively-housewares",
+      "name": "Exclusively Housewares",
+      "aliases": [],
+      "dateStart": "2027-06-08",
+      "dateEnd": "2027-06-09",
+      "location": "Business Design Centre, London",
+      "category": "Trade Show",
+      "sector": "Homeware",
+      "desc": "BHETA's flagship housewares show \u2014 150 leading suppliers, trend talks and trend tours, drawing a strong UK buyer audience.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 20,
+        "decision": 14,
+        "network": 13,
+        "intel": 10,
+        "ei": 9
+      },
+      "classification": "strategic",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ],
+      "link": "https://www.businessdesigncentre.co.uk/event/exclusively-housewares-2027/"
+    },
+    {
+      "id": "harrogate-home-gift",
+      "series": "harrogate-home-gift",
+      "name": "Harrogate Home & Gift Buyers Festival",
+      "aliases": [],
+      "dateStart": "2027-07-18",
+      "dateEnd": "2027-07-21",
+      "location": "Harrogate Convention Centre",
+      "category": "Trade Show",
+      "sector": "Home, Gift, Fashion",
+      "desc": "Northern England's most significant buyers' festival, spanning gifts, home & lifestyle, jewellery, textiles, food and fashion. Over 800 exhibitors \u2014 the summer regional equivalent of Autumn Fair.",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 25,
+        "decision": 16,
+        "network": 14,
+        "intel": 12,
+        "ei": 9
+      },
+      "classification": "anchor",
+      "confidence": "High",
+      "primaryBenefit": "Buyer Access",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline \u2014 was previously only findable via live monthly search, which is a single point of failure for a Must Attend/high-value event"
+      ]
+    },
+    {
+      "id": "drapers-footwear-awards",
+      "series": "drapers-footwear-awards",
+      "name": "Drapers Footwear Awards",
+      "aliases": [],
+      "dateStart": "2027-07-01",
+      "dateEnd": "2027-07-01",
+      "location": "Grosvenor House, London",
+      "category": "Awards",
+      "sector": "Fashion \u2014 Footwear",
+      "desc": "Drapers' dedicated footwear industry awards, celebrating retailers, brands and individuals in footwear. Exact 2027 date not yet published; estimated from the 2026 pattern (1 July).",
+      "source": "Verified via live web search during Opportunity Radar build \u2014 added to permanent baseline so it no longer depends on Gemini re-finding it fresh every month",
+      "scores": {
+        "buyer": 10,
+        "decision": 16,
+        "network": 15,
+        "intel": 9,
+        "ei": 8
+      },
+      "classification": "niche",
+      "confidence": "Low",
+      "primaryBenefit": "Networking",
+      "reasons": [
+        "Promoted from the manually-researched calendar into the permanent baseline"
+      ],
+      "link": "https://footwearawards.drapersonline.com/"
     }
   ],
   "known_aliases": {
